@@ -31,7 +31,7 @@ function LandingPageHeader() {
         <div className="overlay"></div>
         <div className="text-content">
           <p className="header-text">
-            Coming <span style={{ color: "#DCDCDC" }}>Soon</span>
+            Coming <span style={{ color: "#FFFFFF" }}>Soon</span>
           </p>
           <p className="sub-text">
             Our website is under construction, but we are preparing something
