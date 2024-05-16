@@ -4,10 +4,11 @@
 }
 
 :root {
-  --primary: #f4ce14;
+  --primary: #D6AE30;
   --background: #fcfaf1;
   --black: #060606;
   --grey: #45474b;
+  --light-grey: #DCDCDC;
   --accent: #201c06;
 }
 
@@ -17,7 +18,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: var(--white);
+    color: var(--black);
     font-family: 'Inter';
 }
 
@@ -39,16 +40,17 @@ body {
     min-height: 100vh;
 }
 
-/* *::-webkit-scrollbar{
-    display: none;
+*::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
 }
 
 *::-webkit-scrollbar-track{
-    background-color: var(--dark-jungle-green);
+    background-color: var(--background);
     border-radius: 20px;
 }
 
 *::-webkit-scrollbar-thumb{
-    background-color: var(--dark-gray);
+    background-color: var(--primary);
     border-radius: 20px;
-} */
+}
