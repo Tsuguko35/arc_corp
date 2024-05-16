@@ -194,8 +194,11 @@
 }
 
 @media only screen and (max-width: 568px){
+    #landingPageHeader > .wrapper > .text-content{
+        padding-inline: 20px;
+    }
     #landingPageHeader > .wrapper > .text-content > .header-text{
-        font-size: 35px;
+        font-size: 45px;
         text-align: center;
     }
     
@@ -206,26 +209,22 @@
 }
 
 @media only screen and (max-width: 425px){
-    #landingPageHeader > .wrapper > .text-content > .header-text{
-        font-size: 30px;
-        text-align: center;
-    }
-    
     #landingPageHeader > .wrapper > .text-content > .sub-text{
-        font-size: 14px;
+        font-size: 16px;
         width: 100%;
         text-align: center;
     }
 }
 
 @media only screen and (max-width: 419px){
+    
     #landingPageHeader > .wrapper > .text-content > .header-text{
-        font-size: 25px;
+        font-size: 35px;
         text-align: center;
     }
     
     #landingPageHeader > .wrapper > .text-content > .sub-text{
-        font-size: 12px;
+        font-size: 16px;
         width: 100%;
         text-align: center;
     }
