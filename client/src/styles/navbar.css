@@ -69,7 +69,7 @@
 }
 
 #navbar > .wrapper > .nav-menu > .nav-item:not(.active):hover::after {
-    width: 100%;
+    width: 100%; 
 }
 
 #navbar > .wrapper > .nav-menu > .nav-item.active {
