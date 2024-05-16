@@ -10,6 +10,7 @@
   --grey: #45474b;
   --light-grey: #DCDCDC;
   --accent: #201c06;
+  --dark-blue: #150E40;
 }
 
 
@@ -53,4 +54,8 @@ body {
 *::-webkit-scrollbar-thumb{
     background-color: var(--primary);
     border-radius: 20px;
+}
+
+.bold{
+    font-weight: bold;
 }

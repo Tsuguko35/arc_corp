@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef } from "react";
 import "../../styles/landingPageHeader.css";
 
 import backgroundImage from "../../assets/images/LandingPage/headerBackground.png";
@@ -8,6 +8,11 @@ import backgroundImage4 from "../../assets/svg/3.svg";
 
 import backgroundVideo from "../../assets/videos/LandingPage/backgroundVideo.mp4";
 
+import * as fiIcons from "react-icons/fi";
+import { Link } from "react-router-dom";
+
+import InfiniteCarousel from "react-leaf-carousel";
+
 function LandingPageHeader() {
   const backgroundImages = [
     backgroundImage,
@@ -16,38 +21,48 @@ function LandingPageHeader() {
     backgroundImage4,
   ];
 
-  const [bgIndex, setBgIndex] = useState(0);
+  const imageRef = useRef(null);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setBgIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, [backgroundImages.length]);
   return (
     <header id="landingPageHeader" className="landingPageHeader">
       <div className="wrapper">
         <div className="overlay"></div>
         <div className="text-content">
-          <p className="header-text">
-            Coming <span style={{ color: "#FFFFFF" }}>Soon</span>
-          </p>
+          <p className="header-text">“We Build America”</p>
           <p className="sub-text">
-            Our website is under construction, but we are preparing something
-            amazing and exciting for you. Please check back soon for updates.
+            Elevating Your Home's Protection with Precision Construction
           </p>
+          <div className="stack">
+            <Link>Request a Quote</Link>
+            <div className="quick-action-group">
+              <fiIcons.FiPhone />
+              <fiIcons.FiMail />
+            </div>
+          </div>
         </div>
         <div className="slideshow">
-          {backgroundImages.map((image, index) => (
-            <img
-              key={`Slide ${index}`}
-              src={image}
-              alt={`Slide ${bgIndex}`}
-              className="background-image"
-              style={{ transform: `translateX(${100 * (index - bgIndex)}%)` }}
-            />
-          ))}
+          {backgroundImages && (
+            <InfiniteCarousel
+              autoCycle={true}
+              cycleInterval={6000}
+              arrows={false}
+              dots={false}
+              slidesToShow={1}
+              incrementalSides={true}
+              slidesSpacing={0}
+              animationDuration={1000}
+            >
+              {backgroundImages.map((image, index) => (
+                <img
+                  key={`Slide ${index}`}
+                  src={image}
+                  alt={`Slide ${index}`}
+                  className="background-image"
+                  ref={imageRef}
+                />
+              ))}
+            </InfiniteCarousel>
+          )}
         </div>
         <div className="bottom-details">
           <span className="outside">
