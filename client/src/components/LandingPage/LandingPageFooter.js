@@ -9,15 +9,23 @@ function LandingPageFooter() {
     <footer id="landingPageFooter" className="landingPageFooter">
       <div className="wrapper">
         <div className="socials">
-          <Link className="icon-container">
+          <Link
+            to={"https://www.facebook.com/ARCRoofingCorp"}
+            target="_blank"
+            className="icon-container"
+          >
             <faIcons.FaFacebookF />
           </Link>
-          <Link className="icon-container">
+          <Link
+            to={"https://www.instagram.com/arcroofingcorp/"}
+            target="_blank"
+            className="icon-container"
+          >
             <faIcons.FaInstagram />
           </Link>
-          <Link className="icon-container">
+          {/* <Link className="icon-container">
             <faIcons.FaTwitter />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>
