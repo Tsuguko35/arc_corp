@@ -15,7 +15,6 @@ function LandingPage() {
 
       {/* Content */}
       <LandingPageContent />
-      <CustomerReviews />
 
       {/* Footer */}
       <LandingPageFooter />
