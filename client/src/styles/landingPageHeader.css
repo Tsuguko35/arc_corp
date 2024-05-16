@@ -154,7 +154,7 @@
         font-size: 40px;
     }
 
-    #landingPageHeader > .wrapper > .background-image{
+    #landingPageHeader > .wrapper > .slideshow > .background-image{
         height: 600px;
     }
     
@@ -173,7 +173,7 @@
         text-align: center;
     }
 
-    #landingPageHeader > .wrapper > .background-image{
+    #landingPageHeader > .wrapper > .slideshow > .background-image{
         height: 600px;
     }
     
