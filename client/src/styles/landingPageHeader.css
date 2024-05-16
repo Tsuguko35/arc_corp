@@ -1,0 +1,231 @@
+#landingPageHeader{
+    position: relative;
+}
+
+#landingPageHeader > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Image */
+#landingPageHeader > .wrapper > .slideshow{
+    position: relative;
+    width: 100%;
+    height: 820px;
+    overflow: hidden;
+}
+
+#landingPageHeader > .wrapper > .slideshow > .background-image{
+    position: absolute;
+    padding-top: 101px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    transition: transform 1s ease-in-out;
+    z-index: -1;
+}
+
+/* Overlay */
+#landingPageHeader > .wrapper > .overlay{
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 68%;
+    height: calc(100% - 12px);
+    background: rgba(214, 174, 48, 0.72); /* Yellow with some transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 50% 100%, 0 100%); /* Diagonal slice */
+}
+
+#landingPageHeader > .wrapper > .text-content{
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    padding-inline: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#landingPageHeader > .wrapper > .text-content > .header-text{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#landingPageHeader > .wrapper > .text-content > .sub-text{
+    width: 700px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Bottom Details */
+
+#landingPageHeader > .wrapper > .bottom-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#landingPageHeader > .wrapper > .bottom-details > .outside{
+    content: '';
+    width: 70%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: var(--light-grey);
+    overflow: hidden;
+}
+
+#landingPageHeader > .wrapper > .bottom-details > .outside > .inside{
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: var(--primary);
+}
+
+@media only screen and (max-width: 1536px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 60px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 22px;
+        width: 630px;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 58px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 22px;
+        width: 620px;
+    }
+}
+
+@media only screen and (max-width: 1336px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 55px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 20px;
+        width: 580px;
+    }
+}
+
+@media only screen and (max-width: 1270px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 54px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 18px;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #landingPageHeader > .wrapper > .text-content{
+        padding-inline: 75px;
+    }
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 40px;
+    }
+
+    #landingPageHeader > .wrapper > .slideshow{
+        height: 600px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 16px;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #landingPageHeader > .wrapper > .text-content{
+        padding-inline: 40px;
+    }
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #landingPageHeader > .wrapper > .slideshow{
+        height: 600px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #landingPageHeader > .wrapper > .overlay{
+        width: 100%;
+        clip-path: none; /* Diagonal slice */
+    }
+
+    #landingPageHeader > .wrapper > .text-content{
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 568px){
+    #landingPageHeader > .wrapper > .text-content{
+        padding-inline: 20px;
+    }
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 419px){
+    
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}

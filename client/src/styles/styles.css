@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+:root {
+  --primary: #D6AE30;
+  --background: #fcfaf1;
+  --black: #060606;
+  --grey: #45474b;
+  --light-grey: #DCDCDC;
+  --accent: #201c06;
+}
+
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    font-family: 'Inter';
+}
+
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, button, select{
+    font: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: var(--background);
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    border-radius: 20px;
+}
