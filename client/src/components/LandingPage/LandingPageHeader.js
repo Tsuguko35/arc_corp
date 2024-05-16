@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef } from "react";
 import "../../styles/landingPageHeader.css";
 
 import backgroundImage from "../../assets/images/LandingPage/headerBackground.png";
@@ -6,7 +6,7 @@ import backgroundImage2 from "../../assets/svg/1.svg";
 import backgroundImage3 from "../../assets/svg/2.svg";
 import backgroundImage4 from "../../assets/svg/3.svg";
 
-import backgroundVideo from "../../assets/videos/LandingPage/backgroundVideo.mp4";
+import InfiniteCarousel from "react-leaf-carousel";
 
 function LandingPageHeader() {
   const backgroundImages = [
@@ -16,15 +16,8 @@ function LandingPageHeader() {
     backgroundImage4,
   ];
 
-  const [bgIndex, setBgIndex] = useState(0);
+  const imageRef = useRef(null);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setBgIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, [backgroundImages.length]);
   return (
     <header id="landingPageHeader" className="landingPageHeader">
       <div className="wrapper">
@@ -39,15 +32,28 @@ function LandingPageHeader() {
           </p>
         </div>
         <div className="slideshow">
-          {backgroundImages.map((image, index) => (
-            <img
-              key={`Slide ${index}`}
-              src={image}
-              alt={`Slide ${bgIndex}`}
-              className="background-image"
-              style={{ transform: `translateX(${100 * (index - bgIndex)}%)` }}
-            />
-          ))}
+          {backgroundImages && (
+            <InfiniteCarousel
+              autoCycle={true}
+              cycleInterval={6000}
+              arrows={false}
+              dots={false}
+              slidesToShow={1}
+              incrementalSides={true}
+              slidesSpacing={0}
+              animationDuration={1000}
+            >
+              {backgroundImages.map((image, index) => (
+                <img
+                  key={`Slide ${index}`}
+                  src={image}
+                  alt={`Slide ${index}`}
+                  className="background-image"
+                  ref={imageRef}
+                />
+              ))}
+            </InfiniteCarousel>
+          )}
         </div>
         <div className="bottom-details">
           <span className="outside">

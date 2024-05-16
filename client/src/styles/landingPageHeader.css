@@ -16,19 +16,17 @@
 #landingPageHeader > .wrapper > .slideshow{
     position: relative;
     width: 100%;
-    height: 820px;
+    height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
-#landingPageHeader > .wrapper > .slideshow > .background-image{
-    position: absolute;
+#landingPageHeader > .wrapper > .slideshow .background-image{
     padding-top: 101px;
     width: 100%;
-    height: 100%;
+    height: 802px;
     object-fit: cover;
     user-select: none;
-    transition: transform 1s ease-in-out;
-    z-index: -1;
 }
 
 /* Overlay */

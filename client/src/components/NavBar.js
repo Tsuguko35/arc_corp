@@ -30,7 +30,7 @@ function NavBar() {
             </Link>
             <Link className={`nav-item`}>Services</Link>
             <Link className={`nav-item`}>Portfolio</Link>
-            <Link className={`nav-item`}>About</Link>
+            <Link className={`nav-item`}>About Us</Link>
             <Link className={`nav-item`}>Contact Us</Link>
           </div>
         )}
