@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/landingPage.css";
 import {
   ClientReviews,
-  CustomerReviews,
   LandingPageContent,
   LandingPageFooter,
   LandingPageHeader,
@@ -18,7 +17,7 @@ function LandingPage() {
       {/* Content */}
       <LandingPageContent />
       <ClientReviews />
-      {/* <LandingPageProdAndSer /> */}
+      <LandingPageProdAndSer />
 
       {/* Footer */}
       <LandingPageFooter />

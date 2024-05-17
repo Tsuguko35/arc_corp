@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "../../styles/clientReviews.css";
 
 import profile_img_1 from "../../assets/images/profiles/billHicks.png";
@@ -12,11 +10,6 @@ import * as mdIcons from "react-icons/md";
 function CustomNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    // <div
-    //   className={className}
-    //   style={{ ...style, display: "block", background: "red" }}
-    //   onClick={onClick}
-    // />
     <div className={`next-arrow`} style={{ ...style }} onClick={onClick}>
       <mdIcons.MdNavigateNext />
     </div>

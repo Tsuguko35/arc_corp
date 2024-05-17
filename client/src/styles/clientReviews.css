@@ -141,12 +141,12 @@
     width: 1200px;
 }
 
-.slick-dots li.slick-active button:before{
+#clientReviews .slick-dots li.slick-active button:before{
     color: var(--primary) !important;
 }
 
-.slick-dots li button,
-.slick-dots li button:before{
+#clientReviews .slick-dots li button,
+#clientReviews .slick-dots li button:before{
     width: 17px;
     height: 17px;
     font-size: 17px;
