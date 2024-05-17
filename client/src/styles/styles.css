@@ -5,12 +5,15 @@
 
 :root {
   --primary: #D6AE30;
+  --mustard: #F4CE14;
   --background: #fcfaf1;
   --black: #060606;
   --grey: #45474b;
   --light-grey: #DCDCDC;
   --accent: #201c06;
   --dark-blue: #150E40;
+  --input-border: #9ea2ac;
+  --link-color: #0081FE;
 }
 
 

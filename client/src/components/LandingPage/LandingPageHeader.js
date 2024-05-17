@@ -54,6 +54,7 @@ function LandingPageHeader() {
             >
               {backgroundImages.map((image, index) => (
                 <img
+                  loading="lazy"
                   key={`Slide ${index}`}
                   src={image}
                   alt={`Slide ${index}`}
