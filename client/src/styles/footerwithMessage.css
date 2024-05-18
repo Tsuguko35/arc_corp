@@ -205,3 +205,13 @@
         font-size: 18px;
     }
 }
+
+@media only screen and (max-width: 425px){
+    #footerWithMessage > .wrapper{
+        padding: 0px;
+    }
+
+    #footerWithMessage > .wrapper > .message-container > .background{
+        border-radius: 0;
+    }
+}

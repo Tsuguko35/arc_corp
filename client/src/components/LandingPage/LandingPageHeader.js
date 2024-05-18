@@ -33,7 +33,7 @@ function LandingPageHeader() {
             Elevating Your Home's Protection with Precision Construction
           </p>
           <div className="stack">
-            <Link>Request a Quote</Link>
+            <Link to={"/RequestQuote"}>Request a Quote</Link>
             <div className="quick-action-group">
               <fiIcons.FiPhone />
               <fiIcons.FiMail />

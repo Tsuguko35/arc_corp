@@ -22,13 +22,24 @@ function NavBar() {
         {windowWidth > 1024 && (
           <div className="nav-menu">
             <Link
+              to={"/"}
               className={`nav-item ${
-                location.pathname === "/" ? "active" : ""
+                location.pathname === "/" ||
+                location.pathname === "/RequestQuote"
+                  ? "active"
+                  : ""
               }`}
             >
               Home
             </Link>
-            <Link className={`nav-item`}>Services</Link>
+            <Link
+              to={"/Services"}
+              className={`nav-item ${
+                location.pathname.includes("/Services") ? "active" : ""
+              }`}
+            >
+              Services
+            </Link>
             <Link className={`nav-item`}>Portfolio</Link>
             <Link className={`nav-item`}>About Us</Link>
             <Link className={`nav-item`}>Contact Us</Link>
@@ -44,13 +55,24 @@ function NavBar() {
             </div>
             <div className={`nav-menu mobile ${sidebarOpen ? "open" : ""}`}>
               <Link
+                to={"/"}
                 className={`nav-item ${
-                  location.pathname === "/" ? "active" : ""
+                  location.pathname === "/" ||
+                  location.pathname === "/RequestQuote"
+                    ? "active"
+                    : ""
                 }`}
               >
                 Home
               </Link>
-              <Link className={`nav-item`}>Services</Link>
+              <Link
+                to={"/Services"}
+                className={`nav-item ${
+                  location.pathname.includes("/Services") ? "active" : ""
+                }`}
+              >
+                Services
+              </Link>
               <Link className={`nav-item`}>Portfolio</Link>
               <Link className={`nav-item`}>About Us</Link>
               <Link className={`nav-item`}>Contact Us</Link>

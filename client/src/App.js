@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { routes } from "./config";
 
 import "./styles/styles.css";
@@ -11,11 +11,13 @@ import LocomotiveScroll from "locomotive-scroll";
 
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useEffect } from "react";
+import { ScrollToTop } from "./utils";
 
 /* Locomotive scroll instance */
 const locomotiveScroll = new LocomotiveScroll();
 
 function App() {
+  const { pathname } = useLocation();
   // useEffect(() => {
   //   const scroll = new LocomotiveScroll({
   //     el: document.querySelector("[data-scroll-container]"),
@@ -29,17 +31,27 @@ function App() {
   //     if (scroll) scroll.destroy();
   //   };
   // }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div data-scroll-container>
       {/* Navigation Bar */}
       <NavBar />
 
       {/* Pages */}
-      <Routes>
-        {routes.map((route) => (
-          <Route key={route.path} path={route.path} element={route.component} />
-        ))}
-      </Routes>
+      <div className="pages">
+        <Routes>
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={route.component}
+            />
+          ))}
+        </Routes>
+      </div>
     </div>
   );
 }

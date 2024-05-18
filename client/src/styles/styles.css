@@ -2,9 +2,12 @@
     font-family: 'Inter';
     src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --primary: #D6AE30;
+  --primary-hover: #b39227;
+  --white-hover: #ebeaea;
   --mustard: #F4CE14;
   --background: #fcfaf1;
   --black: #060606;
@@ -55,10 +58,15 @@ body {
 }
 
 *::-webkit-scrollbar-thumb{
-    background-color: var(--primary);
+    background-color: var(--primary-hover);
     border-radius: 20px;
 }
 
 .bold{
     font-weight: bold;
 }
+
+.pages{
+    padding-top: 101px;
+}
+
