@@ -36,9 +36,9 @@
     pointer-events: none;
     top: 0;
     left: 0;
-    width: 68%;
+    width: 66%;
     height: calc(100% - 12px);
-    background: rgba(214, 174, 48, 0.72); /* Yellow with some transparency */
+    background: var(--hero-overlay-1);
     display: flex;
     align-items: center;
     justify-content: center;

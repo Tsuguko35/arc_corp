@@ -12,6 +12,11 @@ import com_image2 from "../assets/images/Services/Commercial/comIcon2.svg";
 import com_image3 from "../assets/images/Services/Commercial/comIcon3.svg";
 import com_image4 from "../assets/images/Services/Commercial/comIcon4.svg";
 
+import port_image1 from "../assets/images/Portfolio/Icons/kPoint1.svg";
+import port_image2 from "../assets/images/Portfolio/Icons/kPoint2.svg";
+import port_image3 from "../assets/images/Portfolio/Icons/kPoint3.svg";
+import port_image4 from "../assets/images/Portfolio/Icons/kPoint4.svg";
+
 const serviceKeyPoints = [
   {
     icon: keypoint_image1,
@@ -92,4 +97,36 @@ const commercialKeyPoints = [
   },
 ];
 
-export { serviceKeyPoints, residentialKeyPoints, commercialKeyPoints };
+const portfolioKeyPoints = [
+  {
+    icon: port_image1,
+    title: "Design",
+    description:
+      "I specialize in web development and design, creating visually appealing, user-friendly digital experiences.",
+  },
+  {
+    icon: port_image2,
+    title: "Branding",
+    description:
+      "I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.",
+  },
+  {
+    icon: port_image3,
+    title: "UX Research",
+    description:
+      "I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.",
+  },
+  {
+    icon: port_image4,
+    title: "Usability Testing",
+    description:
+      "I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.",
+  },
+];
+
+export {
+  serviceKeyPoints,
+  residentialKeyPoints,
+  commercialKeyPoints,
+  portfolioKeyPoints,
+};

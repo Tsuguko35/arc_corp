@@ -16,7 +16,16 @@
   --accent: #201c06;
   --dark-blue: #150E40;
   --input-border: #9ea2ac;
+  --input-fill: #ECECEC;
   --link-color: #0081FE;
+  --form-background: #F1F1F1;
+
+  --hero-overlay-1: rgba(214, 174, 48, 0.7);
+  --hero-overlay-2: rgba(224, 195, 102, 0.7);
+  --hero-overlay-3: rgba(224, 195, 102, 0.55);
+  --hero-overlay-dark1: rgba(32, 28, 6, 0.6);
+  --hero-overlay-dark2: rgba(41, 41, 38, 0.7);
+  --image-overlay-1: rgba(214, 174, 48, 0.6);
 }
 
 
@@ -25,7 +34,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: var(--black);
+    color: var(--accent);
     font-family: 'Inter';
 }
 

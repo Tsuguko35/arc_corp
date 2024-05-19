@@ -18,6 +18,12 @@ import ProductGrid from "./reusable/ProductGrid";
 import RoofCarousel from "./reusable/RoofCarousel";
 import CommercialContent from "./Services/CommercialContent";
 import CommercialHeader from "./Services/CommercialHeader";
+import ProductContent from "./Services/ProductContent";
+import PortfolioHeader from "./Portfolio/PortfolioHeader";
+import PortfolioContent from "./Portfolio/PortfolioContent";
+import AboutUsContent from "./AboutUs/AboutUsContent";
+import AboutUsHeader from "./AboutUs/AboutUsHeader";
+import Faq from "./reusable/Faq";
 
 export {
   LandingPageHeader,
@@ -40,4 +46,10 @@ export {
   RoofCarousel,
   CommercialContent,
   CommercialHeader,
+  ProductContent,
+  PortfolioHeader,
+  PortfolioContent,
+  AboutUsContent,
+  AboutUsHeader,
+  Faq,
 };

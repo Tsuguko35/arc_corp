@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 540px;
     min-height: 620px;
-    background-color: #F1F1F1;
+    background-color: var(--form-background);
     border-radius: 15px;
     box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.5);
     padding: 40px 30px;
@@ -67,7 +67,7 @@
     font-size: 14px;
     outline: none;
     border: 1px solid var(--input-border);
-    background-color: #ECECEC;
+    background-color: var(--input-fill);
     border-radius: 5px;
 }
 
@@ -86,7 +86,7 @@
 
 #quoteForm > .inputs > .input-group .input-with-label > textarea{
     border: 1px solid var(--input-border);
-    background-color: #ECECEC !important;
+    background-color: var(--input-fill) !important;
     border-radius: 5px;
     outline: none;
     background: none;

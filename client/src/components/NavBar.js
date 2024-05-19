@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import "../styles/navbar.css";
 
 import arcLogo from "../assets/images/LandingPage/Logo.png";
@@ -12,6 +12,10 @@ function NavBar() {
   const windowWidth = GetWindowWidth();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useMemo(() => {
+    setSidebarOpen(false);
+  }, [location]);
 
   return (
     <div id="navbar" className="navbar">
@@ -40,8 +44,22 @@ function NavBar() {
             >
               Services
             </Link>
-            <Link className={`nav-item`}>Portfolio</Link>
-            <Link className={`nav-item`}>About Us</Link>
+            <Link
+              to={"/Portfolio"}
+              className={`nav-item ${
+                location.pathname.includes("/Portfolio") ? "active" : ""
+              }`}
+            >
+              Portfolio
+            </Link>
+            <Link
+              to={"/About"}
+              className={`nav-item ${
+                location.pathname === "/About" ? "active" : ""
+              }`}
+            >
+              About Us
+            </Link>
             <Link className={`nav-item`}>Contact Us</Link>
           </div>
         )}
@@ -51,7 +69,11 @@ function NavBar() {
               className="hamburgerMenu"
               onClick={() => setSidebarOpen(!sidebarOpen)}
             >
-              <Hamburger color="#060606" label="Show menu" />
+              <Hamburger
+                color="#060606"
+                label="Show menu"
+                toggled={sidebarOpen}
+              />
             </div>
             <div className={`nav-menu mobile ${sidebarOpen ? "open" : ""}`}>
               <Link
@@ -73,8 +95,22 @@ function NavBar() {
               >
                 Services
               </Link>
-              <Link className={`nav-item`}>Portfolio</Link>
-              <Link className={`nav-item`}>About Us</Link>
+              <Link
+                to={"/Portfolio"}
+                className={`nav-item ${
+                  location.pathname.includes("/Portfolio") ? "active" : ""
+                }`}
+              >
+                Portfolio
+              </Link>
+              <Link
+                to={"/About"}
+                className={`nav-item ${
+                  location.pathname === "/About" ? "active" : ""
+                }`}
+              >
+                About Us
+              </Link>
               <Link className={`nav-item`}>Contact Us</Link>
             </div>
           </>

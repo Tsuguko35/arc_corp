@@ -1,5 +1,8 @@
 import {
+  AboutUs,
   LandingPage,
+  Portfolio,
+  Product,
   RequestQuote,
   ServiceCommercial,
   ServiceResidential,
@@ -26,6 +29,18 @@ const routes = [
   {
     path: "/Services/Commercial",
     component: <ServiceCommercial />,
+  },
+  {
+    path: "/Services/:productType",
+    component: <Product />,
+  },
+  {
+    path: "/Portfolio",
+    component: <Portfolio />,
+  },
+  {
+    path: "/About",
+    component: <AboutUs />,
   },
 ];
 

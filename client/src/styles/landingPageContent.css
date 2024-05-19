@@ -60,7 +60,7 @@
     height: 56px;
     border: none;
     font-weight: bold;
-    background-color: var(--black);
+    background-color: var(--accent);
     color: white;
     display: flex;
     justify-content: center;
@@ -133,7 +133,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    background-color: rgba(214, 174, 48, 0.6);
+    background-color: var(--image-overlay-1);
     z-index: 9;
 }
 

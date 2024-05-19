@@ -4,6 +4,7 @@ import {
   serviceKeyPoints,
   residentialKeyPoints,
   commercialKeyPoints,
+  portfolioKeyPoints,
 } from "./services";
 import { residentialProducts, commercialProducts } from "./products";
 import { residentialItems } from "./roofCarouselItems";
@@ -17,4 +18,5 @@ export {
   commercialKeyPoints,
   residentialItems,
   commercialProducts,
+  portfolioKeyPoints,
 };
