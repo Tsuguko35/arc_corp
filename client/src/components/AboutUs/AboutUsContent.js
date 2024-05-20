@@ -74,7 +74,7 @@ function AboutUsContent() {
                 power services to our customers
               </p>
               <div className="action">
-                <Link>Learn More.</Link>
+                <Link to={"/About/Profile/WilliamBeliles"}>Learn More.</Link>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ function AboutUsContent() {
                 Earth and guide others on their solar journey.
               </p>
               <div className="action">
-                <Link>Learn More.</Link>
+                <Link to={"/About/Profile/WilliamBeliles"}>Learn More.</Link>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ function AboutUsContent() {
                 promoting sustainable energy solutions.
               </p>
               <div className="action">
-                <Link>Learn More.</Link>
+                <Link to={"/About/Profile/WilliamBeliles"}>Learn More.</Link>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ import * as IoIcons from "react-icons/io";
 
 function MainFooter() {
   return (
-    <div id="mainFooter" className="mainFooter">
+    <footer id="mainFooter" className="mainFooter">
       <div className="wrapper">
         <div className="icon-adress">
           <div className="icon">
@@ -59,7 +59,7 @@ function MainFooter() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

@@ -31,6 +31,26 @@ function App() {
   //     if (scroll) scroll.destroy();
   //   };
   // }, []);
+  // Handle scroll animation for features
+  useEffect(() => {
+    const handleScroll = () => {
+      const features = document.querySelectorAll(".feature");
+
+      features.forEach((feature) => {
+        const featureBounding = feature.getBoundingClientRect();
+        const triggerPoint = window.innerHeight * 0.65; // Trigger when the element is 75% in view
+
+        if (featureBounding.top <= triggerPoint) {
+          feature.classList.add("start-fade-bottom");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);

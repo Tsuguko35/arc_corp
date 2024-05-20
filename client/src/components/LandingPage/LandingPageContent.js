@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/landingPageContent.css";
 
 import companyDescImage1 from "../../assets/svg/1.svg";
@@ -9,7 +9,7 @@ function LandingPageContent() {
   return (
     <div id="landingPageContent" className="landingPageContent">
       <div className="wrapper">
-        <div className="company-description">
+        <div className="company-description feature">
           <div className="left">
             <p className="title">
               What is <span style={{ color: "#D6AE30" }}>ARC Solutions?</span>

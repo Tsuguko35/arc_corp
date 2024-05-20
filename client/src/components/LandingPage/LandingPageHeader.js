@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../../styles/landingPageHeader.css";
 
 import backgroundImage from "../../assets/images/LandingPage/headerBackground.png";

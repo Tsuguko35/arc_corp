@@ -66,7 +66,7 @@ function LandingPageProdAndSer() {
           <div className="upper">METAL ROOF MASTER</div>
           <div className="lower">Products & Services</div>
         </div>
-        <div className="reviews-container">
+        <div className="reviews-container feature">
           <Slider {...settings}>
             <div className="card">
               <div className="card-content">

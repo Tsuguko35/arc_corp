@@ -57,7 +57,7 @@ function ClientReviews() {
     ],
   };
   return (
-    <div id="clientReviews" className="clientReviews">
+    <div id="clientReviews" className="clientReviews feature">
       <div className="wrapper">
         <span className="title">What Our Clients Say About Us</span>
         <div className="reviews-container">

@@ -6,6 +6,8 @@ import ServiceCommercial from "./ServiceCommercial";
 import Product from "./Product";
 import Portfolio from "./Portfolio";
 import AboutUs from "./AboutUs";
+import MemberProfile from "./MemberProfile";
+import ContactUs from "./ContactUs";
 
 export {
   LandingPage,
@@ -16,4 +18,6 @@ export {
   Product,
   Portfolio,
   AboutUs,
+  MemberProfile,
+  ContactUs,
 };

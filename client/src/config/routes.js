@@ -1,6 +1,8 @@
 import {
   AboutUs,
+  ContactUs,
   LandingPage,
+  MemberProfile,
   Portfolio,
   Product,
   RequestQuote,
@@ -41,6 +43,14 @@ const routes = [
   {
     path: "/About",
     component: <AboutUs />,
+  },
+  {
+    path: "/About/Profile/:teamMember",
+    component: <MemberProfile />,
+  },
+  {
+    path: "/Contact",
+    component: <ContactUs />,
   },
 ];
 

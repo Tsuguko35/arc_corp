@@ -55,12 +55,19 @@ function NavBar() {
             <Link
               to={"/About"}
               className={`nav-item ${
-                location.pathname === "/About" ? "active" : ""
+                location.pathname.includes("/About") ? "active" : ""
               }`}
             >
               About Us
             </Link>
-            <Link className={`nav-item`}>Contact Us</Link>
+            <Link
+              to={"/Contact"}
+              className={`nav-item ${
+                location.pathname.includes("/Contact") ? "active" : ""
+              }`}
+            >
+              Contact Us
+            </Link>
           </div>
         )}
         {windowWidth <= 1024 && (
@@ -106,12 +113,19 @@ function NavBar() {
               <Link
                 to={"/About"}
                 className={`nav-item ${
-                  location.pathname === "/About" ? "active" : ""
+                  location.pathname.includes("/About") ? "active" : ""
                 }`}
               >
                 About Us
               </Link>
-              <Link className={`nav-item`}>Contact Us</Link>
+              <Link
+                to={"/Contact"}
+                className={`nav-item ${
+                  location.pathname.includes("/Contact") ? "active" : ""
+                }`}
+              >
+                Contact Us
+              </Link>
             </div>
           </>
         )}

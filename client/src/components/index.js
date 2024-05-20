@@ -23,7 +23,10 @@ import PortfolioHeader from "./Portfolio/PortfolioHeader";
 import PortfolioContent from "./Portfolio/PortfolioContent";
 import AboutUsContent from "./AboutUs/AboutUsContent";
 import AboutUsHeader from "./AboutUs/AboutUsHeader";
+import MemberProfileContent from "./AboutUs/MemberProfileContent";
 import Faq from "./reusable/Faq";
+import ContactUsContent from "./ContactUs/ContactUsContent";
+import ContactUsForm from "./reusable/ContactUsForm";
 
 export {
   LandingPageHeader,
@@ -52,4 +55,7 @@ export {
   AboutUsContent,
   AboutUsHeader,
   Faq,
+  MemberProfileContent,
+  ContactUsContent,
+  ContactUsForm,
 };
