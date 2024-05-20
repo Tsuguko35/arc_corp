@@ -38,7 +38,7 @@
     left: 0;
     width: 68%;
     height: calc(100% - 12px);
-    background: rgba(214, 174, 48, 0.72); /* Yellow with some transparency */
+    background: rgba(15, 26, 38, 0.7); /* Yellow with some transparency */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,11 +60,13 @@
 }
 
 #landingPageHeader > .wrapper > .text-content > .header-text{
+    color: white;
     font-size: 64px;
     font-weight: bold;
 }
 
 #landingPageHeader > .wrapper > .text-content > .sub-text{
+    color: white;
     width: 700px;
     text-align: left;
     font-size: 24px;
@@ -89,7 +91,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-color: var(--light-grey);
+    background-color: var(--dark-blue);
     overflow: hidden;
 }
 

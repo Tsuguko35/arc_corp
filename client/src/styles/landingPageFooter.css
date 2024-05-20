@@ -30,6 +30,10 @@
     transition: background-color 250ms ease-in-out;
 }
 
+#landingPageFooter > .wrapper > .socials > .icon-container > svg > *{
+    color: var(--dark-blue);
+}
+
 #landingPageFooter > .wrapper > .socials > .icon-container:hover{
     background-color: var(--light-grey);
 }
