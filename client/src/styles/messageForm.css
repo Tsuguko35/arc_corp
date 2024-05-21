@@ -96,13 +96,33 @@
     width: 100%;
     display: flex;
     align-items: center;
+    gap: 20px;
     justify-content: flex-start;
+}
+
+#messageForm > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 8px;
+}
+
+#messageForm > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 8px;
 }
 
 #messageForm > .submit-area > .message-submit{
     width: 150px;
     height: 50px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary);
     color: white;
     border-radius: 10px;
@@ -125,5 +145,10 @@
     #messageForm > .submit-area > .message-submit{
         height: 40px;
         font-size: 14px;
+    }
+
+    #messageForm > .submit-area{
+        flex-direction: column;
+        
     }
 }

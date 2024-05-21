@@ -103,11 +103,28 @@
 
 }
 
-#contactUsForm > .inputs > .submit-area{
+#contactUsForm> .inputs > .submit-area{
     width: 100%;
     display: flex;
     align-items: center;
+    gap: 20px;
     justify-content: flex-start;
+}
+
+#contactUsForm > .inputs > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 8px;
+}
+
+#contactUsForm > .inputs > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 8px;
 }
 
 #contactUsForm > .inputs > .submit-area > .message-submit{
@@ -116,6 +133,9 @@
     border: none;
     background-color: var(--primary);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
     transition: background-color 250ms ease-in-out;
@@ -150,5 +170,10 @@
     #contactUsForm > .inputs > .submit-area > .message-submit{
         height: 40px;
         font-size: 14px;
+    }
+
+    #contactUsForm > .inputs > .submit-area{
+        flex-direction: column;
+        
     }
 }
