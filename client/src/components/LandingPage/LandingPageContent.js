@@ -36,7 +36,7 @@ function LandingPageContent() {
               </p>
             </div>
             <div className="action">
-              <Link>Learn more.</Link>
+              <Link to={"/About"}>Learn more.</Link>
             </div>
           </div>
           <div className="right">
@@ -48,11 +48,21 @@ function LandingPageContent() {
                     src={companyDescImage1}
                     alt=""
                     className="with-overlay"
+                    role="presentation"
+                    decoding="async"
+                    fetchPriority="high"
                   />
                 </div>
               </div>
 
-              <img src={companyDescImage2} alt="" className="clear" />
+              <img
+                src={companyDescImage2}
+                alt=""
+                className="clear"
+                role="presentation"
+                decoding="async"
+                fetchPriority="high"
+              />
             </div>
           </div>
         </div>

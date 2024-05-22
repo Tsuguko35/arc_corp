@@ -15,7 +15,7 @@ function ServicesContent() {
   return (
     <div id="servicesContent" className="servicesContent">
       <div className="wrapper">
-        <div className="text-content">
+        <div className="text-content feature">
           <p className="header">Why Choose Us</p>
           <div className="text">
             <p className="description">
@@ -54,7 +54,7 @@ function ServicesContent() {
         <div className="text-content withImage">
           <div className="container">
             <div className="image">
-              <img src={service_image1} alt="" />
+              <img src={service_image1} alt="" className="feature2" />
             </div>
             <div className="explanation-content">
               <p>

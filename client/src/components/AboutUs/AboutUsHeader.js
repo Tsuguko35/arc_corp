@@ -10,6 +10,7 @@ function AboutUsHeader() {
         <header className="header">
           <div className="background">
             <div className="overlay"></div>
+            <div className="light"></div>
             <img src={about_header_image} alt="" />
           </div>
           <div className="header-content">

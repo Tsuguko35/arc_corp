@@ -10,7 +10,7 @@
 #landingPageContent > .wrapper{
     padding: 50px 100px;
     width: 100%;
-    max-width: 1920px;
+    max-width: 1536px;
 }
 
 #landingPageContent > .wrapper > .company-description{
@@ -23,7 +23,7 @@
 #landingPageContent > .wrapper > .company-description > .left{
     width: 50%;
     height: 100%;
-    padding: 20px 150px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

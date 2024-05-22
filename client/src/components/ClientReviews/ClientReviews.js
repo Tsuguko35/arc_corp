@@ -66,7 +66,13 @@ function ClientReviews() {
               <div className="card-content">
                 <div className="user-details">
                   <div className="profile-picture">
-                    <img src={profile_img_1} alt="User profile" />
+                    <img
+                      src={profile_img_1}
+                      alt="User profile"
+                      role="presentation"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
                   </div>
                   <div className="details">
                     <p className="name">Bill Hicks</p>
@@ -89,7 +95,13 @@ function ClientReviews() {
               <div className="card-content">
                 <div className="user-details">
                   <div className="profile-picture">
-                    <img src={profile_img_1} alt="User profile" />
+                    <img
+                      src={profile_img_1}
+                      alt="User profile"
+                      role="presentation"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
                   </div>
                   <div className="details">
                     <p className="name">Bill Hicks</p>
@@ -112,7 +124,13 @@ function ClientReviews() {
               <div className="card-content">
                 <div className="user-details">
                   <div className="profile-picture">
-                    <img src={profile_img_1} alt="User profile" />
+                    <img
+                      src={profile_img_1}
+                      alt="User profile"
+                      role="presentation"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
                   </div>
                   <div className="details">
                     <p className="name">Bill Hicks</p>
@@ -135,7 +153,13 @@ function ClientReviews() {
               <div className="card-content">
                 <div className="user-details">
                   <div className="profile-picture">
-                    <img src={profile_img_1} alt="User profile" />
+                    <img
+                      src={profile_img_1}
+                      alt="User profile"
+                      role="presentation"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
                   </div>
                   <div className="details">
                     <p className="name">Bill Hicks</p>
@@ -158,7 +182,13 @@ function ClientReviews() {
               <div className="card-content">
                 <div className="user-details">
                   <div className="profile-picture">
-                    <img src={profile_img_1} alt="User profile" />
+                    <img
+                      src={profile_img_1}
+                      alt="User profile"
+                      role="presentation"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
                   </div>
                   <div className="details">
                     <p className="name">Bill Hicks</p>
@@ -181,7 +211,13 @@ function ClientReviews() {
               <div className="card-content">
                 <div className="user-details">
                   <div className="profile-picture">
-                    <img src={profile_img_1} alt="User profile" />
+                    <img
+                      src={profile_img_1}
+                      alt="User profile"
+                      role="presentation"
+                      decoding="async"
+                      fetchPriority="high"
+                    />
                   </div>
                   <div className="details">
                     <p className="name">Bill Hicks</p>

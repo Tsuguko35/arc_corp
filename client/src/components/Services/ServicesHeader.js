@@ -15,7 +15,7 @@ function ServicesHeader() {
             <img src={header_background} alt="" />
           </div>
           <div className="header-content">
-            <div className="text-content">
+            <div className="text-content start-fade-bottom">
               <p className="title">Roofing Services</p>
               <div className="description">
                 Arc Roofing Corporation provides top-quality roofing services
@@ -37,7 +37,7 @@ function ServicesHeader() {
                   <p>Arc Engineering & Standard</p>
                 </div>
               </div>
-              <div className="actions">
+              <div className="actions start-flip-top">
                 <Link to={"/Services/Commercial"}>Commercial</Link>
                 <Link to={"/Services/Residential"}>Residential</Link>
               </div>

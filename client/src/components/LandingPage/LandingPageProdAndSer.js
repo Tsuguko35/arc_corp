@@ -71,7 +71,13 @@ function LandingPageProdAndSer() {
             <div className="card">
               <div className="card-content">
                 <div className="display-picture">
-                  <img src={tpoRoofing} alt="service" />
+                  <img
+                    src={tpoRoofing}
+                    alt="service"
+                    role="presentation"
+                    decoding="async"
+                    fetchPriority="high"
+                  />
                 </div>
                 <div className="service-details">
                   <p className="service-name">TPO Roofing</p>

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import "../styles/navbar.css";
 
 import arcLogo from "../assets/images/LandingPage/Logo.png";
@@ -10,15 +10,48 @@ import { Sling as Hamburger } from "hamburger-react";
 function NavBar() {
   const location = useLocation();
   const windowWidth = GetWindowWidth();
+  const [hide, setHide] = useState(false);
+  const prevScrollY = useRef(0);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    if (sidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [sidebarOpen]);
 
   useMemo(() => {
     setSidebarOpen(false);
   }, [location]);
 
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 300 && currentScrollY > prevScrollY.current) {
+      setHide(true);
+    } else {
+      setHide(false);
+    }
+
+    prevScrollY.current = currentScrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div id="navbar" className="navbar">
+    <div id="navbar" className={`navbar ${hide ? "hide" : ""}`}>
       <div className="wrapper">
         <Link to={"/"} className="logo-container">
           <img src={arcLogo} alt="" className="logo" />

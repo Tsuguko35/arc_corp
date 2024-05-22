@@ -107,6 +107,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    opacity: 0;
 }
 
 #servicesHeader > .wrapper > .header > .header-content > .text-content > .actions > a{

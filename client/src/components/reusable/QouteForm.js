@@ -70,7 +70,12 @@ function QouteForm() {
     });
   };
   return (
-    <form ref={form} onSubmit={sendEmail} id="quoteForm" className="quoteForm">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      id="quoteForm"
+      className="quoteForm start-tilt-top"
+    >
       <input
         type="text"
         value={`${formData.first_name} ${formData.last_name}`}

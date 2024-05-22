@@ -23,6 +23,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #aboutUsHeader > .wrapper > .header > .background > .overlay{
@@ -33,7 +34,22 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: var(--hero-overlay-3);
+    background-color: var(--hero-overlay-dark1);
+    z-index: 0;
+}
+
+#aboutUsHeader > .wrapper > .header > .background > .light{
+    content: '';
+    position: absolute;
+    bottom: -25%;
+    right: -25%;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--primary);
+    opacity: 1;
+    filter: blur(400px);
     z-index: 0;
 }
 

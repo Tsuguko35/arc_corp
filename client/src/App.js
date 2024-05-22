@@ -5,43 +5,37 @@ import "./styles/styles.css";
 import { NavBar } from "./components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LoadingBar from "react-top-loading-bar";
 
-/* Import locomotive-scroll */
-import LocomotiveScroll from "locomotive-scroll";
-
-import "locomotive-scroll/dist/locomotive-scroll.css";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ScrollToTop } from "./utils";
-
-/* Locomotive scroll instance */
-const locomotiveScroll = new LocomotiveScroll();
 
 function App() {
   const { pathname } = useLocation();
-  // useEffect(() => {
-  //   const scroll = new LocomotiveScroll({
-  //     el: document.querySelector("[data-scroll-container]"),
-  //     smooth: true,
-  //     smoothMobile: true,
-  //     inertia: 0.75, // Adjust inertia for a smoother scroll
-  //     multiplier: 2,
-  //   });
+  const ref = useRef(null);
 
-  //   return () => {
-  //     if (scroll) scroll.destroy();
-  //   };
-  // }, []);
-  // Handle scroll animation for features
+  const [progress, setProgress] = useState(0);
+  const [loading, setLoading] = useState(false);
+
+  // Animations
   useEffect(() => {
     const handleScroll = () => {
+      const triggerPoint = window.innerHeight * 0.65;
       const features = document.querySelectorAll(".feature");
+      const features2 = document.querySelectorAll(".feature2");
 
       features.forEach((feature) => {
         const featureBounding = feature.getBoundingClientRect();
-        const triggerPoint = window.innerHeight * 0.65; // Trigger when the element is 75% in view
 
         if (featureBounding.top <= triggerPoint) {
           feature.classList.add("start-fade-bottom");
+        }
+      });
+      features2.forEach((feature) => {
+        const featureBounding = feature.getBoundingClientRect();
+
+        if (featureBounding.top <= triggerPoint) {
+          feature.classList.add("start-fade-top");
         }
       });
     };
@@ -57,6 +51,7 @@ function App() {
   }, [pathname]);
   return (
     <div data-scroll-container>
+      {/* <LoadingBar color="#F4CE14" progress={progress} height={5} /> */}
       {/* Navigation Bar */}
       <NavBar />
 

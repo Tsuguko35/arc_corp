@@ -3,7 +3,7 @@ import "../../styles/serviceKeyPoints.css";
 
 function ServiceKeyPoints({ keypoints }) {
   return (
-    <div id="serviceKeyPoints" className="serviceKeyPoints">
+    <div id="serviceKeyPoints" className="serviceKeyPoints feature">
       <div className="key-points-grid">
         {keypoints &&
           keypoints.map((keypoint) => (

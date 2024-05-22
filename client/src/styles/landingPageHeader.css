@@ -58,6 +58,7 @@
     align-items: flex-start;
     gap: 10px;
     z-index: 10;
+    opacity: 0;
 }
 
 
@@ -81,6 +82,7 @@
     align-items: center;
     margin-top: 40px;
     gap: 40px;
+    opacity: 0;
 }
 
 #landingPageHeader > .wrapper > .text-content > .stack > a{
