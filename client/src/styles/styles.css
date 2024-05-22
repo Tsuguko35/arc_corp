@@ -56,3 +56,7 @@ body {
     background-color: var(--primary);
     border-radius: 20px;
 }
+
+.pages{
+    padding-top: 80px;
+}

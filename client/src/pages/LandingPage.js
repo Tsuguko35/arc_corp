@@ -9,7 +9,7 @@ function LandingPage() {
       <LandingPageHeader />
 
       {/* Footer */}
-      <LandingPageFooter />
+      {/* <LandingPageFooter /> */}
     </div>
   );
 }
