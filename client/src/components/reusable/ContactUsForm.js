@@ -65,7 +65,7 @@ function ContactUsForm() {
       ref={form}
       onSubmit={sendEmail}
       id="contactUsForm"
-      className="contactUsForm"
+      className="contactUsForm start-tilt-top"
     >
       <input
         type="text"

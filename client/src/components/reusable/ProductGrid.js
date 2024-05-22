@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function ProductGrid({ products }) {
   return (
-    <div id="productGrid" className="productGrid">
+    <div id="productGrid" className="productGrid feature3">
       <div className="action">
         <p>See all.</p>
       </div>

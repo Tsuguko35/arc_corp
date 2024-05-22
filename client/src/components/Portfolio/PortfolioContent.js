@@ -9,7 +9,7 @@ function PortfolioContent() {
   return (
     <div id="portfolioContent" className="portfolioContent">
       <div className="wrapper">
-        <div className="text-content">
+        <div className="text-content start-fade-bottom">
           <p className="title">Services</p>
           <p className="description">
             Explore my design services, from user interface and experience to
@@ -21,7 +21,7 @@ function PortfolioContent() {
         {/* Key Points */}
         <ServiceKeyPoints keypoints={keypoints} />
 
-        <div className="projects-container">
+        <div className="projects-container feature3">
           <p className="title">Projects</p>
           <div className="actions">
             <p className="toggle active">Residential</p>
@@ -50,7 +50,7 @@ function PortfolioContent() {
           <p className="load-more">Load more</p>
         </div>
 
-        <div className="company-skills">
+        <div className="company-skills feature">
           <div className="label">
             <div className="title">Core Design Skills</div>
             <div className="desc">

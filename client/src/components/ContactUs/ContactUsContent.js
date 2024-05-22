@@ -17,7 +17,7 @@ function ContactUsContent() {
             <img src={contact_bg} alt="" />
           </div>
           <div className="header-content">
-            <div className="text-content">
+            <div className="text-content start-fade-bottom">
               <div className="title">Feel Free to Message with Us</div>
               <div className="desc">
                 We’re here to help! Whether you have questions about our

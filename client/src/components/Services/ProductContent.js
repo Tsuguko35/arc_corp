@@ -19,7 +19,7 @@ function ProductContent() {
           <img src={product_header} alt="product 1" />
         </header>
         <div className="product-details-container">
-          <div className="product-details">
+          <div className="product-details start-fade-bottom">
             <div className="title-action">
               <p className="title">ARC Copper Roofing</p>
               <Link to={"/RequestQuote"}>Get a Quote</Link>
@@ -35,7 +35,7 @@ function ProductContent() {
             </p>
           </div>
 
-          <div className="product-benefits">
+          <div className="product-benefits feature">
             <p className="title">Benefits of Copper Roofing</p>
             <div className="benefits-grid">
               <div className="benefit">

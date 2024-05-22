@@ -52,9 +52,9 @@ function ServicesContent() {
         </div>
 
         <div className="text-content withImage">
-          <div className="container">
+          <div className="container feature4">
             <div className="image">
-              <img src={service_image1} alt="" className="feature2" />
+              <img src={service_image1} alt="" />
             </div>
             <div className="explanation-content">
               <p>
@@ -90,11 +90,11 @@ function ServicesContent() {
                 </div>
               </div>
               <div className="action">
-                <Link>Contact Us Now!</Link>
+                <Link to={"/Contact"}>Contact Us Now!</Link>
               </div>
             </div>
           </div>
-          <div className="container inverted">
+          <div className="container inverted feature3">
             <div className="image">
               <img src={service_image2} alt="" />
             </div>
@@ -122,7 +122,7 @@ function ServicesContent() {
           </div>
         </div>
 
-        <div className="text-content">
+        <div className="text-content feature">
           <p className="header">ARC Standard & Homes</p>
           <div className="text">
             <p className="description">

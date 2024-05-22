@@ -13,7 +13,7 @@ function ResidentialContent() {
   return (
     <div id="residntialContent" className="residntialContent">
       <div className="wrapper">
-        <div className="text-content">
+        <div className="text-content feature">
           <p className="header notBold">
             The <span className="bold"> BEST </span> Residential Roofing!
           </p>
@@ -32,7 +32,7 @@ function ResidentialContent() {
         {/* Key Points */}
         <ServiceKeyPoints keypoints={keypoints} />
 
-        <div className="text-content">
+        <div className="text-content feature">
           <p className="header">Residential Roof Systems</p>
           <div className="text">
             <p className="description">

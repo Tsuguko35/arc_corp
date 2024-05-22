@@ -18,7 +18,7 @@ import { useLocation } from "react-router-dom";
 function RoofCarousel({ roofItems }) {
   const location = useLocation();
   return (
-    <div id="roofCarousel" className="roofCarousel">
+    <div id="roofCarousel" className="roofCarousel feature4">
       {location.pathname
         .toLowerCase()
         .includes("Residential".toLowerCase()) && (

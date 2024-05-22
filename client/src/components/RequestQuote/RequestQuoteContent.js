@@ -19,7 +19,7 @@ function RequestQuoteContent() {
         </div>
         <div className="request-quote">
           <div className="container">
-            <div className="text-content">
+            <div className="text-content start-fade-bottom">
               <div className="header">
                 <p>Your Custom Quote, Just a Few Clicks Away!</p>
               </div>

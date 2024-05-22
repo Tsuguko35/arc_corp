@@ -13,7 +13,7 @@ function CommercialHeader() {
             <img src={residntial_bg} alt="" />
           </div>
           <div className="header-content">
-            <div className="text-content">
+            <div className="text-content start-fade-bottom">
               <p className="title">Commercial Roofing Services</p>
               <div className="description">
                 Arc Roofing Corporation provides top-quality roofing services

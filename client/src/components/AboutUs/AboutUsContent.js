@@ -17,7 +17,7 @@ function AboutUsContent() {
   return (
     <div id="aboutUsContent" className="aboutUsContent">
       <div className="wrapper">
-        <div className="about-details">
+        <div className="about-details feature4">
           <div className="image">
             <img src={about_image1} alt="" />
           </div>
@@ -56,7 +56,7 @@ function AboutUsContent() {
 
         <div className="team-details">
           <p className="label">Meet The Team</p>
-          <div className="team-member">
+          <div className="team-member feature3">
             <div className="image">
               <img src={william} alt="" />
             </div>
@@ -79,7 +79,7 @@ function AboutUsContent() {
             </div>
           </div>
 
-          <div className="team-member inverted">
+          <div className="team-member inverted feature4">
             <div className="image">
               <img src={amanda} alt="" />
             </div>
@@ -104,7 +104,7 @@ function AboutUsContent() {
             </div>
           </div>
 
-          <div className="team-member">
+          <div className="team-member feature3">
             <div className="image">
               <img src={bill} alt="" />
             </div>
@@ -153,7 +153,7 @@ function AboutUsContent() {
                   solar system.
                 </p>
                 <div className="action">
-                  <Link>Message Us Now!</Link>
+                  <Link to={"/Contact"}>Message Us Now!</Link>
                 </div>
               </div>
             </div>

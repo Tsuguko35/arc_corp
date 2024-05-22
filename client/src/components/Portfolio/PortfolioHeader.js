@@ -10,7 +10,7 @@ function PortfolioHeader() {
         <img src={protfolio_header} alt="" />
       </div>
       <div className="wrapper">
-        <div className="text-content">
+        <div className="text-content start-fade-bottom">
           <div className="title">Project Portfolio</div>
           <div className="description">
             Explore our diverse project portfolio showcasing Arc Roofing

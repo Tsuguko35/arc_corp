@@ -13,7 +13,7 @@ function AboutUsHeader() {
             <div className="light"></div>
             <img src={about_header_image} alt="" />
           </div>
-          <div className="header-content">
+          <div className="header-content start-fade-bottom">
             <div className="title">
               <p>What is ARC Corporation</p>
               <p>how valid are we?</p>
@@ -28,11 +28,11 @@ function AboutUsHeader() {
               property inspections. Trust Arc Corporation for excellence,
               innovation, and customer satisfaction in every project
             </div>
-            <div className="actions">
+            <div className="actions start-flip-top">
               <Link to={"/Services"} className="filled">
                 See Services
               </Link>
-              <Link>Contact Us</Link>
+              <Link to={"/Contact"}>Contact Us</Link>
             </div>
           </div>
         </header>

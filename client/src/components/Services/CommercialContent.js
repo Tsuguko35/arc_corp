@@ -13,7 +13,7 @@ function CommercialContent() {
   return (
     <div id="commercialContent" className="commercialContent">
       <div className="wrapper">
-        <div className="text-content">
+        <div className="text-content feature">
           <p className="header notBold">
             Commercial Roofing Never Seen Before!
           </p>
@@ -33,7 +33,7 @@ function CommercialContent() {
         {/* Key Points */}
         <ServiceKeyPoints keypoints={keypoints} />
 
-        <div className="text-content">
+        <div className="text-content feature">
           <p className="header">Commercial Roof Systems</p>
           <div className="text">
             <p className="description">

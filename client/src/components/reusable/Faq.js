@@ -17,7 +17,7 @@ export default function Faq() {
     }
   };
   return (
-    <div id="faq" className="faq">
+    <div id="faq" className="faq feature">
       <div className="wrapper">
         <div className="faq-container">
           <div className="image">
