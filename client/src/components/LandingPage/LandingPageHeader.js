@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../styles/landingPageHeader.css";
 
 import backgroundImage from "../../assets/images/LandingPage/headerBackground.png";
@@ -27,7 +27,9 @@ function LandingPageHeader() {
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
-  const videoRef = useRef(null);
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
+  const videoRef3 = useRef(null);
   const videoSources = [video1, video2, video3];
 
   const changeVideo = () => {
@@ -36,9 +38,21 @@ function LandingPageHeader() {
 
   const handleVideoEnded = () => {
     changeVideo();
-    videoRef.current.load(); // Reload the video to update the source
-    videoRef.current.play(); // Ensure the new video starts playing
   };
+
+  useEffect(() => {
+    switch (currentVideoIndex) {
+      case 0:
+        videoRef1.current.play();
+        break;
+      case 1:
+        videoRef2.current.play();
+        break;
+      case 2:
+        videoRef3.current.play();
+        break;
+    }
+  }, [currentVideoIndex]);
 
   return (
     <header id="landingPageHeader" className="landingPageHeader">
@@ -75,14 +89,42 @@ function LandingPageHeader() {
         </div>
         <div className="slideshow">
           <video
-            className="background-image"
-            autoPlay
+            className={`background-image ${
+              currentVideoIndex === 0 ? "active" : ""
+            }`}
+            autoPlay={currentVideoIndex === 0 ? true : false}
             muted
             loop={false} // Disable loop here
             onEnded={handleVideoEnded}
-            ref={videoRef}
+            ref={videoRef1}
           >
-            <source src={videoSources[currentVideoIndex]} type="video/mp4" />
+            <source src={video1} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            className={`background-image ${
+              currentVideoIndex === 1 ? "active" : ""
+            }`}
+            autoPlay={currentVideoIndex === 1 ? true : false}
+            muted
+            loop={false} // Disable loop here
+            onEnded={handleVideoEnded}
+            ref={videoRef2}
+          >
+            <source src={video2} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            className={`background-image ${
+              currentVideoIndex === 2 ? "active" : ""
+            }`}
+            autoPlay={currentVideoIndex === 2 ? true : false}
+            muted
+            loop={false} // Disable loop here
+            onEnded={handleVideoEnded}
+            ref={videoRef3}
+          >
+            <source src={video3} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
