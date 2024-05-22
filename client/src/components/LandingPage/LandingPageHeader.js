@@ -1,14 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import "../../styles/landingPageHeader.css";
-
-import backgroundImage from "../../assets/images/LandingPage/headerBackground2.png";
-import backgroundImage2 from "../../assets/svg/1.svg";
-import backgroundImage3 from "../../assets/images/LandingPage/headerBackground3.jpg";
-import backgroundImage4 from "../../assets/svg/3.svg";
-
-import video1 from "../../assets/videos/LandingPage/landingVideo1.mp4";
-import video2 from "../../assets/videos/LandingPage/landingVideo2.mp4";
-import video3 from "../../assets/videos/LandingPage/landingVideo3.mp4";
 
 import * as faIcons from "react-icons/fa";
 
@@ -17,10 +8,10 @@ import { Link } from "react-router-dom";
 
 function LandingPageHeader() {
   const backgroundImages = [
-    backgroundImage,
-    backgroundImage2,
-    backgroundImage3,
-    backgroundImage4,
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382178/Arc_Landing_Page/Header/s1rvavbz65in9cm1bcgt.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382216/Arc_Landing_Page/Header/n1aingxn1vs9kraalke4.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382177/Arc_Landing_Page/Header/jxw4wqchrmulyll0uly1.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382231/Arc_Landing_Page/Header/swvlbxk83mab5nqm4aja.webp",
   ];
 
   const imageRef = useRef(null);
@@ -106,9 +97,6 @@ function LandingPageHeader() {
                     src={image}
                     alt={`Slide ${index}`}
                     className="background-image"
-                    role="presentation"
-                    decoding="async"
-                    fetchPriority="high"
                     ref={imageRef}
                   />
                 ))}

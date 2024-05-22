@@ -1,6 +1,5 @@
 import React from "react";
-import "../styles/landingPage.css";
-import { LandingPageFooter, LandingPageHeader } from "../components";
+import { LandingPageHeader } from "../components";
 
 function LandingPage() {
   return (
