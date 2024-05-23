@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/footerwithMessage.css";
 import { Link } from "react-router-dom";
-import arc_logo from "../../assets/images/LandingPage/Logo.png";
 
 import * as faIcons from "react-icons/fa";
 import MessageForm from "../reusable/MessageForm";
@@ -30,7 +29,12 @@ function FooterWithMessage() {
         </div>
         <div className="bottom-footer">
           <div className="logo">
-            <img src={arc_logo} alt="logo" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382912/ix9tfxvydepl6juho7jf.webp"
+              }
+              alt="logo"
+            />
           </div>
           <div className="copyright">
             <p>© 2024 Arc Corporation. All rights reserved.</p>

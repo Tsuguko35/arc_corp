@@ -1,7 +1,5 @@
 import React from "react";
 import "../../styles/mainFooter.css";
-
-import arc_logo from "../../assets/images/LandingPage/Logo.png";
 import { Link } from "react-router-dom";
 
 import * as IoIcons from "react-icons/io";
@@ -12,7 +10,12 @@ function MainFooter() {
       <div className="wrapper">
         <div className="icon-adress">
           <div className="icon">
-            <img src={arc_logo} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382912/ix9tfxvydepl6juho7jf.webp"
+              }
+              alt=""
+            />
           </div>
           <div className="address">
             <p>12978 SW 132nd Ave, Miami, FL, United States, Florida</p>

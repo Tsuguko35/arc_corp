@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/memberProfileContent.css";
 
-import profil_pic from "../../assets/images/AboutUs/williamProfile.jfif";
 import { Link } from "react-router-dom";
 
 import * as GoIcons from "react-icons/go";
@@ -13,7 +12,12 @@ function MemberProfileContent() {
         <div className="member-profile">
           <div className="member-details">
             <div className="member-image">
-              <img src={profil_pic} alt="" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
+                }
+                alt="Member profile"
+              />
             </div>
             <div className="details">
               <div className="name-position">

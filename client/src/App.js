@@ -1,22 +1,14 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { routes } from "./config";
 
 import "./styles/styles.css";
 import { NavBar } from "./components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import LoadingBar from "react-top-loading-bar";
 
-import { useEffect, useRef, useState } from "react";
-import { ScrollToTop } from "./utils";
+import { useEffect } from "react";
 
 function App() {
-  const { pathname } = useLocation();
-  const ref = useRef(null);
-
-  const [progress, setProgress] = useState(0);
-  const [loading, setLoading] = useState(false);
-
   // Animations
   useEffect(() => {
     const handleScroll = () => {

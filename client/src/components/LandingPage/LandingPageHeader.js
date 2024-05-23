@@ -1,27 +1,24 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import "../../styles/landingPageHeader.css";
-
-import backgroundImage from "../../assets/images/LandingPage/headerBackground.png";
-import backgroundImage2 from "../../assets/svg/1.svg";
-import backgroundImage3 from "../../assets/svg/2.svg";
-import backgroundImage4 from "../../assets/svg/3.svg";
-
-import video1 from "../../assets/videos/LandingPage/landingVideo1.mp4";
-import video2 from "../../assets/videos/LandingPage/landingVideo2.mp4";
-import video3 from "../../assets/videos/LandingPage/landingVideo3.mp4";
 
 import * as fiIcons from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
-
 import InfiniteCarousel from "react-leaf-carousel";
 
 function LandingPageHeader() {
   const navigate = useNavigate();
+  // const video1 =
+  //   "https://res.cloudinary.com/dkwgg59ur/video/upload/v1716383050/Arc_Landing_Page/Header/cx2nahkhp7c7x36toaut.mp4";
+  // const video2 =
+  //   "https://res.cloudinary.com/dkwgg59ur/video/upload/v1716383050/Arc_Landing_Page/Header/orlnskgrlhw1es4fdn5c.mp4";
+  // const video3 =
+  //   "https://res.cloudinary.com/dkwgg59ur/video/upload/v1716383051/Arc_Landing_Page/Header/zx3pono5uwnpzdgbll3l.mp4";
+
   const backgroundImages = [
-    backgroundImage,
-    backgroundImage2,
-    backgroundImage3,
-    backgroundImage4,
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382178/Arc_Landing_Page/Header/s1rvavbz65in9cm1bcgt.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382216/Arc_Landing_Page/Header/n1aingxn1vs9kraalke4.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382231/Arc_Landing_Page/Header/swvlbxk83mab5nqm4aja.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382177/Arc_Landing_Page/Header/jxw4wqchrmulyll0uly1.webp",
   ];
 
   const imageRef = useRef(null);
@@ -41,34 +38,34 @@ function LandingPageHeader() {
   };
 
   // Video
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  // const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
-  const videoRef1 = useRef(null);
-  const videoRef2 = useRef(null);
-  const videoRef3 = useRef(null);
-  const videoSources = [video1, video2, video3];
+  // const videoRef1 = useRef(null);
+  // const videoRef2 = useRef(null);
+  // const videoRef3 = useRef(null);
+  // const videoSources = [video1, video2, video3];
 
-  const changeVideo = () => {
-    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoSources.length);
-  };
+  // const changeVideo = () => {
+  //   setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoSources.length);
+  // };
 
-  const handleVideoEnded = () => {
-    changeVideo();
-  };
+  // const handleVideoEnded = () => {
+  //   changeVideo();
+  // };
 
-  useEffect(() => {
-    switch (currentVideoIndex) {
-      case 0:
-        videoRef1.current.play();
-        break;
-      case 1:
-        videoRef2.current.play();
-        break;
-      case 2:
-        videoRef3.current.play();
-        break;
-    }
-  }, [currentVideoIndex]);
+  // useEffect(() => {
+  //   switch (currentVideoIndex) {
+  //     case 0:
+  //       videoRef1.current.play();
+  //       break;
+  //     case 1:
+  //       videoRef2.current.play();
+  //       break;
+  //     case 2:
+  //       videoRef3.current.play();
+  //       break;
+  //   }
+  // }, [currentVideoIndex]);
 
   return (
     <header id="landingPageHeader" className="landingPageHeader">
@@ -87,7 +84,7 @@ function LandingPageHeader() {
             </div>
           </div>
         </div>
-        {/* <div className="slideshow">
+        <div className="slideshow">
           {backgroundImages && (
             <InfiniteCarousel
               autoCycle={true}
@@ -105,16 +102,13 @@ function LandingPageHeader() {
                   src={image}
                   alt={`Slide ${index}`}
                   className="background-image"
-                  role="presentation"
-                  decoding="async"
-                  fetchPriority="high"
                   ref={imageRef}
                 />
               ))}
             </InfiniteCarousel>
           )}
-        </div> */}
-        <div className="slideshow">
+        </div>
+        {/* <div className="slideshow">
           {videoSources &&
             videoSources.map((video, index) => (
               <video
@@ -137,7 +131,7 @@ function LandingPageHeader() {
                 Your browser does not support the video tag.
               </video>
             ))}
-        </div>
+        </div> */}
         <div className="bottom-details">
           <span className="outside">
             <span className="inside"></span>

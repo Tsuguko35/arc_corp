@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import service_image1 from "../../assets/images/Services/serviceImage1.jpg";
 import "../../styles/roofCarousel.css";
 
 // Import Swiper styles
@@ -9,10 +8,8 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import * as mdIcons from "react-icons/md";
-
 // import required modules
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import { useLocation } from "react-router-dom";
 
 function RoofCarousel({ roofItems }) {

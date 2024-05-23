@@ -1,9 +1,6 @@
 import React from "react";
 import "../../styles/contactUsContent.css";
 import * as GoIcons from "react-icons/go";
-
-import contact_bg from "../../assets/images/ContactUs/contactBackground.jpeg";
-import chat from "../../assets/images/ContactUs/chat.svg";
 import { Link } from "react-router-dom";
 import ContactUsForm from "../reusable/ContactUsForm";
 
@@ -14,7 +11,12 @@ function ContactUsContent() {
         <header className="header">
           <div className="background">
             <div className="overlay"></div>
-            <img src={contact_bg} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424233/Contact/qtidmhneryksfaepesfg.webp"
+              }
+              alt="contact bg"
+            />
           </div>
           <div className="header-content">
             <div className="text-content start-fade-bottom">
@@ -73,7 +75,12 @@ function ContactUsContent() {
         <div className="contact-us-content">
           <div className="message-us-container">
             <div className="image">
-              <img src={chat} alt="" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424233/Contact/etsxowpc1jxvt8fvrlds.webp"
+                }
+                alt="chat"
+              />
             </div>
             <div className="text-content">
               <p className="title">Live Chat</p>

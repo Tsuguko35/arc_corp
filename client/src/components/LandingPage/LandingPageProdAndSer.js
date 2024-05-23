@@ -1,14 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 import "../../styles/landingPageProdAndSer.css";
-import background_image from "../../assets/images/LandingPage/servicesBackground.jpg";
-import profile_img_1 from "../../assets/images/profiles/billHicks.png";
-import tpoRoofing from "../../assets/images/LandingPage/tpoRoofing.jpg";
 import * as faIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function CustomNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div className={`next-arrow`} style={{ ...style }} onClick={onClick}>
       <faIcons.FaArrowRight />
@@ -17,7 +14,7 @@ function CustomNextArrow(props) {
 }
 
 function CustomPrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div className={`prev-arrow`} style={{ ...style }} onClick={onClick}>
       <faIcons.FaArrowRight />
@@ -60,7 +57,12 @@ function LandingPageProdAndSer() {
       <div className="wrapper">
         <div className="background-img">
           <div className="overlay"></div>
-          <img src={background_image} alt="" />
+          <img
+            src={
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/t3egau1ocnwz74xvhtkk.webp"
+            }
+            alt=""
+          />
         </div>
         <div className="title">
           <div className="upper">METAL ROOF MASTER</div>
@@ -72,11 +74,10 @@ function LandingPageProdAndSer() {
               <div className="card-content">
                 <div className="display-picture">
                   <img
-                    src={tpoRoofing}
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                    }
                     alt="service"
-                    role="presentation"
-                    decoding="async"
-                    fetchPriority="high"
                   />
                 </div>
                 <div className="service-details">
@@ -96,7 +97,12 @@ function LandingPageProdAndSer() {
             <div className="card">
               <div className="card-content">
                 <div className="display-picture">
-                  <img src={tpoRoofing} alt="service" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                    }
+                    alt="service"
+                  />
                 </div>
                 <div className="service-details">
                   <p className="service-name">TPO Roofing</p>
@@ -115,7 +121,12 @@ function LandingPageProdAndSer() {
             <div className="card">
               <div className="card-content">
                 <div className="display-picture">
-                  <img src={tpoRoofing} alt="service" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                    }
+                    alt="service"
+                  />
                 </div>
                 <div className="service-details">
                   <p className="service-name">TPO Roofing</p>
@@ -134,7 +145,12 @@ function LandingPageProdAndSer() {
             <div className="card">
               <div className="card-content">
                 <div className="display-picture">
-                  <img src={tpoRoofing} alt="service" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                    }
+                    alt="service"
+                  />
                 </div>
                 <div className="service-details">
                   <p className="service-name">TPO Roofing</p>
@@ -153,7 +169,12 @@ function LandingPageProdAndSer() {
             <div className="card">
               <div className="card-content">
                 <div className="display-picture">
-                  <img src={tpoRoofing} alt="service" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                    }
+                    alt="service"
+                  />
                 </div>
                 <div className="service-details">
                   <p className="service-name">TPO Roofing</p>
@@ -172,7 +193,12 @@ function LandingPageProdAndSer() {
             <div className="card">
               <div className="card-content">
                 <div className="display-picture">
-                  <img src={tpoRoofing} alt="service" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                    }
+                    alt="service"
+                  />
                 </div>
                 <div className="service-details">
                   <p className="service-name">TPO Roofing</p>
@@ -191,7 +217,12 @@ function LandingPageProdAndSer() {
             <div className="card">
               <div className="card-content">
                 <div className="display-picture">
-                  <img src={tpoRoofing} alt="service" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                    }
+                    alt="service"
+                  />
                 </div>
                 <div className="service-details">
                   <p className="service-name">TPO Roofing</p>

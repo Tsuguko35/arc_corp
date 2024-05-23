@@ -2,10 +2,11 @@ import React from "react";
 import "../../styles/portfolioContent.css";
 import ServiceKeyPoints from "../reusable/ServiceKeyPoints";
 import { portfolioKeyPoints } from "../../utils";
-import project from "../../assets/images/Portfolio/roofProject.jpg";
 
 function PortfolioContent() {
   const keypoints = portfolioKeyPoints;
+  const project =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423355/Arc_Portfolio/eqzqqxmgbhgnsxedob4d.webp";
   return (
     <div id="portfolioContent" className="portfolioContent">
       <div className="wrapper">

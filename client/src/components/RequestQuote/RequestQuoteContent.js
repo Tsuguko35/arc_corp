@@ -1,9 +1,5 @@
 import React from "react";
 import "../../styles/requestQuoteContent.css";
-import background_image from "../../assets/images/LandingPage/servicesBackground.jpg";
-import residential from "../../assets/images/RequestQoute/residential.png";
-import commercial from "../../assets/images/RequestQoute/commercial.png";
-import stormIcon from "../../assets/images/RequestQoute/stormIcon.png";
 
 import * as io5ICons from "react-icons/io5";
 import QouteForm from "../reusable/QouteForm";
@@ -15,7 +11,12 @@ function RequestQuoteContent() {
       <div className="wrapper">
         <div className="background">
           <div className="overlay"></div>
-          <img src={background_image} alt="" />
+          <img
+            src={
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/t3egau1ocnwz74xvhtkk.webp"
+            }
+            alt="background"
+          />
         </div>
         <div className="request-quote">
           <div className="container">
@@ -27,7 +28,12 @@ function RequestQuoteContent() {
                 {/* Card */}
                 <div className="card">
                   <div className="image">
-                    <img src={commercial} alt="" />
+                    <img
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419326/Icons/hljlbksklkq9le00ubqc.webp"
+                      }
+                      alt="Commercial"
+                    />
                   </div>
                   <p className="title">Commercial Services</p>
                   <div className="services">
@@ -56,7 +62,12 @@ function RequestQuoteContent() {
                 {/* Card */}
                 <div className="card">
                   <div className="image">
-                    <img src={residential} alt="" />
+                    <img
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419324/Icons/opfsemfweyckwud683rq.webp"
+                      }
+                      alt="Residential"
+                    />
                   </div>
                   <p className="title">Residential Services</p>
                   <div className="services">
@@ -93,7 +104,12 @@ function RequestQuoteContent() {
           <div className="container">
             <div className="text-content">
               <div className="icon">
-                <img src={stormIcon} alt="" />
+                <img
+                  src={
+                    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419325/Icons/qllgusmh04722e3axjwj.webp"
+                  }
+                  alt="Storm"
+                />
               </div>
               <div className="text">
                 <p className="header">Severe Storm Center</p>

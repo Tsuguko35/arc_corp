@@ -1,19 +1,30 @@
 import React from "react";
 import "../../styles/aboutUsContent.css";
-import about_image1 from "../../assets/images/AboutUs/aboutImage1.jpg";
-import about_Icon from "../../assets/images/AboutUs/Icons/aboutUsIcon.svg";
-import hero_Icon from "../../assets/images/AboutUs/Icons/heroIcon.svg";
-import hero_card_icon1 from "../../assets/images/AboutUs/Icons/heroCardIcon1.svg";
-import hero_card_icon2 from "../../assets/images/AboutUs/Icons/heroCardIcon2.svg";
-import hero_card_icon3 from "../../assets/images/AboutUs/Icons/heroCardIcon3.svg";
+
 import { Link } from "react-router-dom";
 
-import william from "../../assets/images/AboutUs/william.svg";
-import amanda from "../../assets/images/AboutUs/amanda.svg";
-import bill from "../../assets/images/AboutUs/bill.svg";
-import hero_image from "../../assets/images/AboutUs/aboutUsHero2.jpg";
-
 function AboutUsContent() {
+  const about_image1 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423795/Arc_About/bpaynrq1xeoaar6scgjz.webp";
+  const william =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423796/Arc_About/e0kaorobafb6s3k4mj2z.webp";
+  const amanda =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423796/Arc_About/lwokbhx9ghqn7cje33i7.webp";
+  const bill =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423796/Arc_About/jwlu6gicurobfeeimrzm.webp";
+  const hero_image =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423796/Arc_About/dpu6jeylhevua4nnpmcn.webp";
+  const about_Icon =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424077/Icons/About/peozk7gfwol8rliux20q.webp";
+  const hero_Icon =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424077/Icons/About/oqsnodl7cn3ofvggw8jb.webp";
+  const hero_card_icon1 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424076/Icons/About/eatugzzzc14i4ajncfyu.webp";
+  const hero_card_icon2 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424076/Icons/About/bhx1ax8yl9juu9x9fxdk.webp";
+  const hero_card_icon3 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424076/Icons/About/xxeliwojlfiwv5xawhej.webp";
+
   return (
     <div id="aboutUsContent" className="aboutUsContent">
       <div className="wrapper">

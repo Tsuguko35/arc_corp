@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/faq.css";
 
-import faq_image from "../../assets/images/Faq/faqImage.svg";
-import faq_Icon from "../../assets/images/Faq/faqIcon.svg";
-
 import * as FiIcons from "react-icons/fi";
 
 export default function Faq() {
@@ -21,11 +18,21 @@ export default function Faq() {
       <div className="wrapper">
         <div className="faq-container">
           <div className="image">
-            <img src={faq_image} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424368/Arc_Faq/qilfotzrqpifrfg7duvx.webp"
+              }
+              alt="Faq"
+            />
           </div>
           <div className="faq-content">
             <div className="label">
-              <img src={faq_Icon} alt="" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424368/Arc_Faq/yx9jg1anfagqgiit94zs.webp"
+                }
+                alt="Faq"
+              />
               <p>FAQ Question</p>
             </div>
             <p className="title">Frequently asked questions</p>

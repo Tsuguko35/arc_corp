@@ -1,13 +1,17 @@
 import React from "react";
 import "../../styles/portfolioHeader.css";
-import protfolio_header from "../../assets/images/Portfolio/portfolioHeader.jpg";
 
 function PortfolioHeader() {
   return (
     <div id="portfolioHeader" className="portfolioHeader">
       <div className="background">
         <div className="overlay"></div>
-        <img src={protfolio_header} alt="" />
+        <img
+          src={
+            "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423356/Arc_Portfolio/cgbptyca59pkclazbqgs.webp"
+          }
+          alt="Portfolio Header"
+        />
       </div>
       <div className="wrapper">
         <div className="text-content start-fade-bottom">

@@ -1,5 +1,5 @@
 import React from "react";
-import { MainFooter, ProductContent, RoofCarousel } from "../components";
+import { MainFooter, ProductContent } from "../components";
 
 function Product() {
   return (

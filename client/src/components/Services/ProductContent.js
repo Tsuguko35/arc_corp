@@ -2,13 +2,7 @@ import React from "react";
 import "../../styles/productContent.css";
 import RoofCarousel from "../reusable/RoofCarousel";
 import { residentialItems } from "../../utils";
-import product_header from "../../assets/images/Services/Products/copperHeader.jpg";
 import { Link } from "react-router-dom";
-
-import benefit_1 from "../../assets/images/Services/Icons/cBenefit1.svg";
-import benefit_2 from "../../assets/images/Services/Icons/cBenefit2.svg";
-import benefit_3 from "../../assets/images/Services/Icons/cBenefit3.svg";
-import benefit_4 from "../../assets/images/Services/Icons/cBenefit4.svg";
 
 function ProductContent() {
   const roofItems = residentialItems;
@@ -16,7 +10,12 @@ function ProductContent() {
     <div id="productContent" className="productContent">
       <div className="wrapper">
         <header className="header">
-          <img src={product_header} alt="product 1" />
+          <img
+            src={
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423172/Arc_Services/Products/e5d4ki7djo1ptlzbol3o.webp"
+            }
+            alt="product 1"
+          />
         </header>
         <div className="product-details-container">
           <div className="product-details start-fade-bottom">
@@ -40,7 +39,12 @@ function ProductContent() {
             <div className="benefits-grid">
               <div className="benefit">
                 <div className="icon">
-                  <img src={benefit_1} alt="" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420607/Icons/Services/jymunvoecdbjp22xqhqn.webp"
+                    }
+                    alt="ben 1"
+                  />
                 </div>
                 <p className="benefit-title">Durability</p>
                 <p className="benefit-desc">
@@ -55,7 +59,12 @@ function ProductContent() {
               </div>
               <div className="benefit">
                 <div className="icon">
-                  <img src={benefit_2} alt="" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420607/Icons/Services/ln9f84ib8zkioeezhqpn.webp"
+                    }
+                    alt="ben 2"
+                  />
                 </div>
                 <p className="benefit-title">Flexibility & Detail</p>
                 <p className="benefit-desc">
@@ -70,7 +79,12 @@ function ProductContent() {
               </div>
               <div className="benefit">
                 <div className="icon">
-                  <img src={benefit_3} alt="" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420607/Icons/Services/yc4ektyezwvxkktzj76q.webp"
+                    }
+                    alt="ben 3"
+                  />
                 </div>
                 <p className="benefit-title">Affordability</p>
                 <p className="benefit-desc">
@@ -86,7 +100,12 @@ function ProductContent() {
               </div>
               <div className="benefit">
                 <div className="icon">
-                  <img src={benefit_4} alt="" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420608/Icons/Services/jyntqhebvrznl7rpzerr.webp"
+                    }
+                    alt="ben 4"
+                  />
                 </div>
                 <p className="benefit-title">Sustainability</p>
                 <p className="benefit-desc">

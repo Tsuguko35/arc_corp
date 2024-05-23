@@ -1,7 +1,5 @@
 import React from "react";
 import "../../styles/productGrid.css";
-
-import service_image1 from "../../assets/images/Services/serviceImage1.jpg";
 import { Link } from "react-router-dom";
 
 function ProductGrid({ products }) {

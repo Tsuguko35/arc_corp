@@ -1,7 +1,5 @@
 import React from "react";
 import "../../styles/servicesHeader.css";
-import header_background from "../../assets/images/Services/servicesBackground.jpg";
-import point_icon from "../../assets/images/Services/pointVector.png";
 import QouteForm from "../reusable/QouteForm";
 import { Link } from "react-router-dom";
 
@@ -12,7 +10,12 @@ function ServicesHeader() {
         <header className="header">
           <div className="background">
             <div className="overlay"></div>
-            <img src={header_background} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/blbqbawnhzpw7n4muzbg.webp"
+              }
+              alt=""
+            />
           </div>
           <div className="header-content">
             <div className="text-content start-fade-bottom">
@@ -25,15 +28,30 @@ function ServicesHeader() {
               </div>
               <div className="key-points">
                 <div className="point">
-                  <img src={point_icon} alt="" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419845/Arc_Services/sx9c4jrsdt07zbhujrax.webp"
+                    }
+                    alt="Key point"
+                  />
                   <p>One Click Roof</p>
                 </div>
                 <div className="point">
-                  <img src={point_icon} alt="" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419845/Arc_Services/sx9c4jrsdt07zbhujrax.webp"
+                    }
+                    alt="Key point"
+                  />
                   <p>General Construction</p>
                 </div>
                 <div className="point">
-                  <img src={point_icon} alt="" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419845/Arc_Services/sx9c4jrsdt07zbhujrax.webp"
+                    }
+                    alt="Key point"
+                  />
                   <p>Arc Engineering & Standard</p>
                 </div>
               </div>

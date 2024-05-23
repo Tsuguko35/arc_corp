@@ -1,21 +1,38 @@
-import keypoint_image1 from "../assets/images/Services/Icons/sKeyPoint1.svg";
-import keypoint_image2 from "../assets/images/Services/Icons/sKeyPoint2.svg";
-import keypoint_image3 from "../assets/images/Services/Icons/sKeyPoint3.svg";
-import keypoint_image4 from "../assets/images/Services/Icons/sKeyPoint4.svg";
-import res_image1 from "../assets/images/Services/Residential/resIcon1.svg";
-import res_image2 from "../assets/images/Services/Residential/resIcon2.svg";
-import res_image3 from "../assets/images/Services/Residential/resIcon3.svg";
-import res_image4 from "../assets/images/Services/Residential/resIcon4.svg";
+const port_image1 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423560/Icons/Portfolio/klq8ybnfuim29u4ti8ff.webp";
+const port_image2 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423581/Icons/Portfolio/uvexep2krqwiybn6kxag.webp";
+const port_image3 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423581/Icons/Portfolio/hjdgphy2utf9hwmbd8vo.webp";
+const port_image4 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423582/Icons/Portfolio/lustvpr2pob8emhziwm4.webp";
 
-import com_image1 from "../assets/images/Services/Commercial/comIcon1.svg";
-import com_image2 from "../assets/images/Services/Commercial/comIcon2.svg";
-import com_image3 from "../assets/images/Services/Commercial/comIcon3.svg";
-import com_image4 from "../assets/images/Services/Commercial/comIcon4.svg";
+const keypoint_image1 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420607/Icons/Services/tfat882luka79htgweod.webp";
+const keypoint_image2 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420608/Icons/Services/p5i8cpcopwaode5cbm4b.webp";
+const keypoint_image3 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420608/Icons/Services/hehe94v77sw8oi4gm8d4.webp";
+const keypoint_image4 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420608/Icons/Services/ivodaz5yzo99kt9zzjuz.webp";
 
-import port_image1 from "../assets/images/Portfolio/Icons/kPoint1.svg";
-import port_image2 from "../assets/images/Portfolio/Icons/kPoint2.svg";
-import port_image3 from "../assets/images/Portfolio/Icons/kPoint3.svg";
-import port_image4 from "../assets/images/Portfolio/Icons/kPoint4.svg";
+const com_image1 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716421113/Icons/Services_Commercial/atzv50xbku3tv2whj4ea.webp";
+const com_image2 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716421113/Icons/Services_Commercial/h2zcclfu5wddixomuwty.webp";
+const com_image3 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716421113/Icons/Services_Commercial/qerdxyts6uc7ucfpin0k.webp";
+const com_image4 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716421113/Icons/Services_Commercial/xkpicf6wr1sm4o84hbqs.webp";
+
+const res_image1 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423044/Icons/Services_Residential/zssgckcdde4mbfxffcc5.webp";
+const res_image2 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423025/Icons/Services_Residential/gso5zna5c6vdczrlht69.webp";
+const res_image3 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423025/Icons/Services_Residential/xelmywhq9f1zxr3fat6g.webp";
+const res_image4 =
+  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423037/Icons/Services_Residential/ncutpqh0vhss4j6bjnaa.webp";
 
 const serviceKeyPoints = [
   {

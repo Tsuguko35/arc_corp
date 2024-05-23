@@ -13,7 +13,9 @@
 }
 
 /* Background Image */
-#landingPageHeader > .wrapper > .slideshow{
+
+/* Video */
+/* #landingPageHeader > .wrapper > .slideshow{
     position: relative;
     width: 100%;
     height: 100%;
@@ -33,6 +35,24 @@
 }
 
 #landingPageHeader > .wrapper > .slideshow .background-image.active{
+    opacity: 1;
+} */
+
+
+/* Image */
+#landingPageHeader > .wrapper > .slideshow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#landingPageHeader > .wrapper > .slideshow .background-image{
+    width: 100%;
+    height: 802px;
+    object-fit: cover;
+    user-select: none;
     opacity: 1;
 }
 

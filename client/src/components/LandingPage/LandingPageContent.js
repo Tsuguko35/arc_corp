@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../../styles/landingPageContent.css";
 
-import companyDescImage1 from "../../assets/svg/1.svg";
-import companyDescImage2 from "../../assets/svg/2.svg";
 import { Link } from "react-router-dom";
 
 function LandingPageContent() {
@@ -45,23 +43,21 @@ function LandingPageContent() {
                 <div className="img-overlay">
                   <div className="overlay"></div>
                   <img
-                    src={companyDescImage1}
-                    alt=""
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382177/Arc_Landing_Page/Header/jxw4wqchrmulyll0uly1.webp"
+                    }
+                    alt="company 1"
                     className="with-overlay"
-                    role="presentation"
-                    decoding="async"
-                    fetchPriority="high"
                   />
                 </div>
               </div>
 
               <img
-                src={companyDescImage2}
-                alt=""
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418784/Arc_Landing_Page/Content/uqqrdtapkhrttcmn9cuc.webp"
+                }
+                alt="company 2"
                 className="clear"
-                role="presentation"
-                decoding="async"
-                fetchPriority="high"
               />
             </div>
           </div>

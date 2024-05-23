@@ -1,5 +1,4 @@
 import React from "react";
-import residntial_bg from "../../assets/images/Services/residentialBackground.avif";
 import "../../styles/serviceResHeader.css";
 import QouteForm from "../reusable/QouteForm";
 
@@ -10,7 +9,12 @@ function ResidentialHeader() {
         <header className="header">
           <div className="background">
             <div className="overlay"></div>
-            <img src={residntial_bg} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419845/Arc_Services/lgb1v4knafofjhdft9ra.webp"
+              }
+              alt="Residential Background"
+            />
           </div>
           <div className="header-content">
             <div className="text-content start-fade-bottom">

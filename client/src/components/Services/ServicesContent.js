@@ -1,12 +1,6 @@
 import React from "react";
 import "../../styles/servicesContent.css";
 import ServiceKeyPoints from "../reusable/ServiceKeyPoints";
-
-import service_image1 from "../../assets/images/Services/serviceImage1.jpg";
-import service_image2 from "../../assets/images/Services/serviceImage2.jpg";
-
-import ePoint1 from "../../assets/images/Services/Icons/ePoint1.svg";
-import ePoint2 from "../../assets/images/Services/Icons/ePoint2.svg";
 import { Link } from "react-router-dom";
 import { serviceKeyPoints } from "../../utils";
 
@@ -54,7 +48,12 @@ function ServicesContent() {
         <div className="text-content withImage">
           <div className="container feature4">
             <div className="image">
-              <img src={service_image1} alt="" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/kmaylltcoskfapiyn5ic.webp"
+                }
+                alt="SerImage 1"
+              />
             </div>
             <div className="explanation-content">
               <p>
@@ -69,7 +68,12 @@ function ServicesContent() {
               </p>
               <div className="points">
                 <div className="point">
-                  <img src={ePoint1} alt="point 1" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420607/Icons/Services/yyi76ugdqymmsju3kfwn.webp"
+                    }
+                    alt="point 1"
+                  />
                   <div className="point-text">
                     <div className="title bold">Quick & Easy</div>
                     <div className="desc">
@@ -79,7 +83,12 @@ function ServicesContent() {
                   </div>
                 </div>
                 <div className="point">
-                  <img src={ePoint2} alt="point 1" />
+                  <img
+                    src={
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716420607/Icons/Services/qk1rq8pmcj2hc1rtan74.webp"
+                    }
+                    alt="point 1"
+                  />
                   <div className="point-text">
                     <div className="title bold">Fast & Accurate</div>
                     <div className="desc">
@@ -96,7 +105,12 @@ function ServicesContent() {
           </div>
           <div className="container inverted feature3">
             <div className="image">
-              <img src={service_image2} alt="" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/niarb5nq9x7m4gxxbtey.webp"
+                }
+                alt="SerImage 2"
+              />
             </div>
             <div className="explanation-content">
               <p className="header">One-Click Roof</p>

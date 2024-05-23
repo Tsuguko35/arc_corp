@@ -1,5 +1,4 @@
 import React from "react";
-import residntial_bg from "../../assets/images/LandingPage/headerBackground.png";
 import "../../styles/serviceComHeader.css";
 import QouteForm from "../reusable/QouteForm";
 
@@ -10,7 +9,12 @@ function CommercialHeader() {
         <header className="header">
           <div className="background">
             <div className="overlay"></div>
-            <img src={residntial_bg} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382178/Arc_Landing_Page/Header/s1rvavbz65in9cm1bcgt.webp"
+              }
+              alt="Header Background"
+            />
           </div>
           <div className="header-content">
             <div className="text-content start-fade-bottom">

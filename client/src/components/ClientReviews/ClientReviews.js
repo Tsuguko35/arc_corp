@@ -3,12 +3,10 @@ import Slider from "react-slick";
 
 import "../../styles/clientReviews.css";
 
-import profile_img_1 from "../../assets/images/profiles/billHicks.png";
-
 import * as mdIcons from "react-icons/md";
 
 function CustomNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div className={`next-arrow`} style={{ ...style }} onClick={onClick}>
       <mdIcons.MdNavigateNext />
@@ -17,7 +15,7 @@ function CustomNextArrow(props) {
 }
 
 function CustomPrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div className={`prev-arrow`} style={{ ...style }} onClick={onClick}>
       <mdIcons.MdNavigateNext />
@@ -67,11 +65,10 @@ function ClientReviews() {
                 <div className="user-details">
                   <div className="profile-picture">
                     <img
-                      src={profile_img_1}
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418761/Arc_Landing_Page/Content/eft4hthijaetl4khixug.webp"
+                      }
                       alt="User profile"
-                      role="presentation"
-                      decoding="async"
-                      fetchPriority="high"
                     />
                   </div>
                   <div className="details">
@@ -96,11 +93,10 @@ function ClientReviews() {
                 <div className="user-details">
                   <div className="profile-picture">
                     <img
-                      src={profile_img_1}
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418761/Arc_Landing_Page/Content/eft4hthijaetl4khixug.webp"
+                      }
                       alt="User profile"
-                      role="presentation"
-                      decoding="async"
-                      fetchPriority="high"
                     />
                   </div>
                   <div className="details">
@@ -125,11 +121,10 @@ function ClientReviews() {
                 <div className="user-details">
                   <div className="profile-picture">
                     <img
-                      src={profile_img_1}
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418761/Arc_Landing_Page/Content/eft4hthijaetl4khixug.webp"
+                      }
                       alt="User profile"
-                      role="presentation"
-                      decoding="async"
-                      fetchPriority="high"
                     />
                   </div>
                   <div className="details">
@@ -154,11 +149,10 @@ function ClientReviews() {
                 <div className="user-details">
                   <div className="profile-picture">
                     <img
-                      src={profile_img_1}
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418761/Arc_Landing_Page/Content/eft4hthijaetl4khixug.webp"
+                      }
                       alt="User profile"
-                      role="presentation"
-                      decoding="async"
-                      fetchPriority="high"
                     />
                   </div>
                   <div className="details">
@@ -183,11 +177,10 @@ function ClientReviews() {
                 <div className="user-details">
                   <div className="profile-picture">
                     <img
-                      src={profile_img_1}
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418761/Arc_Landing_Page/Content/eft4hthijaetl4khixug.webp"
+                      }
                       alt="User profile"
-                      role="presentation"
-                      decoding="async"
-                      fetchPriority="high"
                     />
                   </div>
                   <div className="details">
@@ -212,11 +205,10 @@ function ClientReviews() {
                 <div className="user-details">
                   <div className="profile-picture">
                     <img
-                      src={profile_img_1}
+                      src={
+                        "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418761/Arc_Landing_Page/Content/eft4hthijaetl4khixug.webp"
+                      }
                       alt="User profile"
-                      role="presentation"
-                      decoding="async"
-                      fetchPriority="high"
                     />
                   </div>
                   <div className="details">

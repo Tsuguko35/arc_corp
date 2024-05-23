@@ -1,6 +1,5 @@
 import React from "react";
 import "../../styles/aboutUsHeader.css";
-import about_header_image from "../../assets/images/AboutUs/aboutUsHeader.jpeg";
 import { Link } from "react-router-dom";
 
 function AboutUsHeader() {
@@ -11,7 +10,12 @@ function AboutUsHeader() {
           <div className="background">
             <div className="overlay"></div>
             <div className="light"></div>
-            <img src={about_header_image} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423795/Arc_About/euo6dumragehk0ccykmb.webp"
+              }
+              alt=""
+            />
           </div>
           <div className="header-content start-fade-bottom">
             <div className="title">

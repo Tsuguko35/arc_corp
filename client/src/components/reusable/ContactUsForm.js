@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "../../styles/contactUsForm.css";
-import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 import LoadingDot from "../../assets/svg/loader/LoadingDot";
 
