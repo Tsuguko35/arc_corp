@@ -59,7 +59,7 @@ function LandingPageProdAndSer() {
           <div className="overlay"></div>
           <img
             src={
-              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/t3egau1ocnwz74xvhtkk.webp"
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/sbme1z3m6fl7hi259nfc.webp"
             }
             alt=""
           />
@@ -75,7 +75,7 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/idxnngiwtmp9zh7utvqd.webp"
                     }
                     alt="service"
                   />
@@ -99,7 +99,7 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/idxnngiwtmp9zh7utvqd.webp"
                     }
                     alt="service"
                   />
@@ -123,7 +123,7 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/idxnngiwtmp9zh7utvqd.webp"
                     }
                     alt="service"
                   />
@@ -147,7 +147,7 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/idxnngiwtmp9zh7utvqd.webp"
                     }
                     alt="service"
                   />
@@ -171,7 +171,7 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/idxnngiwtmp9zh7utvqd.webp"
                     }
                     alt="service"
                   />
@@ -195,7 +195,7 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/idxnngiwtmp9zh7utvqd.webp"
                     }
                     alt="service"
                   />
@@ -219,7 +219,7 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/mrfwhhfwbqdgontm2t8x.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/idxnngiwtmp9zh7utvqd.webp"
                     }
                     alt="service"
                   />

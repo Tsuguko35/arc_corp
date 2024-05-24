@@ -15,10 +15,10 @@ function LandingPageHeader() {
   //   "https://res.cloudinary.com/dkwgg59ur/video/upload/v1716383051/Arc_Landing_Page/Header/zx3pono5uwnpzdgbll3l.mp4";
 
   const backgroundImages = [
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382178/Arc_Landing_Page/Header/s1rvavbz65in9cm1bcgt.webp",
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382216/Arc_Landing_Page/Header/n1aingxn1vs9kraalke4.webp",
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382231/Arc_Landing_Page/Header/swvlbxk83mab5nqm4aja.webp",
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382177/Arc_Landing_Page/Header/jxw4wqchrmulyll0uly1.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/j27owsqkjy7d0tvyvehr.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590056/Arc_Landing_Page/Header/wy43n8nicxheh7afc3rk.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/vkxrlivhk2fwzwichavq.webp",
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/xcjdtwd2qlqhobcs9s7f.webp",
   ];
 
   const imageRef = useRef(null);
