@@ -8,6 +8,7 @@ import Portfolio from "./Portfolio";
 import AboutUs from "./AboutUs";
 import MemberProfile from "./MemberProfile";
 import ContactUs from "./ContactUs";
+import Projects from "./Projects";
 
 export {
   LandingPage,
@@ -20,4 +21,5 @@ export {
   AboutUs,
   MemberProfile,
   ContactUs,
+  Projects,
 };

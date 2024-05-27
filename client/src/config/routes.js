@@ -5,6 +5,7 @@ import {
   MemberProfile,
   Portfolio,
   Product,
+  Projects,
   RequestQuote,
   ServiceCommercial,
   ServiceResidential,
@@ -51,6 +52,10 @@ const routes = [
   {
     path: "/Contact",
     component: <ContactUs />,
+  },
+  {
+    path: "/Portfolio/Projects/:projectType",
+    component: <Projects />,
   },
 ];
 

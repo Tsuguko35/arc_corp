@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/portfolioContent.css";
 import ServiceKeyPoints from "../reusable/ServiceKeyPoints";
 import { portfolioKeyPoints } from "../../utils";
+import { Link } from "react-router-dom";
 
 function PortfolioContent() {
   const keypoints = portfolioKeyPoints;
@@ -25,7 +26,7 @@ function PortfolioContent() {
         <div className="projects-container feature3">
           <p className="title">Projects</p>
           <div className="project-grid">
-            <div className="project">
+            <Link to={`/Portfolio/Projects/Residential`} className="project">
               <div className="overlay"></div>
               <img
                 src={
@@ -37,8 +38,8 @@ function PortfolioContent() {
                 <p className="title">Residential Projects</p>
                 <p className="sub">14 Projects</p>
               </div>
-            </div>
-            <div className="project">
+            </Link>
+            <Link to={`/Portfolio/Projects/Commercial`} className="project">
               <div className="overlay"></div>
               <img
                 src={
@@ -50,7 +51,7 @@ function PortfolioContent() {
                 <p className="title">Commercial Projects</p>
                 <p className="sub">8 Projects</p>
               </div>
-            </div>
+            </Link>
           </div>
           <p className="load-more">Browse more.</p>
         </div>

@@ -27,6 +27,7 @@ import MemberProfileContent from "./AboutUs/MemberProfileContent";
 import Faq from "./reusable/Faq";
 import ContactUsContent from "./ContactUs/ContactUsContent";
 import ContactUsForm from "./reusable/ContactUsForm";
+import ProjectsContent from "./Portfolio/ProjectsContent";
 
 export {
   LandingPageHeader,
@@ -58,4 +59,5 @@ export {
   MemberProfileContent,
   ContactUsContent,
   ContactUsForm,
+  ProjectsContent,
 };
