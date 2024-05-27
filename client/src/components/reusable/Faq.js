@@ -20,7 +20,7 @@ export default function Faq() {
           <div className="image">
             <img
               src={
-                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424368/Arc_Faq/qilfotzrqpifrfg7duvx.webp"
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716767258/Arc_Faq/knj1ejuhuewxjkndhnr1.webp"
               }
               alt="Faq"
             />

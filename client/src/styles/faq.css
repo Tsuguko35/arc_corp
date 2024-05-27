@@ -110,7 +110,7 @@
 }
 
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq.active > .text-container{
-    border-left: 4px solid var(--primary);
+    border-left: 4px solid var(--accent-2);
 }
 
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq:not(.active):hover > .text-container{
@@ -119,12 +119,12 @@
 
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq.active > .text-container > .question > p,
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq.active > .text-container > .question > p.icon *{
-    color: var(--primary);
+    color: var(--accent-2);
 }
 
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq:hover > .text-container > .question > p,
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq:hover > .text-container > .question > p.icon *{
-    color: var(--primary);
+    color: var(--accent-2);
 }
 
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq > .text-container > .answer{

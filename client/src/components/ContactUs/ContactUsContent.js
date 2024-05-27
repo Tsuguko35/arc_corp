@@ -77,20 +77,23 @@ function ContactUsContent() {
             <div className="image">
               <img
                 src={
-                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424233/Contact/etsxowpc1jxvt8fvrlds.webp"
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716767567/Contact/myq3izgckcxhqbwpvjna.webp"
                 }
                 alt="chat"
               />
             </div>
             <div className="text-content">
-              <p className="title">Live Chat</p>
-              <div className="desc">
-                <p>Urgently want to reach us?</p>
-                <p>
-                  We are available 24hrs, seven days a week. (And I respond
-                  within 5 minutes!)
-                </p>
+              <div className="text">
+                <p className="title">Live Chat</p>
+                <div className="desc">
+                  <p>Urgently want to reach us?</p>
+                  <p>
+                    We are available 24hrs, seven days a week. (And I respond
+                    within 5 minutes!)
+                  </p>
+                </div>
               </div>
+
               <div className="action">
                 <p className="button">Message Us</p>
               </div>

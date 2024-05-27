@@ -102,7 +102,7 @@
 
 #mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .nav > a:hover,
 #mainFooter > .wrapper > .nav-top > .navigation-and-socials > .container > .socials > a:hover{
-    color: var(--black);
+    color: var(--secondary);
 }
 
 #mainFooter > .wrapper > .nav-top > .navigation-and-socials > .copyright{

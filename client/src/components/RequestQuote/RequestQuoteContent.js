@@ -13,7 +13,7 @@ function RequestQuoteContent() {
           <div className="overlay"></div>
           <img
             src={
-              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716418762/Arc_Landing_Page/Content/t3egau1ocnwz74xvhtkk.webp"
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/sbme1z3m6fl7hi259nfc.webp"
             }
             alt="background"
           />

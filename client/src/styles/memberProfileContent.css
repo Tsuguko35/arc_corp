@@ -109,6 +109,10 @@
     word-wrap: break-word;
 }
 
+#memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.link{
+    color: var(--secondary);
+}
+
 #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links{
     width: 100%;
     display: flex;
@@ -142,7 +146,7 @@
 }
 
 #memberProfileContent > .wrapper > .member-profile > .member-details > .details > .personal-details > .contact-infos > .contact > .contact-detail.links > a:hover > .link-arrow *{
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 #memberProfileContent > .wrapper > .member-profile > .member-skills > .label{

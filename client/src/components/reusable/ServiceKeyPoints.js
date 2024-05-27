@@ -6,8 +6,8 @@ function ServiceKeyPoints({ keypoints }) {
     <div id="serviceKeyPoints" className="serviceKeyPoints feature">
       <div className="key-points-grid">
         {keypoints &&
-          keypoints.map((keypoint) => (
-            <div className="key-point">
+          keypoints.map((keypoint, index) => (
+            <div className="key-point" key={index}>
               <div className="Icon">
                 <img src={keypoint.icon} alt="keypoint1" />
               </div>

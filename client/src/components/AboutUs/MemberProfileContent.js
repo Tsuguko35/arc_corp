@@ -36,7 +36,7 @@ function MemberProfileContent() {
                 <div className="contact-infos">
                   <div className="contact">
                     <p className="label">Contact Details</p>
-                    <p className="contact-detail">
+                    <p className="contact-detail link">
                       https://www.linkedin.com/in/william-beliles-5b747a10b +090
                       4057 1667
                     </p>

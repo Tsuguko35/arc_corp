@@ -14,14 +14,46 @@
 }
 
 #productContent > .wrapper > .header{
+    position: relative;
     width: 100%;
     height: 430px;
 }
 
+#productContent > .wrapper > .header > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hero-overlay-dark1);
+    z-index: 0;
+}
+
+#productContent > .wrapper > .header > a{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+#productContent > .wrapper > .header > a > svg{
+    width: 20px;
+    height: 20px;
+}
+
+#productContent > .wrapper > .header > a > svg *{
+    color: white;
+}
+
 #productContent > .wrapper > .header > img{
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
 #productContent > .wrapper > .product-details-container{

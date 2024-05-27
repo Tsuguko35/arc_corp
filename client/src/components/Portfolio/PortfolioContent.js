@@ -24,31 +24,35 @@ function PortfolioContent() {
 
         <div className="projects-container feature3">
           <p className="title">Projects</p>
-          <div className="actions">
-            <p className="toggle active">Residential</p>
-            <p className="toggle">Commercial</p>
-          </div>
           <div className="project-grid">
             <div className="project">
-              <img src={project} alt="" />
+              <div className="overlay"></div>
+              <img
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423795/Arc_About/euo6dumragehk0ccykmb.webp"
+                }
+                alt=""
+              />
+              <div className="text-content">
+                <p className="title">Residential Projects</p>
+                <p className="sub">14 Projects</p>
+              </div>
             </div>
             <div className="project">
-              <img src={project} alt="" />
-            </div>
-            <div className="project">
-              <img src={project} alt="" />
-            </div>
-            <div className="project">
-              <img src={project} alt="" />
-            </div>
-            <div className="project">
-              <img src={project} alt="" />
-            </div>
-            <div className="project">
-              <img src={project} alt="" />
+              <div className="overlay"></div>
+              <img
+                src={
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/blbqbawnhzpw7n4muzbg.webp"
+                }
+                alt=""
+              />
+              <div className="text-content">
+                <p className="title">Commercial Projects</p>
+                <p className="sub">8 Projects</p>
+              </div>
             </div>
           </div>
-          <p className="load-more">Load more</p>
+          <p className="load-more">Browse more.</p>
         </div>
 
         <div className="company-skills feature">

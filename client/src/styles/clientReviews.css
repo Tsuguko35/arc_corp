@@ -142,7 +142,7 @@
 }
 
 #clientReviews .slick-dots li.slick-active button:before{
-    color: var(--primary) !important;
+    color: var(--secondary) !important;
 }
 
 #clientReviews .slick-dots li button,

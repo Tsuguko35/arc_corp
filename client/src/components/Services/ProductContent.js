@@ -4,18 +4,24 @@ import RoofCarousel from "../reusable/RoofCarousel";
 import { residentialItems } from "../../utils";
 import { Link } from "react-router-dom";
 
+import { IoIosArrowBack } from "react-icons/io";
+
 function ProductContent() {
   const roofItems = residentialItems;
   return (
     <div id="productContent" className="productContent">
       <div className="wrapper">
         <header className="header">
+          <div className="overlay"></div>
           <img
             src={
               "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423172/Arc_Services/Products/e5d4ki7djo1ptlzbol3o.webp"
             }
             alt="product 1"
           />
+          <Link to={-1}>
+            <IoIosArrowBack /> Back
+          </Link>
         </header>
         <div className="product-details-container">
           <div className="product-details start-fade-bottom">

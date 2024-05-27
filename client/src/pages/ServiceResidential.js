@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ClientReviews,
   MainFooter,
@@ -7,6 +7,9 @@ import {
 } from "../components";
 
 function ServiceResidential() {
+  useEffect(() => {
+    document.title = "Residential | Arc Corporation";
+  });
   return (
     <div id="serviceResidential" className="serviceResidential">
       {/* Header */}

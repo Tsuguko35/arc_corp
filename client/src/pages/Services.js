@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   ClientReviews,
@@ -8,6 +8,9 @@ import {
 } from "../components";
 
 function Services() {
+  useEffect(() => {
+    document.title = "Services | Arc Corporation";
+  });
   return (
     <div id="services" className="services">
       {/* Header */}
