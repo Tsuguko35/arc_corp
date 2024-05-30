@@ -5,7 +5,6 @@ import {
   LandingPageContent,
   LandingPageFooter,
   LandingPageHeader,
-  LandingPageProdAndSer,
 } from "../components";
 
 function LandingPage() {
@@ -18,7 +17,6 @@ function LandingPage() {
       <LandingPageHeader />
 
       {/* Content */}
-      <LandingPageProdAndSer />
       <LandingPageContent />
       <ClientReviews />
       <ContactUsBanner />

@@ -4,6 +4,7 @@ import "../../styles/landingPageContent.css";
 import { Link } from "react-router-dom";
 import PortfolioHighlights from "../reusable/PortfolioHighlights";
 import ProductGallery from "../reusable/ProductGallery";
+import LandingPageProdAndSer from "./LandingPageProdAndSer";
 
 function LandingPageContent() {
   return (
@@ -65,6 +66,8 @@ function LandingPageContent() {
           </div>
         </div>
       </div>
+
+      <LandingPageProdAndSer />
 
       <div className="stat-counter">
         <div className="stat feature5">
