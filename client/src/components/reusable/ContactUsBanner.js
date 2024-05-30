@@ -13,7 +13,7 @@ function ContactUsBanner() {
               Write your concern to us and our specialist will get back to you.
             </p>
           </div>
-          <Link>Contact Us</Link>
+          <Link to={"/Contact"}>Contact Us</Link>
         </div>
       </div>
     </div>

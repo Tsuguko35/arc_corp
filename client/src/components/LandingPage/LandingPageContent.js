@@ -104,7 +104,7 @@ function LandingPageContent() {
               expertise and innovative solutions for your engineering needs.
             </p>
             <div className="action">
-              <Link>Inquire Now</Link>
+              <Link to={"/Services"}>Inquire Now</Link>
             </div>
           </div>
         </div>

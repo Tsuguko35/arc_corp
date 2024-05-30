@@ -22,7 +22,7 @@ function PortfolioHighlights() {
             more services.
           </p>
         </div>
-        <Link>Inquire Now</Link>
+        <Link to={"/Services"}>Inquire Now</Link>
       </div>
       <div className="portfolio-carousel">
         <div className="carousel">
@@ -68,7 +68,7 @@ function PortfolioHighlights() {
             <p>View our finest works here</p>
             <p>PORTFOLIO HIGHLIGHTS</p>
           </div>
-          <Link>View Portfolio</Link>
+          <Link to={"/Portfolio"}>View Portfolio</Link>
         </div>
       </div>
     </div>
