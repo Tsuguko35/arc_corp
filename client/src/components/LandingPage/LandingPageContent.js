@@ -56,7 +56,7 @@ function LandingPageContent() {
 
               <img
                 src={
-                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/mpnwmel4yla6pqnp6sfp.webp"
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717031739/Arc_Landing_Page/Content/vma1b0ljbc7xonxgdx4y.webp"
                 }
                 alt="company 2"
                 className="clear"
