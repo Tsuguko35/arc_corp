@@ -59,7 +59,7 @@ function LandingPageProdAndSer() {
           <div className="overlay"></div>
           <img
             src={
-              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/sbme1z3m6fl7hi259nfc.webp"
+              "https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             }
             alt=""
           />
