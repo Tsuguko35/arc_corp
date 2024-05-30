@@ -17,6 +17,7 @@ function App() {
       const features2 = document.querySelectorAll(".feature2");
       const features3 = document.querySelectorAll(".feature3");
       const features4 = document.querySelectorAll(".feature4");
+      const features5 = document.querySelectorAll(".feature5");
 
       features.forEach((feature) => {
         const featureBounding = feature.getBoundingClientRect();
@@ -44,6 +45,13 @@ function App() {
 
         if (featureBounding.top <= triggerPoint) {
           feature.classList.add("start-fade-right");
+        }
+      });
+      features5.forEach((feature) => {
+        const featureBounding = feature.getBoundingClientRect();
+
+        if (featureBounding.top <= triggerPoint) {
+          feature.classList.add("start-fade-in");
         }
       });
     };

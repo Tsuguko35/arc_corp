@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import {
   ClientReviews,
+  ContactUsBanner,
   LandingPageContent,
   LandingPageFooter,
   LandingPageHeader,
@@ -17,9 +18,10 @@ function LandingPage() {
       <LandingPageHeader />
 
       {/* Content */}
+      <LandingPageProdAndSer />
       <LandingPageContent />
       <ClientReviews />
-      <LandingPageProdAndSer />
+      <ContactUsBanner />
 
       {/* Footer */}
       <LandingPageFooter />

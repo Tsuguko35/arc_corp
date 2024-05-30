@@ -28,6 +28,9 @@ import Faq from "./reusable/Faq";
 import ContactUsContent from "./ContactUs/ContactUsContent";
 import ContactUsForm from "./reusable/ContactUsForm";
 import ProjectsContent from "./Portfolio/ProjectsContent";
+import PortfolioHighlights from "./reusable/PortfolioHighlights";
+import ProductGallery from "./reusable/ProductGallery";
+import ContactUsBanner from "./reusable/ContactUsBanner";
 
 export {
   LandingPageHeader,
@@ -60,4 +63,7 @@ export {
   ContactUsContent,
   ContactUsForm,
   ProjectsContent,
+  PortfolioHighlights,
+  ProductGallery,
+  ContactUsBanner,
 };

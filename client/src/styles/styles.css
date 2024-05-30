@@ -8,18 +8,22 @@
   --white-hover: #ebeaea;
   --mustard: #F4CE14;
   --background: #FFFFFF;
+  --bacground-2: #E4E2D9;
   --black: #060606;
   --grey: #45474b;
   --light-grey: #DCDCDC;
   --accent: #201c06;
   --accent-2: #008080;
   --accent-3: #BE7405;
+  --accent-4: #161C2D;
   --dark-blue: #150E40;
   --input-border: #9ea2ac;
   --input-fill: #ECECEC;
   --link-color: #0081FE;
   --tag-color: #916860;
   --form-background: #F1F1F1;
+  --stat-background: rgba(228, 226, 217, 0.25);
+  --company-feature-bg: rgba(225, 173, 0, 0.25);
 
   --hero-overlay-1: rgba(196, 195, 190, 0.57);
   --hero-overlay-2: rgba(151, 151, 151, 0.7);
@@ -82,7 +86,7 @@ body {
 }
 
 /* Animations */
-.feature, .feature2, .feature3, .feature4{
+.feature, .feature2, .feature3, .feature4, .feature5{
     opacity: 0;
 }
 
@@ -117,6 +121,20 @@ body {
 .start-fade-right{
   animation: fade-in-right 1s forwards;
 }
+
+.start-fade-in{
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 @keyframes fade-in-bottom {
     0% {

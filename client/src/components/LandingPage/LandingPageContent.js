@@ -2,6 +2,8 @@ import React from "react";
 import "../../styles/landingPageContent.css";
 
 import { Link } from "react-router-dom";
+import PortfolioHighlights from "../reusable/PortfolioHighlights";
+import ProductGallery from "../reusable/ProductGallery";
 
 function LandingPageContent() {
   return (
@@ -63,6 +65,58 @@ function LandingPageContent() {
           </div>
         </div>
       </div>
+
+      <div className="stat-counter">
+        <div className="stat feature5">
+          <p>80k+</p>
+          <p>Have transacted on ARC Corporation.</p>
+        </div>
+        <div className="stat feature5">
+          <p>92%</p>
+          <p>Satisfaction rate comes from our awesome customers.</p>
+        </div>
+        <div className="stat feature5">
+          <p>4.9/5.0</p>
+          <p>Average customer ratings we have got all over internet.</p>
+        </div>
+      </div>
+
+      <div className="company-feature">
+        <div className="image">
+          <img
+            src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/kmaylltcoskfapiyn5ic.webp"
+            alt="company-feature"
+          />
+        </div>
+        <div className="description ">
+          <div className="content feature4">
+            <p className="title">Arc Engineering</p>
+            <p className="desc">
+              Arc Engineering offers comprehensive engineering services for both
+              storm-related and standard projects. Our expert team conducts
+              thorough diagnostics to assess structural integrity, providing
+              precise solutions tailored to your needs.{" "}
+            </p>
+            <p className="desc">
+              From creating solar CADs to offering structural and electrical
+              stamping, we ensure your project meets the highest standards of
+              safety and efficiency. Trust Arc Engineering for reliable
+              expertise and innovative solutions for your engineering needs.
+            </p>
+            <div className="action">
+              <Link>Inquire Now</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="wrapper">
+        {/* Portfolio Highlights */}
+        <PortfolioHighlights />
+      </div>
+
+      {/* ProductGallery */}
+      <ProductGallery />
     </div>
   );
 }
