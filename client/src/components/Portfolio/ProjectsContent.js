@@ -42,7 +42,9 @@ function ProjectsContent() {
                 <p>Home Improvement</p>
               </div>
               <div className="action">
-                <Link>View Project</Link>
+                <Link to={`/Portfolio/Projects-Showcase/SingleFamilyHomes`}>
+                  View Project
+                </Link>
               </div>
             </div>
           </div>
@@ -66,7 +68,9 @@ function ProjectsContent() {
                 <p>Residential Complex Roofing</p>
               </div>
               <div className="action">
-                <Link>View Project</Link>
+                <Link to={`/Portfolio/Projects-Showcase/SingleFamilyHomes`}>
+                  View Project
+                </Link>
               </div>
             </div>
           </div>
@@ -90,7 +94,9 @@ function ProjectsContent() {
                 <p>Residential Complex Roofing</p>
               </div>
               <div className="action">
-                <Link>View Project</Link>
+                <Link to={`/Portfolio/Projects-Showcase/SingleFamilyHomes`}>
+                  View Project
+                </Link>
               </div>
             </div>
           </div>

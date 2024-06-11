@@ -1,17 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/navbar.css";
-import { Link, useLocation } from "react-router-dom";
-import { GetWindowWidth } from "../utils";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { GetWindowWidth, bottomNavItems } from "../utils";
 
 import { Sling as Hamburger } from "hamburger-react";
 
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 function NavBar() {
   const location = useLocation();
+  const navigate = useNavigate();
   const windowWidth = GetWindowWidth();
   const [hide, setHide] = useState(false);
   const prevScrollY = useRef(0);
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showHidden, setShowHidden] = useState(false);
+  const [hoveredNav, setHoveredNav] = useState("");
+  const navItems = bottomNavItems;
 
   useEffect(() => {
     if (sidebarOpen) {
@@ -48,8 +53,27 @@ function NavBar() {
     };
   }, []);
 
+  const handleMouseEnter = (item) => {
+    setShowHidden(true);
+    setHoveredNav(item);
+  };
+
+  const redirectToPageContent = (target) => {
+    setShowHidden(false);
+    navigate(target);
+  };
+
+  const resetState = () => {
+    setShowHidden(false);
+    setHoveredNav("");
+  };
+
   return (
-    <div id="navbar" className={`navbar ${hide ? "hide" : ""}`}>
+    <nav
+      id="navbar"
+      className={`navbar ${hide ? "hide" : ""}`}
+      onMouseLeave={() => resetState()}
+    >
       <div className="wrapper">
         <Link to={"/"} className="logo-container">
           <img
@@ -70,6 +94,7 @@ function NavBar() {
                   ? "active"
                   : ""
               }`}
+              onMouseEnter={() => resetState()}
             >
               Home
             </Link>
@@ -78,30 +103,34 @@ function NavBar() {
               className={`nav-item ${
                 location.pathname.includes("/Services") ? "active" : ""
               }`}
+              onMouseEnter={() => handleMouseEnter("Services")}
             >
-              Services
+              Services <MdKeyboardArrowDown />
             </Link>
             <Link
               to={"/Portfolio"}
               className={`nav-item ${
                 location.pathname.includes("/Portfolio") ? "active" : ""
               }`}
+              onMouseEnter={() => handleMouseEnter("Portfolio")}
             >
-              Portfolio
+              Portfolio <MdKeyboardArrowDown />
             </Link>
             <Link
               to={"/About"}
               className={`nav-item ${
                 location.pathname.includes("/About") ? "active" : ""
               }`}
+              onMouseEnter={() => handleMouseEnter("About Us")}
             >
-              About Us
+              About Us <MdKeyboardArrowDown />
             </Link>
             <Link
               to={"/Contact"}
               className={`nav-item ${
                 location.pathname.includes("/Contact") ? "active" : ""
               }`}
+              onMouseEnter={() => resetState()}
             >
               Contact Us
             </Link>
@@ -167,7 +196,58 @@ function NavBar() {
           </>
         )}
       </div>
-    </div>
+      <div className={`hidden-nav ${showHidden ? "show" : ""}`}>
+        <div className="wrapper">
+          <div className="title" style={{ opacity: hoveredNav ? 1 : 0 }}>
+            {hoveredNav ? hoveredNav : "Sub Menu"}
+          </div>
+          <div className="sub-nav">
+            <div className="content-nav">
+              {showHidden &&
+                navItems
+                  .filter((nav) => nav.title === hoveredNav)
+                  .map((nav) => (
+                    <React.Fragment key={nav.title}>
+                      {nav.items.map((item, index) => (
+                        <div
+                          className="nav-item"
+                          key={index}
+                          onClick={() =>
+                            redirectToPageContent(item.serviceTarget)
+                          }
+                        >
+                          <img
+                            src={item.serviceIcon}
+                            alt=""
+                            draggable={false}
+                          />
+                          <div className="title">
+                            <p>{item.serviceName}</p>
+                            <p className="desc">{item.serviceDesc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </React.Fragment>
+                  ))}
+            </div>
+            <div className="vertical-divider"></div>
+            <div className="quote-container">
+              <p className="title">Get A Quote</p>
+              <div className="quote">
+                <img
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718062199/Icons/Sub_Menu/Services/xwesrntxbvjc7zhceurj.webp"
+                  alt="quote img"
+                />
+              </div>
+              <p className="link">
+                Click here to get a quote{" "}
+                <Link to={`/Services#_getQuote`}>Learn more.</Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
 

@@ -75,13 +75,61 @@ function LandingPageProdAndSer() {
                 <div className="display-picture">
                   <img
                     src={
-                      "https://images.pexels.com/photos/9875418/pexels-photo-9875418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      "https://images.pexels.com/photos/314937/pexels-photo-314937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     }
                     alt="service"
                   />
                 </div>
                 <div className="service-details">
-                  <p className="service-name">TPO Roofing</p>
+                  <p className="service-name">Green Roof</p>
+                  <p className="service-description">
+                    Every unit, carton and pallet will be labeled by us as
+                    required. Rest easy knowing your shipments will arrive at
+                    their designated fulfillment centers as scheduled and on
+                    time
+                  </p>
+                  <div className="action">
+                    <Link>READ MORE</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-content">
+                <div className="display-picture">
+                  <img
+                    src={
+                      "https://mlovkzekrrny.i.optimole.com/cb:1Hzz.1ca7/w:320/h:180/q:mauto/f:best/https://www.americanhomecontractors.com/wp-content/uploads/2021/12/tesla-solar-roof-close.jpg"
+                    }
+                    alt="service"
+                  />
+                </div>
+                <div className="service-details">
+                  <p className="service-name">Solar Roofing (Tesla)</p>
+                  <p className="service-description">
+                    Every unit, carton and pallet will be labeled by us as
+                    required. Rest easy knowing your shipments will arrive at
+                    their designated fulfillment centers as scheduled and on
+                    time
+                  </p>
+                  <div className="action">
+                    <Link>READ MORE</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-content">
+                <div className="display-picture">
+                  <img
+                    src={
+                      "https://images.pexels.com/photos/5691639/pexels-photo-5691639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    }
+                    alt="service"
+                  />
+                </div>
+                <div className="service-details">
+                  <p className="service-name">Home Building</p>
                   <p className="service-description">
                     Every unit, carton and pallet will be labeled by us as
                     required. Rest easy knowing your shipments will arrive at
@@ -105,7 +153,7 @@ function LandingPageProdAndSer() {
                   />
                 </div>
                 <div className="service-details">
-                  <p className="service-name">TPO Roofing</p>
+                  <p className="service-name">Eng. Sevice (Solar/Insurance)</p>
                   <p className="service-description">
                     Every unit, carton and pallet will be labeled by us as
                     required. Rest easy knowing your shipments will arrive at
@@ -129,7 +177,7 @@ function LandingPageProdAndSer() {
                   />
                 </div>
                 <div className="service-details">
-                  <p className="service-name">TPO Roofing</p>
+                  <p className="service-name">Nono</p>
                   <p className="service-description">
                     Every unit, carton and pallet will be labeled by us as
                     required. Rest easy knowing your shipments will arrive at
@@ -153,7 +201,7 @@ function LandingPageProdAndSer() {
                   />
                 </div>
                 <div className="service-details">
-                  <p className="service-name">TPO Roofing</p>
+                  <p className="service-name">Solar Property Guarantee</p>
                   <p className="service-description">
                     Every unit, carton and pallet will be labeled by us as
                     required. Rest easy knowing your shipments will arrive at
@@ -177,7 +225,7 @@ function LandingPageProdAndSer() {
                   />
                 </div>
                 <div className="service-details">
-                  <p className="service-name">TPO Roofing</p>
+                  <p className="service-name">One Click Roof</p>
                   <p className="service-description">
                     Every unit, carton and pallet will be labeled by us as
                     required. Rest easy knowing your shipments will arrive at
@@ -201,7 +249,7 @@ function LandingPageProdAndSer() {
                   />
                 </div>
                 <div className="service-details">
-                  <p className="service-name">TPO Roofing</p>
+                  <p className="service-name">Detach & Reset Solar</p>
                   <p className="service-description">
                     Every unit, carton and pallet will be labeled by us as
                     required. Rest easy knowing your shipments will arrive at
@@ -225,7 +273,7 @@ function LandingPageProdAndSer() {
                   />
                 </div>
                 <div className="service-details">
-                  <p className="service-name">TPO Roofing</p>
+                  <p className="service-name">Roofing in a Box</p>
                   <p className="service-description">
                     Every unit, carton and pallet will be labeled by us as
                     required. Rest easy knowing your shipments will arrive at

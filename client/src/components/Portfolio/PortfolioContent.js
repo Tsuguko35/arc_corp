@@ -58,43 +58,18 @@ function PortfolioContent() {
 
         <div className="company-skills feature">
           <div className="label">
-            <div className="title">Core Design Skills</div>
+            <div className="title">Core Construction Skills</div>
             <div className="desc">
-              I excel in essential design skills, creating visually stunning and
-              functional digital experiences. From UI design to UX research, my
-              passion is to craft effective and memorable digital solutions.
+              ARC Solutions stands out as a leader in the roofing industry, with
+              top-tier skills in innovation, sustainability, quality
+              craftsmanship, and customer service. Their commitment to
+              excellence and environmental responsibility makes them a trusted
+              and forward-thinking partner for any roofing project.
             </div>
           </div>
           <div className="skills-grid">
             <div className="skill">
-              <span className="skill-name">Interaction Design</span>
-              <div className="progress-group">
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: "60%" }}></div>
-                </div>
-                <span className="percentage">60%</span>
-              </div>
-            </div>
-            <div className="skill">
-              <span className="skill-name">Figma</span>
-              <div className="progress-group">
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: "95%" }}></div>
-                </div>
-                <span className="percentage">95%</span>
-              </div>
-            </div>
-            <div className="skill">
-              <span className="skill-name">Usability Testing</span>
-              <div className="progress-group">
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: "70%" }}></div>
-                </div>
-                <span className="percentage">70%</span>
-              </div>
-            </div>
-            <div className="skill">
-              <span className="skill-name">Prototyping</span>
+              <span className="skill-name">Innovation</span>
               <div className="progress-group">
                 <div className="progress-bar">
                   <div className="progress" style={{ width: "80%" }}></div>
@@ -103,21 +78,48 @@ function PortfolioContent() {
               </div>
             </div>
             <div className="skill">
-              <span className="skill-name">User Research</span>
+              <span className="skill-name">Customer Service</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "45%" }}></div>
+                  <div className="progress" style={{ width: "95%" }}></div>
                 </div>
-                <span className="percentage">45%</span>
+                <span className="percentage">95%</span>
               </div>
             </div>
             <div className="skill">
-              <span className="skill-name">Information Architecture</span>
+              <span className="skill-name">Sustainability</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "50%" }}></div>
+                  <div className="progress" style={{ width: "98%" }}></div>
                 </div>
-                <span className="percentage">50%</span>
+                <span className="percentage">98%</span>
+              </div>
+            </div>
+            <div className="skill">
+              <span className="skill-name">Project Management</span>
+              <div className="progress-group">
+                <div className="progress-bar">
+                  <div className="progress" style={{ width: "80%" }}></div>
+                </div>
+                <span className="percentage">80%</span>
+              </div>
+            </div>
+            <div className="skill">
+              <span className="skill-name">Quality Craftsmanship</span>
+              <div className="progress-group">
+                <div className="progress-bar">
+                  <div className="progress" style={{ width: "90%" }}></div>
+                </div>
+                <span className="percentage">90%</span>
+              </div>
+            </div>
+            <div className="skill">
+              <span className="skill-name">Safety Standards</span>
+              <div className="progress-group">
+                <div className="progress-bar">
+                  <div className="progress" style={{ width: "100%" }}></div>
+                </div>
+                <span className="percentage">100%</span>
               </div>
             </div>
           </div>

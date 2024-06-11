@@ -5,7 +5,10 @@ import {
   MemberProfile,
   Portfolio,
   Product,
+  ProductQuote,
+  ProjectDetails,
   Projects,
+  ProjectsShowcase,
   RequestQuote,
   ServiceCommercial,
   ServiceResidential,
@@ -38,6 +41,10 @@ const routes = [
     component: <Product />,
   },
   {
+    path: "/Services/Quote/:productType",
+    component: <ProductQuote />,
+  },
+  {
     path: "/Portfolio",
     component: <Portfolio />,
   },
@@ -56,6 +63,18 @@ const routes = [
   {
     path: "/Portfolio/Projects/:projectType",
     component: <Projects />,
+  },
+  {
+    path: "/Portfolio/Projects/:projectType",
+    component: <Projects />,
+  },
+  {
+    path: "/Portfolio/Projects-Showcase/:projectType",
+    component: <ProjectsShowcase />,
+  },
+  {
+    path: "/Portfolio/Projects-Showcase/Details/:projectType",
+    component: <ProjectDetails />,
   },
 ];
 

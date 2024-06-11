@@ -9,6 +9,9 @@ import AboutUs from "./AboutUs";
 import MemberProfile from "./MemberProfile";
 import ContactUs from "./ContactUs";
 import Projects from "./Projects";
+import ProductQuote from "./ProductQuote";
+import ProjectsShowcase from "./ProjectsShowcase";
+import ProjectDetails from "./ProjectDetails";
 
 export {
   LandingPage,
@@ -22,4 +25,7 @@ export {
   MemberProfile,
   ContactUs,
   Projects,
+  ProductQuote,
+  ProjectsShowcase,
+  ProjectDetails,
 };

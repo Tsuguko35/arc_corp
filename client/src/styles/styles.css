@@ -16,6 +16,7 @@
   --accent-2: #008080;
   --accent-3: #BE7405;
   --accent-4: #161C2D;
+  --accent-5: #97A3B7;
   --dark-blue: #150E40;
   --input-border: #9ea2ac;
   --input-fill: #ECECEC;
@@ -31,6 +32,7 @@
   --hero-overlay-dark1: rgba(69, 69, 69, 0.69);
   --hero-overlay-dark2: rgba(41, 41, 38, 0.7);
   --hero-overlay-dark3: rgba(32, 28, 6, 0.9);
+  --hero-overlay-dark4: rgba(0, 0, 0, 0.3);
   --image-overlay-1: rgba(214, 174, 48, 0.6);
 }
 

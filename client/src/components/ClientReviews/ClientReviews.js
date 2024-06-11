@@ -56,7 +56,7 @@ function ClientReviews() {
   };
   return (
     <div id="clientReviews" className="clientReviews feature">
-      <div className="wrapper">
+      <div id="_Reviews" className="wrapper">
         <span className="title">What Our Clients Say About Us</span>
         <div className="reviews-container">
           <Slider {...settings}>

@@ -31,6 +31,10 @@ import ProjectsContent from "./Portfolio/ProjectsContent";
 import PortfolioHighlights from "./reusable/PortfolioHighlights";
 import ProductGallery from "./reusable/ProductGallery";
 import ContactUsBanner from "./reusable/ContactUsBanner";
+import ProductQuoteContent from "./Services/ProductQuoteContent";
+import ProductQuoteForm from "./reusable/ProductQuoteForm";
+import ProjectsShowcaseContent from "./Portfolio/ProjectsShowcaseContent";
+import ProjectDetailsContent from "./Portfolio/ProjectDetailsContent";
 
 export {
   LandingPageHeader,
@@ -66,4 +70,8 @@ export {
   PortfolioHighlights,
   ProductGallery,
   ContactUsBanner,
+  ProductQuoteContent,
+  ProductQuoteForm,
+  ProjectsShowcaseContent,
+  ProjectDetailsContent,
 };

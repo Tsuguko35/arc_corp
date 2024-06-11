@@ -20,8 +20,8 @@ function MainFooter() {
           <div className="address">
             <p>12978 SW 132nd Ave, Miami, FL, United States, Florida</p>
             <div className="contact-info">
-              <p>+1 305-383-2626</p>
-              <p>info@arcroofingco.com</p>
+              <p>(866) 847-7972</p>
+              <p>info@goarccorp.com</p>
             </div>
           </div>
         </div>
@@ -31,10 +31,10 @@ function MainFooter() {
             <div className="container">
               <div className="nav">
                 <Link to={"/"}>Home</Link>
-                <Link>About Us</Link>
-                <Link>Services</Link>
-                <Link>Portfolio</Link>
-                <Link>Contact</Link>
+                <Link to={"/About"}>About Us</Link>
+                <Link to={"/Services"}>Services</Link>
+                <Link to={"/Portfolio"}>Portfolio</Link>
+                <Link to={"/Contact"}>Contact</Link>
               </div>
               <div className="socials">
                 <Link

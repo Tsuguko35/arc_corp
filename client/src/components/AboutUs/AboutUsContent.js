@@ -28,7 +28,7 @@ function AboutUsContent() {
   return (
     <div id="aboutUsContent" className="aboutUsContent">
       <div className="wrapper">
-        <div className="about-details feature4">
+        <div id="_OurCompany" className="about-details feature4">
           <div className="image">
             <img src={about_image1} alt="" />
           </div>
@@ -65,7 +65,7 @@ function AboutUsContent() {
           </div>
         </div>
 
-        <div className="team-details">
+        <div id="_Team" className="team-details">
           <p className="label">Meet The Team</p>
           <div className="team-member feature3">
             <div className="image">
@@ -141,7 +141,7 @@ function AboutUsContent() {
           </div>
         </div>
       </div>
-      <div className="hero">
+      <div id="_Dealer" className="hero">
         <div className="background">
           <div className="overlay"></div>
           <img src={hero_image} alt="" />

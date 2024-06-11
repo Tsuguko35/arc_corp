@@ -2,12 +2,13 @@ import React from "react";
 import "../../styles/productContent.css";
 import RoofCarousel from "../reusable/RoofCarousel";
 import { residentialItems } from "../../utils";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { IoIosArrowBack } from "react-icons/io";
 
 function ProductContent() {
   const roofItems = residentialItems;
+  const { productType } = useParams();
   return (
     <div id="productContent" className="productContent">
       <div className="wrapper">
@@ -27,7 +28,7 @@ function ProductContent() {
           <div className="product-details start-fade-bottom">
             <div className="title-action">
               <p className="title">ARC Copper Roofing</p>
-              <Link to={"/RequestQuote"}>Get a Quote</Link>
+              <Link to={`/Services/Quote/${productType}`}>Get a Quote</Link>
             </div>
             <p className="description">
               Arc Roofing Corporation boasts metal roofing specialists with

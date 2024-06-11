@@ -9,7 +9,7 @@ function ServicesContent() {
   return (
     <div id="servicesContent" className="servicesContent">
       <div className="wrapper">
-        <div className="text-content feature">
+        <div id="_RoofingContractor" className="text-content feature">
           <p className="header">Why Choose Us</p>
           <div className="text">
             <p className="description">
@@ -34,7 +34,7 @@ function ServicesContent() {
         {/* Key Points */}
         <ServiceKeyPoints keypoints={keypoints} />
 
-        <div className="text-content">
+        <div id="_ArcEngineering" className="text-content">
           <p className="header">Arc Engineering</p>
           <div className="text">
             <p className="description">
@@ -136,7 +136,7 @@ function ServicesContent() {
           </div>
         </div>
 
-        <div className="text-content feature">
+        <div id="_GeneralConstruction" className="text-content feature">
           <p className="header">ARC Standard & Homes</p>
           <div className="text">
             <p className="description">

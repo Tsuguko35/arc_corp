@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { routes } from "./config";
 
 import "./styles/styles.css";
@@ -9,6 +9,28 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from "react";
 
 function App() {
+  //Sub Menu
+  const location = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      const hash = location.hash;
+      if (hash) {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          const offset = 100;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }
+    }, 300);
+  }, [location]);
+
   // Animations
   useEffect(() => {
     const handleScroll = () => {
