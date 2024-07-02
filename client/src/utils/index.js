@@ -8,6 +8,7 @@ import {
 import { residentialProducts, commercialProducts } from "./products";
 import { residentialItems } from "./roofCarouselItems";
 import bottomNavItems from "./bottomNavItems";
+import faqQuestions from "./faqQuestions";
 
 export {
   GetWindowWidth,
@@ -19,4 +20,5 @@ export {
   commercialProducts,
   portfolioKeyPoints,
   bottomNavItems,
+  faqQuestions,
 };

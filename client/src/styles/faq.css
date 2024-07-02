@@ -90,7 +90,7 @@
 }
 
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq.active > .text-container{
-    height: 100px;
+    height: 200px;
 }
 
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq > .text-container > .question{
@@ -191,9 +191,7 @@
 }
 
 @media only screen and (max-width: 451px){
-    #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq.active > .text-container{
-        height: 130px;
-    }
+    
     #faq > .wrapper > .faq-container > .image{
         width: 100%;
     }
@@ -203,12 +201,14 @@
     #faq > .wrapper > .faq-container > .faq-content > .title{
         font-size: 24px;
     }
+
+    #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq > .text-container{
+        height: 60px;
+    }
 }
 
 @media only screen and (max-width: 340px){
-    #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq.active > .text-container{
-        height: 150px;
-    }
+    
 
     #faq > .wrapper > .faq-container > .faq-content > .title{
         font-size: 20px;
