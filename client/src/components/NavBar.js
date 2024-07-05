@@ -6,6 +6,7 @@ import { GetWindowWidth, bottomNavItems } from "../utils";
 import { Sling as Hamburger } from "hamburger-react";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { routes } from "../config";
 
 function NavBar() {
   const location = useLocation();
@@ -68,6 +69,22 @@ function NavBar() {
     setHoveredNav("");
   };
 
+  const isActive = !routes.some((route) => {
+    let isEqual = false;
+    if (location.pathname.includes("/Services/Quote/")) {
+      isEqual = location.pathname
+        .toLowerCase()
+        .includes(route.path.toLowerCase());
+    } else if (location.pathname.includes("/Portfolio/Projects/")) {
+      isEqual = location.pathname
+        .toLowerCase()
+        .includes(route.path.toLowerCase());
+    } else {
+      isEqual = location.pathname.toLowerCase() === route.path.toLowerCase();
+    }
+    return isEqual;
+  });
+
   return (
     <nav
       id="navbar"
@@ -90,7 +107,8 @@ function NavBar() {
               to={"/"}
               className={`nav-item ${
                 location.pathname === "/" ||
-                location.pathname === "/RequestQuote"
+                location.pathname.toLowerCase() === "/requestquote" ||
+                isActive
                   ? "active"
                   : ""
               }`}
@@ -101,7 +119,10 @@ function NavBar() {
             <Link
               to={"/Services"}
               className={`nav-item ${
-                location.pathname.includes("/Services") ? "active" : ""
+                location.pathname.toLowerCase() === "/services" ||
+                location.pathname.toLowerCase().includes("/services/")
+                  ? "active"
+                  : ""
               }`}
               onMouseEnter={() => handleMouseEnter("Services")}
             >
@@ -110,7 +131,7 @@ function NavBar() {
             <Link
               to={"/Portfolio"}
               className={`nav-item ${
-                location.pathname.includes("/Portfolio") ? "active" : ""
+                location.pathname.toLowerCase() === "/portfolio" ? "active" : ""
               }`}
               onMouseEnter={() => handleMouseEnter("Portfolio")}
             >
@@ -119,7 +140,7 @@ function NavBar() {
             <Link
               to={"/About"}
               className={`nav-item ${
-                location.pathname.includes("/About") ? "active" : ""
+                location.pathname.toLowerCase() === "/about" ? "active" : ""
               }`}
               onMouseEnter={() => handleMouseEnter("About Us")}
             >
@@ -128,7 +149,7 @@ function NavBar() {
             <Link
               to={"/Contact"}
               className={`nav-item ${
-                location.pathname.includes("/Contact") ? "active" : ""
+                location.pathname.toLowerCase() === "/contact" ? "active" : ""
               }`}
               onMouseEnter={() => resetState()}
             >
@@ -156,7 +177,8 @@ function NavBar() {
                 to={"/"}
                 className={`nav-item ${
                   location.pathname === "/" ||
-                  location.pathname === "/RequestQuote"
+                  location.pathname.toLowerCase() === "/requestquote" ||
+                  isActive
                     ? "active"
                     : ""
                 }`}
@@ -166,7 +188,10 @@ function NavBar() {
               <Link
                 to={"/Services"}
                 className={`nav-item ${
-                  location.pathname.includes("/Services") ? "active" : ""
+                  location.pathname.toLowerCase() === "/services" ||
+                  location.pathname.toLowerCase().includes("/services/")
+                    ? "active"
+                    : ""
                 }`}
               >
                 Services
@@ -174,7 +199,9 @@ function NavBar() {
               <Link
                 to={"/Portfolio"}
                 className={`nav-item ${
-                  location.pathname.includes("/Portfolio") ? "active" : ""
+                  location.pathname.toLowerCase() === "/portfolio"
+                    ? "active"
+                    : ""
                 }`}
               >
                 Portfolio
@@ -182,7 +209,7 @@ function NavBar() {
               <Link
                 to={"/About"}
                 className={`nav-item ${
-                  location.pathname.includes("/About") ? "active" : ""
+                  location.pathname.toLowerCase() === "/about" ? "active" : ""
                 }`}
               >
                 About Us
@@ -190,7 +217,7 @@ function NavBar() {
               <Link
                 to={"/Contact"}
                 className={`nav-item ${
-                  location.pathname.includes("/Contact") ? "active" : ""
+                  location.pathname.toLowerCase() === "/contact" ? "active" : ""
                 }`}
               >
                 Contact Us

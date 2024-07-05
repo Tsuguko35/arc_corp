@@ -36,40 +36,33 @@ const bottomNavItems = [
     title: "Portfolio",
     items: [
       {
+        serviceTarget: "/Portfolio#_Services",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718063746/Icons/Sub_Menu/Portfoio/kvuuubebtzqfj0v4x4nv.webp",
-        serviceName: "Residential Projects",
-        serviceDesc: "A comprehensive roofing installation...",
+        serviceName: "Services",
+        serviceDesc:
+          "Explore our diverse project portfolio showcasing Arc Roofing Corporation's expertise across residential, commercial, and specialty roofing projects.",
       },
       {
+        serviceTarget: "/Portfolio#_Projects",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718063746/Icons/Sub_Menu/Portfoio/rqlhcclp4xcwhnwtse55.webp",
-        serviceName: "Educational Project",
-        serviceDesc: "Installation of a sustainable, weather...",
+        serviceName: "Projects",
+        serviceDesc: "Showcase of Arc's Projects",
       },
       {
+        serviceTarget: "/Portfolio#_Statistics",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718063746/Icons/Sub_Menu/Portfoio/ykg7ocp8ewjx7so9qvx7.webp",
-        serviceName: "Commercial Project",
-        serviceDesc: "A large-scale roofing project...",
+        serviceName: "Statistical Reports",
+        serviceDesc: "Explore our commitment to excellence through real data.",
       },
       {
+        serviceTarget: "/Portfolio#_Reviews",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718063746/Icons/Sub_Menu/Portfoio/kvlgpail22jtscevvhy0.webp",
-        serviceName: "Public Infrastructure Project",
+        serviceName: "Client Reviews",
         serviceDesc: "Development of a robust and durable roofing system",
-      },
-      {
-        serviceIcon:
-          "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718063746/Icons/Sub_Menu/Portfoio/vorhcyxzaf9njkywvvpu.webp",
-        serviceName: "Industrial Project",
-        serviceDesc: "Complete roofing system overhaul",
-      },
-      {
-        serviceIcon:
-          "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718063746/Icons/Sub_Menu/Portfoio/gxzcvhlthhfoxrhedbt9.webp",
-        serviceName: "Retail Project",
-        serviceDesc: "Renovation of the roofing system...",
       },
     ],
   },

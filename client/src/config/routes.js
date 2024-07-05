@@ -21,6 +21,10 @@ const routes = [
     component: <LandingPage />,
   },
   {
+    path: "/*",
+    component: <LandingPage />,
+  },
+  {
     path: "/RequestQuote",
     component: <RequestQuote />,
   },
@@ -36,10 +40,10 @@ const routes = [
     path: "/Services/Commercial",
     component: <ServiceCommercial />,
   },
-  {
-    path: "/Services/:productType",
-    component: <Product />,
-  },
+  // {
+  //   path: "/Services/:productType",
+  //   component: <Product />,
+  // },
   {
     path: "/Services/Quote/:productType",
     component: <ProductQuote />,
@@ -52,10 +56,10 @@ const routes = [
     path: "/About",
     component: <AboutUs />,
   },
-  {
-    path: "/About/Profile/:teamMember",
-    component: <MemberProfile />,
-  },
+  // {
+  //   path: "/About/Profile/:teamMember",
+  //   component: <MemberProfile />,
+  // },
   {
     path: "/Contact",
     component: <ContactUs />,
