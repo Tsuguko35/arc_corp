@@ -29,6 +29,7 @@
   --hero-overlay-1: rgba(196, 195, 190, 0.57);
   --hero-overlay-2: rgba(151, 151, 151, 0.5);
   --hero-overlay-3: rgba(151, 151, 151, 0.5);
+  --hero-overlay-4: rgba(151, 151, 151, 0.6);
   --hero-overlay-dark1: rgba(69, 69, 69, 0.69);
   --hero-overlay-dark2: rgba(41, 41, 38, 0.7);
   --hero-overlay-dark3: rgba(32, 28, 6, 0.9);
@@ -83,16 +84,27 @@ body {
   position: fixed;
   right: 40px;
   bottom: 40px;
-  width: 60px;
+  width: 190px;
   height: 60px;
   background-color: #006AFF;
-  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
   display: flex;
+  padding-inline: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   z-index: 999999;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.1s ease-in;
+}
+
+.messenger.mobile{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  padding: 0;
 }
 
 .messenger:hover{
@@ -100,6 +112,11 @@ body {
 }
 
 .messenger > svg{
+  width: 40px;
+  height: 40px;
+}
+
+.messenger.mobile > svg{
   width: 55%;
   height: 55%;
 }
@@ -261,3 +278,10 @@ body {
       opacity: 1;
     }
   }
+
+@media only screen and (max-width: 767px){
+    .messenger{
+        right: 20px;
+        bottom: 20px;
+    }
+}

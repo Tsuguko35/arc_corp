@@ -84,7 +84,7 @@ function NavBar() {
             className="logo"
           />
         </Link>
-        {windowWidth > 1024 && (
+        {windowWidth > 1080 && (
           <div className="nav-menu">
             <Link
               to={"/"}
@@ -134,9 +134,12 @@ function NavBar() {
             >
               Contact Us
             </Link>
+            <Link className="request-quote" to={"/RequestQuote"}>
+              Request a quote
+            </Link>
           </div>
         )}
-        {windowWidth <= 1024 && (
+        {windowWidth <= 1080 && (
           <>
             <div
               className="hamburgerMenu"
@@ -191,6 +194,9 @@ function NavBar() {
                 }`}
               >
                 Contact Us
+              </Link>
+              <Link className="request-quote" to={"/RequestQuote"}>
+                Request a quote
               </Link>
             </div>
           </>

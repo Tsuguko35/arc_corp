@@ -3,12 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, useLocation } from "react-router-dom";
-
-/* Import locomotive-scroll */
-import LocomotiveScroll from "locomotive-scroll";
-
-/* Locomotive scroll instance */
-const locomotiveScroll = new LocomotiveScroll();
+import { locomotiveScroll } from "./config";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
