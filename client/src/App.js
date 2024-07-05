@@ -85,7 +85,7 @@ function App() {
   }, []);
 
   return (
-    <div data-scroll-container>
+    <div id="scroll-container" data-scroll-container>
       {/* Facebook Messenger */}
       <FacebookMsg />
 

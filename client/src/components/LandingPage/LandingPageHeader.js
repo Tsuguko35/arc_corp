@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../../styles/landingPageHeader.css";
 
-import * as fiIcons from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
-import InfiniteCarousel from "react-leaf-carousel";
+import { FaArrowDown } from "react-icons/fa6";
+import { MdEmail, MdPhone } from "react-icons/md";
+import LocomotiveScroll from "locomotive-scroll";
+import { locomotiveScroll } from "../../config";
 
 function LandingPageHeader() {
   const navigate = useNavigate();
@@ -68,20 +70,33 @@ function LandingPageHeader() {
     });
   }, [currentVideoIndex]);
 
+  const scrollDown = () => {
+    const target = document.getElementById("landingPageProdAndSer");
+    locomotiveScroll.scrollTo(target, {
+      duration: 3,
+    });
+  };
+
   return (
     <header id="landingPageHeader" className="landingPageHeader">
       <div className="wrapper">
-        <div className="overlay start-slide-left"></div>
+        <div className="overlay"></div>
         <div className="text-content start-fade-bottom-delay">
-          <p className="header-text">“We Build America”</p>
+          <div className="header-text">
+            <p className="top">
+              We <span className="highlight">Build</span> America
+            </p>
+          </div>
           <p className="sub-text">
             Elevating Your Home's Protection with Precision Construction
           </p>
+          <div className="quick-action-group">
+            <MdPhone onClick={() => navigate(`/Contact`)} />
+            <MdEmail onClick={() => scrollToFooter()} />
+          </div>
           <div className="stack start-flip-top">
-            <Link to={"/RequestQuote"}>Request a Quote</Link>
-            <div className="quick-action-group">
-              <fiIcons.FiPhone onClick={() => navigate(`/Contact`)} />
-              <fiIcons.FiMail onClick={() => scrollToFooter()} />
+            <div className="circle" onClick={scrollDown}>
+              <FaArrowDown />
             </div>
           </div>
         </div>
