@@ -13,7 +13,7 @@ function RequestQuoteContent() {
           <div className="overlay"></div>
           <img
             src={
-              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590208/Arc_Landing_Page/Content/sbme1z3m6fl7hi259nfc.webp"
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720135144/Arc_Landing_Page/Content/sfgx4hq66auucsxmegxa.webp"
             }
             alt="background"
           />
@@ -120,9 +120,7 @@ function RequestQuoteContent() {
                 </p>
               </div>
             </div>
-            <div className="action">
-              <Link>Learn More.</Link>
-            </div>
+            <div className="action">{/* <Link>Learn More.</Link> */}</div>
           </div>
         </div>
       </div>

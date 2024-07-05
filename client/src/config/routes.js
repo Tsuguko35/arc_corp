@@ -64,18 +64,14 @@ const routes = [
     path: "/Portfolio/Projects/:projectType",
     component: <Projects />,
   },
-  {
-    path: "/Portfolio/Projects/:projectType",
-    component: <Projects />,
-  },
-  {
-    path: "/Portfolio/Projects-Showcase/:projectType",
-    component: <ProjectsShowcase />,
-  },
-  {
-    path: "/Portfolio/Projects-Showcase/Details/:projectType",
-    component: <ProjectDetails />,
-  },
+  // {
+  //   path: "/Portfolio/Projects-Showcase/:projectType",
+  //   component: <ProjectsShowcase />,
+  // },
+  // {
+  //   path: "/Portfolio/Projects-Showcase/Details/:projectType",
+  //   component: <ProjectDetails />,
+  // },
 ];
 
 export default routes;

@@ -1,15 +1,15 @@
 import React from "react";
 import "../../styles/serviceComContent.css";
-import { commercialKeyPoints } from "../../utils";
+import { commercialItems, commercialKeyPoints } from "../../utils";
 import ServiceKeyPoints from "../reusable/ServiceKeyPoints";
 import ProductGrid from "../reusable/ProductGrid";
-import { residentialItems, commercialProducts } from "../../utils";
+import { commercialProducts } from "../../utils";
 import RoofCarousel from "../reusable/RoofCarousel";
 
 function CommercialContent() {
   const keypoints = commercialKeyPoints;
   const products = commercialProducts;
-  const roofItems = residentialItems;
+  const roofItems = commercialItems;
   return (
     <div id="commercialContent" className="commercialContent">
       <div className="wrapper">

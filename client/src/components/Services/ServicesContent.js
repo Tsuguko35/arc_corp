@@ -50,7 +50,7 @@ function ServicesContent() {
             <div className="image">
               <img
                 src={
-                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/kmaylltcoskfapiyn5ic.webp"
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137782/Arc_Services/jlx8a87kc2wgjpj6nqqi.webp"
                 }
                 alt="SerImage 1"
               />
@@ -107,7 +107,7 @@ function ServicesContent() {
             <div className="image">
               <img
                 src={
-                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/niarb5nq9x7m4gxxbtey.webp"
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720136400/Arc_Landing_Page/Content/sxerauozxq9c5e2goofb.webp"
                 }
                 alt="SerImage 2"
               />

@@ -47,7 +47,7 @@ function LandingPageContent() {
                   <div className="overlay"></div>
                   <img
                     src={
-                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/xcjdtwd2qlqhobcs9s7f.webp"
+                      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720135144/Arc_Landing_Page/Content/sfgx4hq66auucsxmegxa.webp"
                     }
                     alt="company 1"
                     className="with-overlay"
@@ -57,7 +57,7 @@ function LandingPageContent() {
 
               <img
                 src={
-                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717031739/Arc_Landing_Page/Content/vma1b0ljbc7xonxgdx4y.webp"
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720135144/Arc_Landing_Page/Content/idgxmajyce52lhqmw9mz.webp"
                 }
                 alt="company 2"
                 className="clear"
@@ -87,7 +87,7 @@ function LandingPageContent() {
       <div className="company-feature">
         <div className="image">
           <img
-            src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/kmaylltcoskfapiyn5ic.webp"
+            src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720136967/Arc_Landing_Page/Content/ustjyrvi8mesckbwlpq0.webp"
             alt="company-feature"
           />
         </div>

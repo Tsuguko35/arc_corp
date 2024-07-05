@@ -2,7 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { routes } from "./config";
 
 import "./styles/styles.css";
-import { NavBar } from "./components";
+import { FacebookMsg, NavBar } from "./components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -84,12 +84,11 @@ function App() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [pathname]);
   return (
     <div data-scroll-container>
-      {/* <LoadingBar color="#F4CE14" progress={progress} height={5} /> */}
+      {/* Facebook Messenger */}
+      <FacebookMsg />
+
       {/* Navigation Bar */}
       <NavBar />
 

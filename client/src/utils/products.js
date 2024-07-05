@@ -17,39 +17,9 @@ const residentialProducts = [
     image: copperRoof1,
     label: "Copper Roofing",
   },
-  {
-    link: "/Services/CopperRoofing",
-    image: copperRoof1,
-    label: "Copper Roofing",
-  },
-  {
-    link: "/Services/CopperRoofing",
-    image: copperRoof1,
-    label: "Copper Roofing",
-  },
-  {
-    link: "/Services/CopperRoofing",
-    image: copperRoof1,
-    label: "Copper Roofing",
-  },
 ];
 
 const commercialProducts = [
-  {
-    link: "/Services/CopperRoofing",
-    image: copperRoof1,
-    label: "Copper Roofing",
-  },
-  {
-    link: "/Services/CopperRoofing",
-    image: copperRoof1,
-    label: "Copper Roofing",
-  },
-  {
-    link: "/Services/CopperRoofing",
-    image: copperRoof1,
-    label: "Copper Roofing",
-  },
   {
     link: "/Services/CopperRoofing",
     image: copperRoof1,

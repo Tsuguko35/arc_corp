@@ -4,8 +4,6 @@ import "../../styles/aboutUsContent.css";
 import { Link } from "react-router-dom";
 
 function AboutUsContent() {
-  const about_image1 =
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423795/Arc_About/bpaynrq1xeoaar6scgjz.webp";
   const william =
     "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423796/Arc_About/e0kaorobafb6s3k4mj2z.webp";
   const amanda =
@@ -30,7 +28,12 @@ function AboutUsContent() {
       <div className="wrapper">
         <div id="_OurCompany" className="about-details feature4">
           <div className="image">
-            <img src={about_image1} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720136717/Arc_Landing_Page/Content/xzgmmuctdth0cymxgifa.webp"
+              }
+              alt=""
+            />
           </div>
           <div className="company-details">
             <div className="label">
@@ -46,9 +49,9 @@ function AboutUsContent() {
                 building, and commercial property development.
               </p>
               <div className="actions">
-                <p className="active">Company</p>
-                <p>Services</p>
-                <p>Our Team</p>
+                <Link className="active">Company</Link>
+                <Link to={"/Services"}>Services</Link>
+                <Link to={"/About#_Team"}>Our Team</Link>
               </div>
             </div>
             <div className="description">
@@ -59,9 +62,9 @@ function AboutUsContent() {
               craftsmanship and exceptional customer satisfaction in every
               project.
             </div>
-            <div className="action">
+            {/* <div className="action">
               <p>Learn More.</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -84,9 +87,9 @@ function AboutUsContent() {
                 revolutionize the energy landscape and deliver exceptional solar
                 power services to our customers
               </p>
-              <div className="action">
+              {/* <div className="action">
                 <Link to={"/About/Profile/WilliamBeliles"}>Learn More.</Link>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -109,9 +112,9 @@ function AboutUsContent() {
                 their flexibility. Her goal is conserve energy for a better
                 Earth and guide others on their solar journey.
               </p>
-              <div className="action">
+              {/* <div className="action">
                 <Link to={"/About/Profile/WilliamBeliles"}>Learn More.</Link>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -122,21 +125,30 @@ function AboutUsContent() {
             <div className="member-details">
               <div className="name-position">
                 <p className="name">Bill Hicks</p>
-                <p className="position">Vice President of Dealer Relations</p>
+                <p className="position">
+                  Senior Vice President of Sales & Marketing
+                </p>
               </div>
               <p className="description">
-                Meet Bill Hicks, our dedicated Vice President of Dealer
-                Relations. With a passion for building strong partnerships, Bill
-                excels in fostering lasting relationships with our dealers.
-                Outside of work, he is a committed father and an active
-                community member, often volunteering at local events. Bill's
-                goal is to ensure seamless collaboration with our dealers,
-                helping them thrive and succeed in the solar industry while
-                promoting sustainable energy solutions.
+                Bill Hicks is an accomplished sales and marketing executive with
+                extensive experience across multiple industries. Currently
+                serving as the SVP of Sales & Marketing for Eden HVAC & Home
+                Efficiency, ARC Corporation, and Genesis Solar Power, Bill
+                operates remotely from Montana, where he leverages his expertise
+                to enhance comfort, maximize efficiency, and drive
+                industry-leading solutions. His strategic leadership at Genesis
+                Solar Power ensures comprehensive excellence in solar EPC
+                services. Additionally, Bill contributes his skills to Sojourner
+                International Inc. as a Director/Board Member, supporting
+                community-focused initiatives locally and globally. Bill's
+                dedication to transforming environments, safeguarding
+                investments, and fostering sustainability underscores his
+                commitment to making a positive impact in every role he
+                undertakes.
               </p>
-              <div className="action">
+              {/* <div className="action">
                 <Link to={"/About/Profile/WilliamBeliles"}>Learn More.</Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -144,7 +156,12 @@ function AboutUsContent() {
       <div id="_Dealer" className="hero">
         <div className="background">
           <div className="overlay"></div>
-          <img src={hero_image} alt="" />
+          <img
+            src={
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720135759/Arc_Landing_Page/Content/c8bruyxke0rwufavhiu2.webp"
+            }
+            alt=""
+          />
         </div>
         <div className="wrapper">
           <div className="hero-content">

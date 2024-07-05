@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/projectsContent.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 function ProjectsContent() {
+  const { projectType } = useParams();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (
+      projectType.toLowerCase() !== "residential" &&
+      projectType.toLowerCase() !== "commercial"
+    ) {
+      navigate("/");
+    }
+  }, [projectType]);
   return (
     <div id="projectsContent" className="projectsContent">
       <div className="wrapper">
-        <div className="header">
-          <p className="title">Residential Projects</p>
+        <div className="coming-soon">
+          <img
+            src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720141240/Icons/erwtn9ssdgczjky7herk.webp"
+            alt=""
+          />
+          <p className="main">
+            Coming <span className="highlight">Soon!</span>
+          </p>
+          <p className="sub">
+            Stay tuned for our showcase of roofing projects, featuring stunning
+            transformations and expert craftsmanship to inspire your next home
+            improvement!
+          </p>
+        </div>
+        {/* <div className="header">
+          <p className="title">{projectType} Projects</p>
           <p className="desc">
             Arc Roofing Corporation excels in delivering top-quality residential
             roofing solutions. Our services include roof repairs, maintenance,
@@ -100,7 +124,7 @@ function ProjectsContent() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

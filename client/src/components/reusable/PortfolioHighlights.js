@@ -42,21 +42,21 @@ function PortfolioHighlights() {
           >
             <SwiperSlide>
               <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716774609/Arc_Portfolio/Projects/iwrcivqk3miqtldae5o8.webp"
+                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137097/Arc_Landing_Page/Content/gpscdp9hjze9qejnjy7p.webp"
                 className="swiper-img"
                 alt="Slide 1"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716774609/Arc_Portfolio/Projects/tzkoerefjuupnqdkvcvi.webp"
+                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137096/Arc_Landing_Page/Content/jtg1dupdkhd3nhbkg4hv.webp"
                 className="swiper-img"
                 alt="Slide 1"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716774609/Arc_Portfolio/Projects/urdgdtidlwrd1q2etfgh.webp"
+                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137097/Arc_Landing_Page/Content/jukxwtxc2whuqtev6cpu.webp"
                 className="swiper-img"
                 alt="Slide 1"
               />

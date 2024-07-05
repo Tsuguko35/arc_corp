@@ -30,7 +30,7 @@ function PortfolioContent() {
               <div className="overlay"></div>
               <img
                 src={
-                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423795/Arc_About/euo6dumragehk0ccykmb.webp"
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720135760/Arc_Landing_Page/Content/e13zujp5nz3yjqzzucjh.webp"
                 }
                 alt=""
               />
@@ -43,7 +43,7 @@ function PortfolioContent() {
               <div className="overlay"></div>
               <img
                 src={
-                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/blbqbawnhzpw7n4muzbg.webp"
+                  "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720135759/Arc_Landing_Page/Content/c8bruyxke0rwufavhiu2.webp"
                 }
                 alt=""
               />
@@ -53,7 +53,7 @@ function PortfolioContent() {
               </div>
             </Link>
           </div>
-          <p className="load-more">Browse more.</p>
+          {/* <p className="load-more">Browse more.</p> */}
         </div>
 
         <div className="company-skills feature">
@@ -72,9 +72,9 @@ function PortfolioContent() {
               <span className="skill-name">Innovation</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "80%" }}></div>
+                  <div className="progress" style={{ width: "96%" }}></div>
                 </div>
-                <span className="percentage">80%</span>
+                <span className="percentage">96%</span>
               </div>
             </div>
             <div className="skill">
@@ -99,18 +99,18 @@ function PortfolioContent() {
               <span className="skill-name">Project Management</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "80%" }}></div>
+                  <div className="progress" style={{ width: "99%" }}></div>
                 </div>
-                <span className="percentage">80%</span>
+                <span className="percentage">99%</span>
               </div>
             </div>
             <div className="skill">
               <span className="skill-name">Quality Craftsmanship</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "90%" }}></div>
+                  <div className="progress" style={{ width: "97%" }}></div>
                 </div>
-                <span className="percentage">90%</span>
+                <span className="percentage">97%</span>
               </div>
             </div>
             <div className="skill">

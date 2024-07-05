@@ -13,7 +13,7 @@ function ContactUsContent() {
             <div className="overlay"></div>
             <img
               src={
-                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716424233/Contact/qtidmhneryksfaepesfg.webp"
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720136967/Arc_Landing_Page/Content/ustjyrvi8mesckbwlpq0.webp"
               }
               alt="contact bg"
             />
@@ -39,26 +39,19 @@ function ContactUsContent() {
                 <div className="contact">
                   <p className="label">Address</p>
                   <p className="contact-detail">
-                    458 Old york Court hamington station, ny 11746
+                    6028 Stonybook CT, Topeka, KS 66614
                   </p>
                 </div>
                 <div className="contact">
                   <p className="label">Social Media</p>
                   <div className="contact-detail links">
-                    <Link>
+                    <Link
+                      to={
+                        "https://www.facebook.com/profile.php?id=61559432554065&mibextid=qi2Omg&rdid=kdAAkPtlpB6fv6K9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F9tLwJiQk5u9Engff%2F%3Fmibextid%3Dqi2Omg"
+                      }
+                      target="_blank"
+                    >
                       Facebook{" "}
-                      <span className="link-arrow">
-                        <GoIcons.GoArrowUpRight />
-                      </span>
-                    </Link>
-                    <Link>
-                      Twitter{" "}
-                      <span className="link-arrow">
-                        <GoIcons.GoArrowUpRight />
-                      </span>
-                    </Link>
-                    <Link>
-                      LinkedIn{" "}
                       <span className="link-arrow">
                         <GoIcons.GoArrowUpRight />
                       </span>
@@ -95,7 +88,13 @@ function ContactUsContent() {
               </div>
 
               <div className="action">
-                <p className="button">Message Us</p>
+                <Link
+                  to={"https://m.me/303695626163278"}
+                  target="_blank"
+                  className="button"
+                >
+                  Message Us
+                </Link>
               </div>
             </div>
           </div>

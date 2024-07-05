@@ -11,7 +11,7 @@ function ResidentialHeader() {
             <div className="overlay"></div>
             <img
               src={
-                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419845/Arc_Services/lgb1v4knafofjhdft9ra.webp"
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720136967/Arc_Landing_Page/Content/ustjyrvi8mesckbwlpq0.webp"
               }
               alt="Residential Background"
             />

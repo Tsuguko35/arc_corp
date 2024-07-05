@@ -6,9 +6,10 @@ import {
   portfolioKeyPoints,
 } from "./services";
 import { residentialProducts, commercialProducts } from "./products";
-import { residentialItems } from "./roofCarouselItems";
+import { residentialItems, commercialItems } from "./roofCarouselItems";
 import bottomNavItems from "./bottomNavItems";
 import faqQuestions from "./faqQuestions";
+import arkServices from "./arcServices";
 
 export {
   GetWindowWidth,
@@ -21,4 +22,6 @@ export {
   portfolioKeyPoints,
   bottomNavItems,
   faqQuestions,
+  arkServices,
+  commercialItems,
 };

@@ -12,7 +12,7 @@ function AboutUsHeader() {
             <div className="light"></div>
             <img
               src={
-                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423795/Arc_About/euo6dumragehk0ccykmb.webp"
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720135760/Arc_Landing_Page/Content/e13zujp5nz3yjqzzucjh.webp"
               }
               alt=""
             />

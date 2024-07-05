@@ -58,7 +58,13 @@ function ClientReviews() {
     <div id="clientReviews" className="clientReviews feature">
       <div id="_Reviews" className="wrapper">
         <span className="title">What Our Clients Say About Us</span>
-        <div className="reviews-container">
+        <iframe
+          src="https://widget.tagembed.com/155356?view"
+          style={{ width: "100%", height: "500px", overflow: "auto" }}
+          frameborder="0"
+          allowtransparency="true"
+        ></iframe>
+        {/* <div className="reviews-container">
           <Slider {...settings}>
             <div className="card">
               <div className="card-content">
@@ -229,7 +235,7 @@ function ClientReviews() {
               </div>
             </div>
           </Slider>
-        </div>
+        </div> */}
       </div>
     </div>
   );

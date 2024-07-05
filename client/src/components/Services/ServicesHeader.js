@@ -12,7 +12,7 @@ function ServicesHeader() {
             <div className="overlay"></div>
             <img
               src={
-                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/vkxrlivhk2fwzwichavq.webp"
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137782/Arc_Services/rqilrm2v4efymxrpubse.webp"
               }
               alt=""
             />

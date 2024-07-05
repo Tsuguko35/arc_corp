@@ -25,25 +25,25 @@ function ProductGallery() {
         <div className="products">
           <div className="product">
             <img
-              src="https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137097/Arc_Landing_Page/Content/jukxwtxc2whuqtev6cpu.webp"
               alt="product"
             />
           </div>
           <div className="product">
             <img
-              src="https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137097/Arc_Landing_Page/Content/gpscdp9hjze9qejnjy7p.webp"
               alt="product"
             />
           </div>
           <div className="product">
             <img
-              src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137096/Arc_Landing_Page/Content/jtg1dupdkhd3nhbkg4hv.webp"
               alt="product"
             />
           </div>
           <div className="product">
             <img
-              src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137345/Arc_Landing_Page/Content/lkftjeobaammjorjkpf9.webp"
               alt="product"
             />
           </div>
@@ -51,49 +51,25 @@ function ProductGallery() {
             <React.Fragment>
               <div className="product">
                 <img
-                  src="https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137344/Arc_Landing_Page/Content/wdslirnchjihh1bvjyrh.webp"
                   alt="product"
                 />
               </div>
               <div className="product">
                 <img
-                  src="https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137345/Arc_Landing_Page/Content/nfskpjri8qvif3rqlu94.webp"
                   alt="product"
                 />
               </div>
               <div className="product">
                 <img
-                  src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137345/Arc_Landing_Page/Content/tva9wqojie3dfxvzuidi.webp"
                   alt="product"
                 />
               </div>
               <div className="product">
                 <img
-                  src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="product"
-                />
-              </div>
-              <div className="product">
-                <img
-                  src="https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="product"
-                />
-              </div>
-              <div className="product">
-                <img
-                  src="https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="product"
-                />
-              </div>
-              <div className="product">
-                <img
-                  src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="product"
-                />
-              </div>
-              <div className="product">
-                <img
-                  src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137345/Arc_Landing_Page/Content/lw8ugd1fmzxtutnvev9b.webp"
                   alt="product"
                 />
               </div>

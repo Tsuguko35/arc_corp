@@ -11,6 +11,9 @@
     padding: 50px 100px;
     width: 100%;
     max-width: 1536px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #clientReviews > .wrapper > .title{

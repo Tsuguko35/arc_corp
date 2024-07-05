@@ -11,7 +11,7 @@ function CommercialHeader() {
             <div className="overlay"></div>
             <img
               src={
-                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716419846/Arc_Services/blbqbawnhzpw7n4muzbg.webp"
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720137345/Arc_Landing_Page/Content/tva9wqojie3dfxvzuidi.webp"
               }
               alt="Header Background"
             />

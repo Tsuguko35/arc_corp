@@ -8,7 +8,7 @@ function PortfolioHeader() {
         <div className="overlay"></div>
         <img
           src={
-            "https://images.pexels.com/photos/4254158/pexels-photo-4254158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720140116/Arc_Portfolio/cgmqhwyywultv9oessxe.webp"
           }
           alt="Portfolio Header"
         />

@@ -33,7 +33,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: var(--hero-overlay-3);
+    background-color: var(--hero-overlay-dark1);
+    backdrop-filter: blur(2px);
     z-index: 0;
 }
 

@@ -65,8 +65,8 @@ body {
 }
 
 *::-webkit-scrollbar{
-    width: 10px; 
-    height: 10px;
+    width: 7px; 
+    height: 7px;
 }
 
 *::-webkit-scrollbar-track{
@@ -77,6 +77,35 @@ body {
 *::-webkit-scrollbar-thumb{
     background-color: var(--primary-hover);
     border-radius: 20px;
+}
+
+.messenger{
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #006AFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.1s ease-in;
+}
+
+.messenger:hover{
+  transform: scale(1.1);
+}
+
+.messenger > svg{
+  width: 55%;
+  height: 55%;
+}
+
+.messenger > svg *{
+  color: white;
 }
 
 .bold{

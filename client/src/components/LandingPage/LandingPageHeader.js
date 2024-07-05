@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../styles/landingPageHeader.css";
 
 import * as fiIcons from "react-icons/fi";
@@ -7,12 +7,6 @@ import InfiniteCarousel from "react-leaf-carousel";
 
 function LandingPageHeader() {
   const navigate = useNavigate();
-  // const video1 =
-  //   "https://res.cloudinary.com/dkwgg59ur/video/upload/v1716383050/Arc_Landing_Page/Header/cx2nahkhp7c7x36toaut.mp4";
-  // const video2 =
-  //   "https://res.cloudinary.com/dkwgg59ur/video/upload/v1716383050/Arc_Landing_Page/Header/orlnskgrlhw1es4fdn5c.mp4";
-  // const video3 =
-  //   "https://res.cloudinary.com/dkwgg59ur/video/upload/v1716383051/Arc_Landing_Page/Header/zx3pono5uwnpzdgbll3l.mp4";
 
   const backgroundImages = [
     "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/j27owsqkjy7d0tvyvehr.webp",
@@ -38,34 +32,41 @@ function LandingPageHeader() {
   };
 
   // Video
-  // const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
-  // const videoRef1 = useRef(null);
-  // const videoRef2 = useRef(null);
-  // const videoRef3 = useRef(null);
-  // const videoSources = [video1, video2, video3];
+  const videoSources = [
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133028/Arc_Landing_Page/Header/Videos/wwkm8e34fc7olms9gwac.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133042/Arc_Landing_Page/Header/Videos/f1t1qkwe8g8d8g3kawpl.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133033/Arc_Landing_Page/Header/Videos/bkuzgroovlexkyeufgsu.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133031/Arc_Landing_Page/Header/Videos/tvvtmlmy079zqao0aqgx.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133028/Arc_Landing_Page/Header/Videos/nlt5hc6rzb9bp2v8hswy.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133027/Arc_Landing_Page/Header/Videos/ztzygsawojudgc6ysvd7.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133027/Arc_Landing_Page/Header/Videos/ksrpqxpcwzkvvjqfjrpo.mp4",
+  ];
 
-  // const changeVideo = () => {
-  //   setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoSources.length);
-  // };
+  const videoRefs = useRef(
+    Array(videoSources.length)
+      .fill()
+      .map(() => React.createRef())
+  );
 
-  // const handleVideoEnded = () => {
-  //   changeVideo();
-  // };
+  const changeVideo = () => {
+    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoSources.length);
+  };
 
-  // useEffect(() => {
-  //   switch (currentVideoIndex) {
-  //     case 0:
-  //       videoRef1.current.play();
-  //       break;
-  //     case 1:
-  //       videoRef2.current.play();
-  //       break;
-  //     case 2:
-  //       videoRef3.current.play();
-  //       break;
-  //   }
-  // }, [currentVideoIndex]);
+  const handleVideoEnded = () => {
+    changeVideo();
+  };
+
+  useEffect(() => {
+    videoRefs.current.forEach((ref, index) => {
+      if (index === currentVideoIndex) {
+        ref.current.play();
+      } else {
+        ref.current.pause();
+      }
+    });
+  }, [currentVideoIndex]);
 
   return (
     <header id="landingPageHeader" className="landingPageHeader">
@@ -84,7 +85,7 @@ function LandingPageHeader() {
             </div>
           </div>
         </div>
-        <div className="slideshow">
+        {/* <div className="slideshow">
           {backgroundImages && (
             <InfiniteCarousel
               autoCycle={true}
@@ -107,8 +108,8 @@ function LandingPageHeader() {
               ))}
             </InfiniteCarousel>
           )}
-        </div>
-        {/* <div className="slideshow">
+        </div> */}
+        <div className="slideshow">
           {videoSources &&
             videoSources.map((video, index) => (
               <video
@@ -119,19 +120,13 @@ function LandingPageHeader() {
                 muted
                 loop={false} // Disable loop here
                 onEnded={handleVideoEnded}
-                ref={
-                  index === 0
-                    ? videoRef1
-                    : index === 1
-                    ? videoRef2
-                    : index === 2 && videoRef3
-                }
+                ref={videoRefs.current[index]}
               >
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ))}
-        </div> */}
+        </div>
         <div className="bottom-details">
           <span className="outside">
             <span className="inside"></span>
