@@ -119,25 +119,25 @@ const portfolioKeyPoints = [
     icon: port_image1,
     title: "Design",
     description:
-      "I specialize in web development and design, creating visually appealing, user-friendly digital experiences.",
+      " We work closely with clients to design custom roofing solutions that meet their specific needs and aesthetic preferences.",
   },
   {
     icon: port_image2,
-    title: "Branding",
+    title: "Emergency Services",
     description:
-      "I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.",
+      "Our emergency response team is available 24/7 to provide immediate assistance, ensuring your property is protected from unforeseen damage.",
   },
   {
     icon: port_image3,
-    title: "UX Research",
+    title: "Advanced Technology",
     description:
-      "I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.",
+      "Integrating the latest in roofing technology, SmartShield Roofing provides real-time monitoring and diagnostics, ensuring your roof's health is always optimal.",
   },
   {
     icon: port_image4,
-    title: "Usability Testing",
+    title: "Expert Consultation",
     description:
-      "I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.",
+      "Our experienced consultants provide expert advice and guidance throughout the roofing process, from initial planning to final installation, ensuring a seamless and satisfying experience.",
   },
 ];
 
