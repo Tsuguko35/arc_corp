@@ -8,12 +8,12 @@ import InfiniteCarousel from "react-leaf-carousel";
 function LandingPageHeader() {
   const navigate = useNavigate();
 
-  const backgroundImages = [
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/j27owsqkjy7d0tvyvehr.webp",
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590056/Arc_Landing_Page/Header/wy43n8nicxheh7afc3rk.webp",
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/vkxrlivhk2fwzwichavq.webp",
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/xcjdtwd2qlqhobcs9s7f.webp",
-  ];
+  // const backgroundImages = [
+  //   "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/j27owsqkjy7d0tvyvehr.webp",
+  //   "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590056/Arc_Landing_Page/Header/wy43n8nicxheh7afc3rk.webp",
+  //   "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/vkxrlivhk2fwzwichavq.webp",
+  //   "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716590055/Arc_Landing_Page/Header/xcjdtwd2qlqhobcs9s7f.webp",
+  // ];
 
   const imageRef = useRef(null);
 
@@ -35,13 +35,13 @@ function LandingPageHeader() {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const videoSources = [
-    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133028/Arc_Landing_Page/Header/Videos/wwkm8e34fc7olms9gwac.mp4",
-    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133042/Arc_Landing_Page/Header/Videos/f1t1qkwe8g8d8g3kawpl.mp4",
-    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133033/Arc_Landing_Page/Header/Videos/bkuzgroovlexkyeufgsu.mp4",
-    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133031/Arc_Landing_Page/Header/Videos/tvvtmlmy079zqao0aqgx.mp4",
-    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133028/Arc_Landing_Page/Header/Videos/nlt5hc6rzb9bp2v8hswy.mp4",
-    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133027/Arc_Landing_Page/Header/Videos/ztzygsawojudgc6ysvd7.mp4",
-    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720133027/Arc_Landing_Page/Header/Videos/ksrpqxpcwzkvvjqfjrpo.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720155353/Arc_Landing_Page/Header/Videos/Optimized/d32hzd0utkayevm8hnrd.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720155353/Arc_Landing_Page/Header/Videos/Optimized/nxcxljxjzzfmquyigiwx.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720155353/Arc_Landing_Page/Header/Videos/Optimized/t2mfdyhlbfl42o62izdo.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720155353/Arc_Landing_Page/Header/Videos/Optimized/nlriepamp99qkqwtry40.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720155353/Arc_Landing_Page/Header/Videos/Optimized/qfrccwvxoeajgyajllmm.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720155354/Arc_Landing_Page/Header/Videos/Optimized/lecbhyfvs9hoelec6hep.mp4",
+    "https://res.cloudinary.com/dkwgg59ur/video/upload/v1720155353/Arc_Landing_Page/Header/Videos/Optimized/f3nkzjv5taaojnkbxgbv.mp4",
   ];
 
   const videoRefs = useRef(
@@ -113,12 +113,14 @@ function LandingPageHeader() {
           {videoSources &&
             videoSources.map((video, index) => (
               <video
+                key={index}
                 className={`background-image ${
                   currentVideoIndex === index ? "active" : ""
                 }`}
                 autoPlay={currentVideoIndex === index ? true : false}
                 muted
-                loop={false} // Disable loop here
+                loop={false}
+                poster="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720153600/Arc_Landing_Page/tziynr5f6wwxfpag9wpa.webp"
                 onEnded={handleVideoEnded}
                 ref={videoRefs.current[index]}
               >
