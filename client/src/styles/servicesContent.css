@@ -45,7 +45,7 @@
     background-color: var(--primary);
     color: white;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
     transition: background-color 250ms ease-in-out;
     cursor: pointer;
 }
@@ -101,7 +101,7 @@
     max-height: 380px;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 #servicesContent > .wrapper > .text-content > .container > .explanation-content{
@@ -155,7 +155,7 @@
     background-color: var(--primary);
     color: white;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
     transition: background-color 250ms ease-in-out;
     cursor: pointer;
 }
