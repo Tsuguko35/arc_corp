@@ -282,8 +282,7 @@
     #landingPageProdAndSer > .wrapper > .background-img{
 
         width: 100%;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 0;
     }
 
     #landingPageProdAndSer > .wrapper > .title{

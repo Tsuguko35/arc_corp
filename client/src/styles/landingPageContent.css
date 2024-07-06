@@ -429,4 +429,8 @@
     #landingPageContent > .company-feature > .description > .content > .title{
         font-size: 32px;
     }
+
+    #landingPageContent > .wrapper > .company-description > .left > .title{
+        font-size: 24px;
+    }
 }

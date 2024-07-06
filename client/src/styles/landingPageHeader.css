@@ -351,6 +351,7 @@
     }
 }
 
+
 @media only screen and (max-width: 568px){
     #landingPageHeader > .wrapper > .text-content{
         padding-inline: 20px;
@@ -367,6 +368,14 @@
 
     #landingPageHeader > .wrapper > .text-content > .stack{
         flex-direction: column;
+    }
+
+    #landingPageHeader > .wrapper > .text-content > .header-text > .top > .highlight{
+        font-size: 100px;
+    }
+
+    #landingPageHeader > .wrapper > .text-content > .header-text > p{
+        font-size: 62px;
     }
 }
 
