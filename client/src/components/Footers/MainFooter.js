@@ -20,7 +20,7 @@ function MainFooter() {
           <div className="address">
             <p>6028 Stonybook CT, Topeka, KS 66614</p>
             <div className="contact-info">
-              <p>913-228-4495</p>
+              <p>(866) 847-7972</p>
               <p>info@goarccorp.com</p>
             </div>
           </div>
