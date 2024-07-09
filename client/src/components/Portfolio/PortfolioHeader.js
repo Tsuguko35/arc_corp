@@ -17,13 +17,13 @@ function PortfolioHeader() {
         <div className="text-content start-fade-bottom">
           <div className="title">Project Portfolio</div>
           <div className="description">
-            Explore our diverse project portfolio showcasing Arc Roofing
-            Corporation's expertise across residential, commercial, and
-            specialty roofing projects. From stunning residential installations
-            to large-scale commercial ventures, each project exemplifies our
-            commitment to quality craftsmanship and customer satisfaction. Dive
-            into our portfolio to discover the superior results we deliver to
-            clients across the Southeastern United States.
+            Explore our diverse project portfolio showcasing Arc Corporation's
+            expertise across residential, commercial, and specialty roofing
+            projects. From stunning residential installations to large-scale
+            commercial ventures, each project exemplifies our commitment to
+            quality craftsmanship and customer satisfaction. Dive into our
+            portfolio to discover the superior results we deliver to clients
+            across the Southeastern United States.
           </div>
         </div>
       </div>

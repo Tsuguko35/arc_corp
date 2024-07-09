@@ -13,20 +13,19 @@ function ServicesContent() {
           <p className="header">Why Choose Us</p>
           <div className="text">
             <p className="description">
-              The founder of Arc Roofing Corporation opened the company to help
-              families and business owners recover quickly from catastrophic
-              storm damage and stay protected for the long term. Our mission has
-              always been to provide top-quality roofing services that help
-              people and restore the communities we serve. Over the past 20
-              years, our focus has expanded, but our mission remains the same—to
-              help people like you.
+              The founder of Arc Corporation opened the company to help families
+              and business owners recover quickly from catastrophic storm damage
+              and stay protected for the long term. Our mission has always been
+              to provide top-quality roofing services that help people and
+              restore the communities we serve. Over the past 20 years, our
+              focus has expanded, but our mission remains the same—to help
+              people like you.
             </p>
             <p className="description">
               We protect and preserve American communities one roof at a time.
               Whether you have a new construction project, are ready to upgrade
               your building’s curb appeal, or need rapid response roofing
-              services following severe storms, Arc Roofing Corporation is here
-              to help.
+              services following severe storms, Arc Corporation is here to help.
             </p>
           </div>
         </div>
@@ -120,10 +119,10 @@ function ServicesContent() {
               </p>
               <p>
                 Experience the ultimate convenience with One Click Roof, a
-                cutting-edge service from Arc Roofing Corporation. Designed
-                specifically for solar contractors, our innovative platform
-                provides instant quotes and streamlined installations, saving
-                you time and resources.
+                cutting-edge service from Arc Corporation. Designed specifically
+                for solar contractors, our innovative platform provides instant
+                quotes and streamlined installations, saving you time and
+                resources.
               </p>
               <p>
                 Forget lengthy wait times and complex processes—One Click Roof
@@ -140,15 +139,15 @@ function ServicesContent() {
           <p className="header">ARC Standard & Homes</p>
           <div className="text">
             <p className="description">
-              At Arc Roofing Corporation, we set the standard for excellence
-              with Arc Standard. Our thorough property inspections guarantee
-              compliance with solar construction standards, backed by a
-              money-back guarantee. Trust us to ensure your property meets the
-              highest industry standards, providing peace of mind and confidence
-              in your solar construction projects. Additionally, with Arc Homes,
-              we offer luxury home building and commercial property
-              construction, bringing the same commitment to quality and
-              excellence to every project we undertake.
+              At Arc Corporation, we set the standard for excellence with Arc
+              Standard. Our thorough property inspections guarantee compliance
+              with solar construction standards, backed by a money-back
+              guarantee. Trust us to ensure your property meets the highest
+              industry standards, providing peace of mind and confidence in your
+              solar construction projects. Additionally, with Arc Homes, we
+              offer luxury home building and commercial property construction,
+              bringing the same commitment to quality and excellence to every
+              project we undertake.
             </p>
           </div>
           <div className="action">

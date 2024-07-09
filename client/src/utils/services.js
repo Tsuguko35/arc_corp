@@ -39,7 +39,7 @@ const serviceKeyPoints = [
     icon: keypoint_image1,
     title: "We Have 25 Years of Experience",
     description:
-      "Arc Roofing Corporation delivers top-quality roofing services, ensuring your home or business is protected and enhanced.",
+      "Arc Corporation delivers top-quality roofing services, ensuring your home or business is protected and enhanced.",
   },
   {
     icon: keypoint_image2,

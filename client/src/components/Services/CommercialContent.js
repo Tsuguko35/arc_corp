@@ -19,13 +19,13 @@ function CommercialContent() {
           </p>
           <div className="text">
             <p className="description">
-              Arc Roofing Corporation specializes in providing comprehensive
-              commercial roofing solutions tailored to the unique needs of
-              businesses. From large-scale installations to repairs and
-              maintenance, our team delivers unmatched expertise and quality
-              craftsmanship. Trust us to safeguard your commercial property with
-              durable, reliable roofing systems designed to withstand the rigors
-              of the commercial environment.
+              Arc Corporation specializes in providing comprehensive commercial
+              roofing solutions tailored to the unique needs of businesses. From
+              large-scale installations to repairs and maintenance, our team
+              delivers unmatched expertise and quality craftsmanship. Trust us
+              to safeguard your commercial property with durable, reliable
+              roofing systems designed to withstand the rigors of the commercial
+              environment.
             </p>
           </div>
         </div>
@@ -37,10 +37,10 @@ function CommercialContent() {
           <p className="header">Commercial Roof Systems</p>
           <div className="text">
             <p className="description">
-              Arc Roofing Corporation excels in delivering premium commercial
-              roofing solutions, ensuring your business property receives the
-              utmost protection and aesthetic appeal. We offer an extensive
-              selection of top-tier roofing systems in various styles, providing
+              Arc Corporation excels in delivering premium commercial roofing
+              solutions, ensuring your business property receives the utmost
+              protection and aesthetic appeal. We offer an extensive selection
+              of top-tier roofing systems in various styles, providing
               unparalleled defense against severe weather conditions. Beneath
               the surface, our integration of advanced products, including
               NASA-developed Titanium UDL underlayment, enhances your roof's

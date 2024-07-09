@@ -20,10 +20,10 @@ function ResidentialHeader() {
             <div className="text-content start-fade-bottom">
               <p className="title">Residential Roofing Services</p>
               <div className="description">
-                Arc Roofing Corporation provides top-quality roofing services
-                for property owners across the Southeastern United States. We
-                are ranked as a leading roofing company and have been entrusted
-                to help build and restore communities one roof at a time.
+                Arc Corporation provides top-quality roofing services for
+                property owners across the Southeastern United States. We are
+                ranked as a leading roofing company and have been entrusted to
+                help build and restore communities one roof at a time.
               </div>
             </div>
             <div className="form">

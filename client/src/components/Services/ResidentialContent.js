@@ -19,9 +19,9 @@ function ResidentialContent() {
           </p>
           <div className="text">
             <p className="description">
-              Arc Roofing Corporation delivers unmatched residential roofing
-              services, encompassing repairs, maintenance, and installations.
-              From impact-resistant asphalt shingles to exquisite Ludowici clay
+              Arc Corporation delivers unmatched residential roofing services,
+              encompassing repairs, maintenance, and installations. From
+              impact-resistant asphalt shingles to exquisite Ludowici clay
               tiles, our range of high-performance roofing systems ensures the
               perfect fit for your needs. Trust our experts for superior
               craftsmanship and lasting quality.
@@ -36,15 +36,14 @@ function ResidentialContent() {
           <p className="header">Residential Roof Systems</p>
           <div className="text">
             <p className="description">
-              Arc Roofing Corporation utilizes top-tier roofing systems in a
-              diverse array of styles, guaranteeing a visually appealing roof
-              that adds value and provides unparalleled protection against
-              severe weather. Beneath the surface, we integrate advanced
-              products to enhance your roof's performance, such as Titanium UDL
-              underlayment crafted from NASA-developed materials. Through the
-              fusion of premium details, accessories, and durable, elegant
-              roofing materials, Arc ensures the installation of roofs that
-              stand the test of time.
+              Arc Corporation utilizes top-tier roofing systems in a diverse
+              array of styles, guaranteeing a visually appealing roof that adds
+              value and provides unparalleled protection against severe weather.
+              Beneath the surface, we integrate advanced products to enhance
+              your roof's performance, such as Titanium UDL underlayment crafted
+              from NASA-developed materials. Through the fusion of premium
+              details, accessories, and durable, elegant roofing materials, Arc
+              ensures the installation of roofs that stand the test of time.
             </p>
           </div>
         </div>
