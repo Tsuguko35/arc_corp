@@ -130,6 +130,7 @@
 #faq > .wrapper > .faq-container > .faq-content > .faq-accordion > .faq > .text-container > .answer{
     font-size: 16px;
     font-weight: 500;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 1176px){

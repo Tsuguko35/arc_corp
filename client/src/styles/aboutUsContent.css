@@ -82,6 +82,7 @@
 #aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .company-description{
     font-size: 16px;
     font-weight: 500;
+    text-align: justify;
 }
 
 #aboutUsContent > .wrapper > .about-details > .company-details > .overview-container > .actions{
@@ -118,6 +119,7 @@
 
 #aboutUsContent > .wrapper > .about-details > .company-details > .description{
     font-weight: 500;
+    text-align: justify;
 }
 
 #aboutUsContent > .wrapper > .about-details > .company-details > .action{
@@ -210,6 +212,7 @@
 
 #aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .description{
     font-size: 20px;
+    text-align: justify;
 }
 
 #aboutUsContent > .wrapper > .team-details > .team-member > .member-details > .action{
@@ -322,6 +325,7 @@
 #aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content > .desc{
     color: white;
     font-weight: 500;
+    text-align: justify;
 }
 
 #aboutUsContent > .hero > .wrapper > .hero-content > .hero-message > .text-content > .action{
