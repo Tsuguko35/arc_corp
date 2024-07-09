@@ -36,6 +36,7 @@ import ProductQuoteForm from "./reusable/ProductQuoteForm";
 import ProjectsShowcaseContent from "./Portfolio/ProjectsShowcaseContent";
 import ProjectDetailsContent from "./Portfolio/ProjectDetailsContent";
 import FacebookMsg from "./FacebookMsg";
+import PrivacyPolicy from "./reusable/PrivacyPolicy";
 
 export {
   LandingPageHeader,
@@ -76,4 +77,5 @@ export {
   ProjectsShowcaseContent,
   ProjectDetailsContent,
   FacebookMsg,
+  PrivacyPolicy,
 };

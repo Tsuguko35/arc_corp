@@ -36,7 +36,7 @@ function PortfolioContent() {
               />
               <div className="text-content">
                 <p className="title">Residential Projects</p>
-                <p className="sub">14 Projects</p>
+                {/* <p className="sub">14 Projects</p> */}
               </div>
             </Link>
             <Link to={`/Portfolio/Projects/Commercial`} className="project">
@@ -49,7 +49,7 @@ function PortfolioContent() {
               />
               <div className="text-content">
                 <p className="title">Commercial Projects</p>
-                <p className="sub">8 Projects</p>
+                {/* <p className="sub">8 Projects</p> */}
               </div>
             </Link>
           </div>

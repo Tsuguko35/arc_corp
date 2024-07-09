@@ -41,9 +41,7 @@
 
 #productGallery > .wrapper > .products{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: flex;
 }
 
 #productGallery > .wrapper > .products > .product{

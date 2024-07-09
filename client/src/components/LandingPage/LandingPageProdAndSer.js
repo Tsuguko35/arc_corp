@@ -27,6 +27,8 @@ function LandingPageProdAndSer() {
   const settings = {
     className: "center",
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,

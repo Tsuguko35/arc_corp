@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 function PortfolioHighlights() {
   return (
@@ -28,6 +28,7 @@ function PortfolioHighlights() {
         <div className="carousel">
           <Swiper
             grabCursor={true}
+            autoplay={{ delay: 4000 }}
             slidesPerView={1}
             loop={true}
             spaceBetween={20}
@@ -36,7 +37,7 @@ function PortfolioHighlights() {
                 slidesPerView: 2,
               },
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
             className="swiper-container"
           >

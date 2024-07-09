@@ -87,9 +87,10 @@
     color: white;
 }
 
-#messageForm > .checkbox-input > .text > a{
+#messageForm > .checkbox-input > .text > span{
     color: var(--link-color);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #messageForm > .submit-area{

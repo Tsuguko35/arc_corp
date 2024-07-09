@@ -2,13 +2,15 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { routes } from "./config";
 
 import "./styles/styles.css";
-import { FacebookMsg, NavBar } from "./components";
+import { FacebookMsg, NavBar, PrivacyPolicy } from "./components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { ProjectContext } from "./context";
 
 function App() {
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
   //Sub Menu
   const location = useLocation();
 
@@ -85,7 +87,10 @@ function App() {
   }, []);
 
   return (
-    <div id="scroll-container" data-scroll-container>
+    <div id="main-container" data-scroll-container>
+      {/* Privacy Policy */}
+      <PrivacyPolicy show={showPrivacyPolicy} setShow={setShowPrivacyPolicy} />
+
       {/* Facebook Messenger */}
       <FacebookMsg />
 
@@ -94,15 +99,22 @@ function App() {
 
       {/* Pages */}
       <div className="pages">
-        <Routes>
-          {routes.map((route) => (
-            <Route
-              key={route.path}
-              path={route.path}
-              element={route.component}
-            />
-          ))}
-        </Routes>
+        <ProjectContext.Provider
+          value={{
+            setShowPrivacyPolicy,
+            showPrivacyPolicy,
+          }}
+        >
+          <Routes>
+            {routes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.component}
+              />
+            ))}
+          </Routes>
+        </ProjectContext.Provider>
       </div>
     </div>
   );

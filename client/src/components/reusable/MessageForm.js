@@ -1,11 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "../../styles/messageForm.css";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 import LoadingDot from "../../assets/svg/loader/LoadingDot";
+import { ProjectContext } from "../../context";
 
 function MessageForm() {
   const form = useRef();
+  const { setShowPrivacyPolicy, showPrivacyPolicy } =
+    useContext(ProjectContext);
   const [submit, setSubmit] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [formData, setFormData] = useState({
@@ -122,7 +125,9 @@ function MessageForm() {
         />
         <p className="text">
           I have read and accept the &nbsp;
-          <Link>privacy policy.</Link>
+          <span onClick={() => setShowPrivacyPolicy(true)}>
+            privacy policy.
+          </span>
         </p>
       </div>
 

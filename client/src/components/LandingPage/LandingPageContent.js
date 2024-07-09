@@ -71,11 +71,7 @@ function LandingPageContent() {
 
       <div className="stat-counter">
         <div className="stat feature5">
-          <p>80k+</p>
-          <p>Have transacted on ARC Corporation.</p>
-        </div>
-        <div className="stat feature5">
-          <p>92%</p>
+          <p>98%</p>
           <p>Satisfaction rate comes from our awesome customers.</p>
         </div>
         <div className="stat feature5">
