@@ -1,0 +1,402 @@
+#landingPageHeader{
+    position: relative;
+}
+
+#landingPageHeader > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Image */
+
+/* Video */
+#landingPageHeader > .wrapper > .slideshow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: 802px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#landingPageHeader > .wrapper > .slideshow .background-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#landingPageHeader > .wrapper > .slideshow .background-image.active{
+    opacity: 1;
+}
+
+
+/* Image */
+/* #landingPageHeader > .wrapper > .slideshow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#landingPageHeader > .wrapper > .slideshow .background-image{
+    width: 100%;
+    height: 802px;
+    object-fit: cover;
+    user-select: none;
+    opacity: 1;
+} */
+
+/* Overlay */
+#landingPageHeader > .wrapper > .overlay{
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 12px);
+    background: var(--hero-overlay-dark1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Diagonal slice */
+}
+
+#landingPageHeader > .wrapper > .text-content{
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    padding-inline: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    opacity: 0;
+}
+
+
+
+#landingPageHeader > .wrapper > .text-content > .header-text{
+    display: flex;
+    align-items: flex-end;
+}
+
+#landingPageHeader > .wrapper > .text-content > .header-text > p{
+    font-size: 82px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+#landingPageHeader > .wrapper > .text-content > .header-text > .top > .highlight{
+    font-size: 120px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+
+#landingPageHeader > .wrapper > .text-content > .sub-text{
+    width: 700px;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
+    text-align: center;
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+    opacity: 0;
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > .circle{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > .circle:hover{
+    background-color: white;
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > .circle::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 250ms ease-in-out;
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > .circle:hover:after{
+    animation: circleHover 1s ease-in-out infinite;
+}
+
+@keyframes circleHover{
+    0%{
+        width: 60px;
+        height: 60px;
+    }
+    50%{
+        width: 70px;
+        height: 70px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > .circle > svg * {
+    color: white;
+    transition: all 250ms ease-in-out;
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > .circle:hover > svg * {
+    color: var(--primary);
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > a{
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 170px;
+    height: 42px;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#landingPageHeader > .wrapper > .text-content > .stack > a:hover{
+    background-color: var(--white-hover);
+}
+
+#landingPageHeader > .wrapper > .text-content > .quick-action-group{
+    display: flex;
+    gap: 30px;
+}
+
+#landingPageHeader > .wrapper > .text-content > .quick-action-group > svg{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#landingPageHeader > .wrapper > .text-content > .quick-action-group > svg * {
+    color: white;
+    transition: color 250ms ease-in-out;
+}
+
+#landingPageHeader > .wrapper > .text-content > .quick-action-group > svg:hover *{
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+/* Bottom Details */
+
+#landingPageHeader > .wrapper > .bottom-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#landingPageHeader > .wrapper > .bottom-details > .outside{
+    content: '';
+    width: 70%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: var(--light-grey);
+    overflow: hidden;
+}
+
+#landingPageHeader > .wrapper > .bottom-details > .outside > .inside{
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: var(--primary);
+}
+
+@media only screen and (max-width: 1536px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 60px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 22px;
+        width: 630px;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 58px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 22px;
+        width: 620px;
+    }
+}
+
+@media only screen and (max-width: 1336px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 55px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 20px;
+        width: 580px;
+    }
+}
+
+@media only screen and (max-width: 1270px){
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 54px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 18px;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #landingPageHeader > .wrapper > .text-content{
+        padding-inline: 75px;
+    }
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 40px;
+    }
+
+    #landingPageHeader > .wrapper > .slideshow{
+        height: 600px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 16px;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #landingPageHeader > .wrapper > .text-content > .stack{
+        justify-content: center;
+    }
+
+    #landingPageHeader > .wrapper > .text-content{
+        padding-inline: 40px;
+    }
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #landingPageHeader > .wrapper > .slideshow{
+        height: 600px;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #landingPageHeader > .wrapper > .overlay{
+        width: 100%;
+        clip-path: none; /* Diagonal slice */
+    }
+
+    #landingPageHeader > .wrapper > .text-content{
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 568px){
+    #landingPageHeader > .wrapper > .text-content{
+        padding-inline: 20px;
+    }
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    #landingPageHeader > .wrapper > .text-content > .stack{
+        flex-direction: column;
+    }
+
+    #landingPageHeader > .wrapper > .text-content > .header-text > .top > .highlight{
+        font-size: 100px;
+    }
+
+    #landingPageHeader > .wrapper > .text-content > .header-text > p{
+        font-size: 62px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 419px){
+    
+    #landingPageHeader > .wrapper > .text-content > .header-text{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    #landingPageHeader > .wrapper > .text-content > .sub-text{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
