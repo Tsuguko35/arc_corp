@@ -3,9 +3,9 @@ import "../../styles/landingPageHeader.css";
 
 import { Link, useNavigate } from "react-router-dom";
 import { FaArrowDown } from "react-icons/fa6";
-import { MdEmail, MdPhone } from "react-icons/md";
-import LocomotiveScroll from "locomotive-scroll";
+import { MdPhone, MdFormatQuote } from "react-icons/md";
 import { locomotiveScroll } from "../../config";
+import { FaQuoteLeft } from "react-icons/fa";
 
 function LandingPageHeader() {
   const navigate = useNavigate();
@@ -81,22 +81,25 @@ function LandingPageHeader() {
     <header id="landingPageHeader" className="landingPageHeader">
       <div className="wrapper">
         <div className="overlay"></div>
-        <div className="text-content start-fade-bottom-delay">
-          <div className="header-text">
-            <p className="top">
-              We <span className="highlight">Build</span> America
+        <div className="header-content start-fade-bottom-delay">
+          <div className="text">
+            <div className="header-text">
+              <p>
+                We <span className="highlight">BUILD</span> America
+              </p>
+            </div>
+            <p className="sub-text">
+              Elevating Your Home's Protection with Precision Construction
             </p>
-          </div>
-          <p className="sub-text">
-            Elevating Your Home's Protection with Precision Construction
-          </p>
-          <div className="quick-action-group">
-            <MdPhone onClick={() => navigate(`/Contact`)} />
-            <MdEmail onClick={() => scrollToFooter()} />
-          </div>
-          <div className="stack start-flip-top">
-            <div className="circle" onClick={scrollDown}>
-              <FaArrowDown />
+            <div className="quick-action-group">
+              <span onClick={() => navigate(`/Contact`)} className="solid">
+                <MdPhone />
+                Contact Us
+              </span>
+              <span onClick={() => navigate(`/RequestQuote`)}>
+                <MdFormatQuote />
+                Request a Quote
+              </span>
             </div>
           </div>
         </div>
