@@ -25,7 +25,6 @@ const ScrollToTop = () => {
       },
     });
 
-    // Event listener to prevent Locomotive Scroll from interfering with nested scrollable elements
     const handleWheel = (e) => {
       if (e.target.closest(".ignore-scroll")) {
         e.stopPropagation();
@@ -34,10 +33,11 @@ const ScrollToTop = () => {
 
     document.addEventListener("wheel", handleWheel, { passive: true });
 
-    // Scroll to the top on pathname change
-    scroll.scrollTo("top", { immediate: true });
+    // Delay the scrollTo call to ensure it happens after LocomotiveScroll is fully initialized
+    setTimeout(() => {
+      scroll.scrollTo("top", { immediate: true });
+    }, 100);
 
-    // Cleanup function to destroy Locomotive Scroll instance and remove event listener
     return () => {
       if (scroll) scroll.destroy();
       document.removeEventListener("wheel", handleWheel);
@@ -57,7 +57,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
